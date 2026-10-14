@@ -12,11 +12,6 @@ on:
   schedule:
     - cron: "17 2 * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "src/comparaison.py"
-      - ".github/workflows/comparaison.yml"
 
 concurrency:
   group: comparaison

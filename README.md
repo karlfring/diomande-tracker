@@ -146,8 +146,9 @@ donc par les matchs, pour la saison 2025-2026 :
 1. **Championnats** : Premier League, LaLiga, Serie A, Bundesliga et Ligue 1,
    retrouvés par leur nom exact dans leur pays.
 2. **Calendriers** : environ 20 requêtes pour les cinq championnats.
-3. **Box scores** : une requête par match terminé, environ 1 750. Les matchs
-   du RB Leipzig déjà archivés par le suivi sont relus, sans requête.
+3. **Box scores** : une requête par match terminé de la saison régulière
+   (barrages exclus), environ 1 750. Les matchs du RB Leipzig déjà archivés
+   par le suivi sont relus, sans requête.
 4. **Postes détaillés** : une fois tous les box scores archivés, le profil de
    chaque attaquant et milieu à 900 minutes et plus (environ 800 requêtes)
    donne son poste détaillé. Les ailiers sont les joueurs dont le poste

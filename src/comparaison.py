@@ -71,6 +71,9 @@ MINUTES_MIN = 900         # seuil pour entrer dans la comparaison
 POSTES_CANDIDATS = {"Forward", "Midfielder"}     # poste noté dans les box scores
 POSTES_AILIERS = {"Left Winger": "Ailier gauche", "Right Winger": "Ailier droit"}
 ETATS_FINAUX = FINISHED_STATES | {"Cancelled", "Postponed", "Abandoned", "Awarded"}
+# Saison régulière uniquement : les barrages (« Final », « Semi-finals »...)
+# opposent aussi des clubs de deuxième division.
+SAISON_REGULIERE = "Regular Season"
 
 # Statistiques additionnées sur la saison (colonnes des box scores)
 STATS = list(_COMPTAGES) + list(_DECIMALES)
@@ -86,10 +89,11 @@ class Arret(Exception):
     """Réserve de quota atteinte : la suite sera collectée à la prochaine exécution."""
 
 
-def dire(message: str, niveau: str = "notice") -> None:
-    """Affiche le message et le publie en annotation dans GitHub Actions."""
+def dire(message: str, niveau: str = "notice", annotation: bool = True) -> None:
+    """Affiche le message et, si demandé, le publie en annotation dans GitHub
+    Actions (10 annotations au plus par étape : on les réserve à l'essentiel)."""
     print(message, flush=True)
-    if os.environ.get("GITHUB_ACTIONS"):
+    if annotation and os.environ.get("GITHUB_ACTIONS"):
         texte = message.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
         print(f"::{niveau}::{texte}", flush=True)
 
@@ -176,7 +180,8 @@ def resoudre_championnats(api, raw: Path = RAW) -> dict:
             raise ApiError(f"{c['nom']} : {len(exacts)} correspondance(s) parmi les ligues de {c['pays']} : "
                            f"{noms}. Ajoute son identifiant dans CHAMPIONNATS.")
         connus[c["code"]] = {"id": exacts[0]["id"], "nom": exacts[0]["name"], "pays": c["pays"]}
-        dire(f"[OK] {c['nom']} : identifiant {exacts[0]['id']} (offre {plan.get('tier')} : {plan.get('message')})")
+        dire(f"[OK] {c['nom']} : identifiant {exacts[0]['id']} (offre {plan.get('tier')} : {plan.get('message')})",
+             annotation=False)
         ecrire_json(chemin, connus)
     ecrire_json(chemin, connus)
     return connus
@@ -198,16 +203,22 @@ def recuperer_calendriers(api, championnats: dict, raw: Path = RAW) -> list[dict
                        "plan": plan, "matchs": liste}
             ecrire_json(chemin, archive)
             termines = sum((m.get("state") or {}).get("description") in FINISHED_STATES for m in liste)
-            dire(f"[OK] {info['nom']} {SAISON}-{SAISON + 1} : {len(liste)} matchs au calendrier, {termines} terminés")
-        for m in archive["matchs"]:
-            if (m.get("state") or {}).get("description") in FINISHED_STATES:
-                matchs.append({"match_id": m["id"], "date": m["date"], "championnat": code})
+            dire(f"[OK] {info['nom']} {SAISON}-{SAISON + 1} : {len(liste)} matchs au calendrier, {termines} terminés",
+                 annotation=False)
+        matchs += matchs_retenus(archive["matchs"], code)
     vus, uniques = set(), []
     for m in sorted(matchs, key=lambda x: (x["date"], x["match_id"])):
         if m["match_id"] not in vus:
             vus.add(m["match_id"])
             uniques.append(m)
     return uniques
+
+
+def matchs_retenus(liste: list[dict], code: str) -> list[dict]:
+    """Matchs terminés de la saison régulière d'un championnat."""
+    return [{"match_id": m["id"], "date": m["date"], "championnat": code} for m in liste
+            if (m.get("state") or {}).get("description") in FINISHED_STATES
+            and str(m.get("round") or "").startswith(SAISON_REGULIERE)]
 
 
 # --- 3. Box scores ---------------------------------------------------------------
@@ -479,8 +490,7 @@ def main() -> int:
         matchs = []
         for code in championnats:
             archive = lire_json(RAW / "calendriers" / f"{code}.json") or {"matchs": []}
-            matchs += [{"match_id": m["id"], "date": m["date"], "championnat": code} for m in archive["matchs"]
-                       if (m.get("state") or {}).get("description") in FINISHED_STATES]
+            matchs += matchs_retenus(archive["matchs"], code)
         journal = {e["cle"]: e for e in lire_json(RAW / "journal.json", []) or []}
         print(json.dumps(construire(championnats, matchs, journal, diomande=diomande), ensure_ascii=False, indent=1))
         return 0

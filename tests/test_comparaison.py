@@ -29,8 +29,8 @@ LIGUES = {
 }
 
 
-def match(mid, ligue, jour, etat="Finished"):
-    return {"id": mid, "date": f"2025-09-{jour:02d}T15:00:00.000Z", "round": "Regular Season - 1",
+def match(mid, ligue, jour, etat="Finished", tour="Regular Season - 1"):
+    return {"id": mid, "date": f"2025-09-{jour:02d}T15:00:00.000Z", "round": tour,
             "league": {"id": ligue, "season": 2025, "name": "?"},
             "homeTeam": {"id": 1, "name": "A"}, "awayTeam": {"id": 2, "name": "B"},
             "state": {"description": etat, "score": {"current": "1 - 0"}}}
@@ -40,7 +40,7 @@ CALENDRIERS = {
     2001: [match(101, 2001, 1), match(102, 2001, 8), match(103, 2001, 15, "Not started")],
     3001: [match(201, 3001, 2)],
     4001: [match(301, 4001, 3)],
-    67162: [match(401, 67162, 4)],
+    67162: [match(401, 67162, 4), match(402, 67162, 20, tour="Final")],   # barrage : exclu
     5001: [match(501, 5001, 5)],
 }
 
@@ -143,6 +143,7 @@ def test_collecte_complete_et_export(dossiers):
     assert etat["complet"] is True
     assert "box-score/401" not in api.appels         # relu dans l'archive du suivi
     assert "box-score/103" not in api.appels         # match pas encore joué
+    assert "box-score/402" not in api.appels         # barrage, hors saison régulière
     profils = sorted(a for a in api.appels if a.startswith("players/"))
     assert profils == ["players/1", "players/2", "players/5", f"players/{DIOMANDE}"]
     lignes = json.loads(dossiers["sortie"].read_text(encoding="utf-8"))
