@@ -1,13 +1,11 @@
-"""Vérifie l'accès à API-Football avant de lancer le pipeline.
+"""Vérifie l'accès aux données avant de lancer l'ingestion.
 
 Usage :
-    export APIFOOTBALL_KEY=ta_cle        (Windows PowerShell : $env:APIFOOTBALL_KEY="ta_cle")
+    export HIGHLIGHTLY_KEY=ta_cle         (PowerShell : $env:HIGHLIGHTLY_KEY="ta_cle")
+    export DIOMANDE_SEASON=2025           (facultatif, 2026 par défaut)
     python src/check_access.py
 
-Consomme 3 requêtes. Répond à trois questions :
-  1. La clé fonctionne-t-elle, et sur quelle offre ?
-  2. La saison en cours est-elle accessible avec cette offre ?
-  3. Quel est l'identifiant API-Football de Yan Diomande ?
+Consomme 4 requêtes : club, calendrier à domicile, joueur, un box score.
 """
 
 from __future__ import annotations
@@ -18,8 +16,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from client import ApiError, ApiFootball  # noqa: E402
-from config import FINISHED_STATUSES, PLAYER_SEARCH, SEASON, TEAM_ID, TEAM_NAME  # noqa: E402
+from client import ApiError, Highlightly  # noqa: E402
+from config import FINISHED_STATES, PLAYER_NAME, SEASON, TEAM_NAME  # noqa: E402
+from ingest import _choisir  # noqa: E402
+from parsers import parse_box_score  # noqa: E402
 
 
 def dire(message: str) -> None:
@@ -33,53 +33,62 @@ def dire(message: str) -> None:
 
 
 def main() -> int:
+    saison = f"{SEASON}-{SEASON + 1}"
     try:
-        api = ApiFootball()
+        api = Highlightly()
+        page = api.get("teams", name=TEAM_NAME)
     except ApiError as exc:
         dire(f"[ÉCHEC] {exc}")
         return 1
-
-    # 1. Compte
+    plan = page.get("plan") or {}
+    dire(f"[OK] Clé valide. Offre : {plan.get('tier')}. Message de l'offre : {plan.get('message') or 'aucun'}")
     try:
-        statut = api.get("status")["response"]
+        team_id = _choisir(page.get("data", []), TEAM_NAME, "Club")
     except ApiError as exc:
-        dire(f"[ÉCHEC] Clé refusée : {exc}")
-        return 1
-    abonnement = statut.get("subscription", {})
-    requetes = statut.get("requests", {})
-    dire(f"[OK] Clé valide. Offre : {abonnement.get('plan')} "
-          f"(active : {abonnement.get('active')}). "
-          f"Requêtes aujourd'hui : {requetes.get('current')}/{requetes.get('limit_day')}")
-
-    # 2. Saison en cours
-    try:
-        matchs = api.get("fixtures", team=TEAM_ID, season=SEASON)["response"]
-    except ApiError as exc:
-        dire(f"[BLOQUANT] Saison {SEASON}-{SEASON + 1} inaccessible avec cette offre :\n  {exc}")
-        dire("  Il faudra passer à l'offre Pro, ou choisir une autre source.")
+        dire(f"[BLOQUANT] {exc}")
         return 2
-    termines = [m for m in matchs if m["fixture"]["status"]["short"] in FINISHED_STATUSES]
-    competitions = sorted({m["league"]["name"] for m in matchs})
-    dire(f"[OK] Saison {SEASON}-{SEASON + 1} accessible : {len(matchs)} matchs de {TEAM_NAME} "
-          f"au calendrier, {len(termines)} terminés.")
-    dire(f"     Compétitions : {', '.join(competitions)}")
+    dire(f"[OK] Club : {TEAM_NAME}, identifiant {team_id}")
 
-    # 3. Identifiant du joueur
     try:
-        joueurs = api.get("players", team=TEAM_ID, season=SEASON, search=PLAYER_SEARCH)["response"]
+        page = api.get("matches", homeTeamId=team_id, season=SEASON)
     except ApiError as exc:
-        dire(f"[ATTENTION] Recherche du joueur impossible : {exc}")
-        return 3
-    if not joueurs:
-        dire(f"[ATTENTION] Aucun joueur « {PLAYER_SEARCH} » trouvé dans l'effectif {SEASON}.")
-        return 3
-    for j in joueurs:
-        p = j["player"]
-        dire(f"[OK] Joueur trouvé : {p['name']} ({p.get('firstname')} {p.get('lastname')}), "
-              f"identifiant {p['id']}")
-    dire("\nÉtape suivante : ajoute cet identifiant comme variable DIOMANDE_PLAYER_ID "
-          "(secret ou variable du dépôt GitHub).")
-    dire(f"Quota restant aujourd'hui : {api.quota_restant}")
+        dire(f"[BLOQUANT] Saison {saison} inaccessible : {exc}")
+        return 2
+    matchs = page.get("data", [])
+    termines = [m for m in matchs if (m.get("state") or {}).get("description") in FINISHED_STATES]
+    total = (page.get("pagination") or {}).get("totalCount", len(matchs))
+    competitions = sorted({(m.get("league") or {}).get("name", "?") for m in matchs})
+    dire(f"[OK] Saison {saison} : {total} matchs à domicile au calendrier, {len(termines)} terminés. "
+         f"Compétitions : {', '.join(competitions) or 'aucune'}")
+    if not termines:
+        dire(f"[BLOQUANT] Aucun match terminé pour {TEAM_NAME} en {saison}.")
+        return 2
+
+    player_id = None
+    try:
+        joueurs = api.get("players", name=PLAYER_NAME).get("data", [])
+        player_id = _choisir(joueurs, PLAYER_NAME, "Joueur")
+        dire(f"[OK] Joueur : {PLAYER_NAME}, identifiant {player_id}")
+    except ApiError as exc:
+        dire(f"[ATTENTION] {exc} La recherche par nom servira de secours.")
+
+    dernier = max(termines, key=lambda m: m["date"])
+    try:
+        box = api.get(f"box-score/{dernier['id']}")
+    except ApiError as exc:
+        dire(f"[BLOQUANT] Box score inaccessible : {exc}")
+        return 2
+    ligne = parse_box_score(box, player_id, PLAYER_NAME, dernier["id"])
+    nb_joueurs = sum(len(e.get("players") or []) for e in box or [])
+    adversaire = dernier["awayTeam"]["name"]
+    if ligne["statut"] == "données indisponibles":
+        dire(f"[BLOQUANT] Box score vide pour {TEAM_NAME} - {adversaire} ({dernier['date'][:10]}) : "
+             "l'offre gratuite masque peut-être ces données.")
+        return 2
+    dire(f"[OK] Box score {TEAM_NAME} - {adversaire} ({dernier['date'][:10]}) : {nb_joueurs} joueurs. "
+         f"Diomande : {ligne['statut']}, {ligne['minutes']} min, note {ligne['note']}, "
+         f"buts {ligne['buts']}, xG {ligne['xg']}, xA {ligne['xa']}, dribbles réussis {ligne['dribbles_reussis']}")
+    dire(f"Requêtes utilisées : {api.nb_requetes}. Quota restant aujourd'hui : {api.quota_restant}")
     return 0
 
 

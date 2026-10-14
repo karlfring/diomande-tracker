@@ -1,4 +1,4 @@
-"""Client minimal pour API-Football : clé, délais, quota, erreurs."""
+"""Client minimal pour l'API Highlightly : clé, délais, quota, erreurs."""
 
 from __future__ import annotations
 
@@ -21,36 +21,31 @@ log = logging.getLogger("client")
 
 
 class ApiError(RuntimeError):
-    """Erreur renvoyée par l'API (clé invalide, saison non accessible...)."""
+    """Erreur renvoyée par l'API (clé invalide, ressource introuvable...)."""
 
 
 class QuotaExhausted(RuntimeError):
-    """Le quota journalier est presque épuisé : on arrête proprement."""
+    """Le quota journalier est épuisé ou presque : on arrête proprement."""
 
 
-class ApiFootball:
+class Highlightly:
     def __init__(self, api_key: str | None = None, session: requests.Session | None = None):
         key = api_key or os.environ.get(API_KEY_ENV)
         if not key:
-            raise ApiError(
-                f"Clé absente : définis la variable d'environnement {API_KEY_ENV}."
-            )
+            raise ApiError(f"Clé absente : définis la variable d'environnement {API_KEY_ENV}.")
         self.session = session or requests.Session()
-        self.session.headers.update({"x-apisports-key": key})
+        self.session.headers.update({"x-rapidapi-key": key})
         self._dernier_appel = 0.0
         self.quota_restant: int | None = None
+        self.nb_requetes = 0
 
     def _attendre(self) -> None:
         ecoule = time.monotonic() - self._dernier_appel
         if ecoule < REQUEST_DELAY_S:
             time.sleep(REQUEST_DELAY_S - ecoule)
 
-    def get(self, endpoint: str, **params) -> dict:
-        """Appelle un endpoint et renvoie le JSON complet.
-
-        API-Football répond 200 même en cas d'erreur métier : les erreurs
-        sont dans le champ `errors` (liste vide ou dictionnaire).
-        """
+    def get(self, endpoint: str, **params):
+        """Appelle un endpoint et renvoie le JSON (objet ou liste)."""
         if self.quota_restant is not None and self.quota_restant <= MIN_DAILY_QUOTA:
             raise QuotaExhausted(f"Quota journalier presque épuisé ({self.quota_restant}).")
 
@@ -63,17 +58,34 @@ class ApiFootball:
             except requests.RequestException as exc:
                 log.warning("tentative %s/%s : %s", tentative, MAX_RETRIES, exc)
                 continue
+            self.nb_requetes += 1
             restant = r.headers.get("x-ratelimit-requests-remaining")
-            if restant is not None and restant.isdigit():
+            if restant is not None and str(restant).isdigit():
                 self.quota_restant = int(restant)
             if r.status_code == 429:
-                log.warning("limite par minute atteinte, nouvelle tentative")
-                time.sleep(60)
+                raise QuotaExhausted("Quota journalier épuisé (HTTP 429).")
+            if r.status_code >= 500:
+                log.warning("tentative %s/%s : HTTP %s", tentative, MAX_RETRIES, r.status_code)
+                time.sleep(5)
                 continue
-            r.raise_for_status()
-            payload = r.json()
-            erreurs = payload.get("errors")
-            if erreurs:
-                raise ApiError(f"{endpoint} {params} : {erreurs}")
-            return payload
+            if r.status_code >= 400:
+                raise ApiError(f"{endpoint} {params} : HTTP {r.status_code} {r.text[:300]}")
+            return r.json()
         raise ApiError(f"{endpoint} {params} : échec après {MAX_RETRIES} tentatives")
+
+    def get_pagine(self, endpoint: str, **params) -> tuple[list, dict]:
+        """Parcourt toutes les pages d'un endpoint paginé.
+
+        Renvoie (éléments, plan). Le bloc `plan` signale ce que l'offre
+        gratuite masque éventuellement.
+        """
+        elements, offset, plan = [], 0, {}
+        while True:
+            page = self.get(endpoint, offset=offset, **params)
+            donnees = page.get("data", [])
+            plan = page.get("plan") or plan
+            elements.extend(donnees)
+            total = (page.get("pagination") or {}).get("totalCount", len(elements))
+            offset += len(donnees)
+            if not donnees or offset >= total:
+                return elements, plan

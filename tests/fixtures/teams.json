@@ -1,0 +1,21 @@
+{
+ "data": [
+  {
+   "id": 541,
+   "name": "Real Madrid"
+  },
+  {
+   "id": 7001,
+   "name": "Real Madrid Castilla"
+  }
+ ],
+ "pagination": {
+  "totalCount": 2,
+  "offset": 0,
+  "limit": 100
+ },
+ "plan": {
+  "tier": "BASIC",
+  "message": "Some results might be hidden with FREE tier."
+ }
+}

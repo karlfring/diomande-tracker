@@ -1,0 +1,42 @@
+{
+ "data": [
+  {
+   "id": 1002,
+   "round": "Regular Season - 5",
+   "date": "2026-09-27T14:00:00.000Z",
+   "country": {
+    "code": "ES",
+    "name": "Spain"
+   },
+   "homeTeam": {
+    "id": 548,
+    "name": "Real Sociedad"
+   },
+   "awayTeam": {
+    "id": 541,
+    "name": "Real Madrid"
+   },
+   "league": {
+    "id": 140,
+    "season": 2026,
+    "name": "LaLiga"
+   },
+   "state": {
+    "description": "Finished",
+    "score": {
+     "current": "1 - 1",
+     "penalties": null
+    }
+   }
+  }
+ ],
+ "pagination": {
+  "totalCount": 1,
+  "offset": 0,
+  "limit": 100
+ },
+ "plan": {
+  "tier": "BASIC",
+  "message": "Some results might be hidden with FREE tier."
+ }
+}

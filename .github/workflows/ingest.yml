@@ -1,10 +1,18 @@
 name: Ingestion des matchs
 
-# Lundi et jeudi matin : couvre les matchs du week-end et de milieu de semaine.
 on:
-  schedule:
-    - cron: "23 6 * * 1,4"
+  # Lundi et jeudi matin : couvre les matchs du week-end et de milieu de
+  # semaine. Activé une fois l'accès à la saison en cours vérifié.
+  # schedule:
+  #   - cron: "23 6 * * 1,4"
   workflow_dispatch:
+    inputs:
+      saison:
+        description: "Saison (année de début) : 2025 = RB Leipzig, 2026 = Real Madrid"
+        required: true
+        default: "2026"
+        type: choice
+        options: ["2025", "2026"]
 
 jobs:
   ingerer:
@@ -12,8 +20,8 @@ jobs:
     permissions:
       contents: write
     env:
-      APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
-      DIOMANDE_PLAYER_ID: ${{ vars.DIOMANDE_PLAYER_ID }}
+      HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
+      DIOMANDE_SEASON: ${{ inputs.saison || '2026' }}
 
     steps:
       - uses: actions/checkout@v4
@@ -40,6 +48,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "Aucun nouveau match."
           else
-            git commit -m "data: matchs au $(date -u +%Y-%m-%d)"
+            git commit -m "data: saison ${DIOMANDE_SEASON}, matchs au $(date -u +%Y-%m-%d)"
+            git pull --rebase
             git push
           fi

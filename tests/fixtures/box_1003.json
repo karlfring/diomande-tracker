@@ -1,0 +1,42 @@
+[
+ {
+  "team": {
+   "id": 541,
+   "name": "Real Madrid"
+  },
+  "players": [
+   {
+    "id": 999001,
+    "name": "Yan Diomande",
+    "fullName": "Yan Diomande",
+    "isCaptain": false,
+    "minutesPlayed": 31,
+    "isSubstitute": true,
+    "offsides": 1,
+    "matchRating": "7.0",
+    "position": "Forward",
+    "shirtNumber": 21,
+    "statistics": {
+     "goalsScored": 0,
+     "assists": 1,
+     "expectedAssists": "0.35"
+    }
+   },
+   {
+    "id": 888,
+    "name": "Vinicius Junior",
+    "fullName": "Vinicius Junior",
+    "isCaptain": false,
+    "minutesPlayed": 90,
+    "isSubstitute": false,
+    "offsides": 1,
+    "matchRating": "7.1",
+    "position": "Forward",
+    "shirtNumber": 21,
+    "statistics": {
+     "goalsScored": 0
+    }
+   }
+  ]
+ }
+]

@@ -1,13 +1,17 @@
-"""Pipeline d'ingestion : API-Football -> CSV en étoile.
+"""Pipeline d'ingestion : API Highlightly -> CSV en étoile.
 
 Usage :
-    python src/ingest.py
+    python src/ingest.py                 # saison en cours (2026, Real Madrid)
+    DIOMANDE_SEASON=2025 python src/ingest.py   # saison passée (RB Leipzig)
 
 À chaque exécution :
-  1. récupère le calendrier du club pour la saison (1 requête) ;
-  2. pour chaque match terminé jamais archivé, récupère les statistiques
-     des joueurs (1 requête par match) et archive la réponse brute ;
-  3. reconstruit les tables à partir de l'archive.
+  1. retrouve les identifiants du club et du joueur (une seule fois par
+     saison, ensuite lus dans data/raw/<saison>/identifiants.json) ;
+  2. récupère le calendrier du club pour la saison (2 requêtes :
+     matchs à domicile, matchs à l'extérieur) ;
+  3. pour chaque match terminé jamais archivé, récupère le box score
+     (1 requête par match) et archive la réponse brute ;
+  4. reconstruit les tables à partir de l'archive.
 
 Un match déjà archivé n'est jamais redemandé : l'exécution est idempotente
 et ne consomme presque rien les jours sans match.
@@ -19,30 +23,35 @@ import hashlib
 import json
 import logging
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from client import ApiError, ApiFootball, QuotaExhausted  # noqa: E402
+from client import ApiError, Highlightly, QuotaExhausted  # noqa: E402
 from config import (  # noqa: E402
     DATA_OUT,
     DATA_RAW,
-    FINISHED_STATUSES,
+    FINISHED_STATES,
     PLAYER_ID,
-    PLAYER_SEARCH,
+    PLAYER_NAME,
     SEASON,
     TEAM_ID,
+    TEAM_NAME,
 )
-from parsers import parse_fixture, parse_player_match  # noqa: E402
+from parsers import normaliser_nom, parse_box_score, parse_match  # noqa: E402
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s  %(levelname)-7s %(message)s", datefmt="%H:%M:%S")
 log = logging.getLogger("ingest")
 
+# Un box score vide juste après un match peut être un simple retard de mise
+# à jour : on le redemande pendant ce délai, puis on le considère définitif.
+DELAI_NOUVEL_ESSAI = timedelta(days=7)
 
-def _ecrire_json(chemin: Path, payload: dict) -> str:
+
+def _ecrire_json(chemin: Path, payload) -> str:
     """Écrit un JSON stable (clés triées) et renvoie son empreinte SHA-256."""
     chemin.parent.mkdir(parents=True, exist_ok=True)
     texte = json.dumps(payload, ensure_ascii=False, sort_keys=True, indent=1)
@@ -50,50 +59,97 @@ def _ecrire_json(chemin: Path, payload: dict) -> str:
     return hashlib.sha256(texte.encode("utf-8")).hexdigest()
 
 
-def resoudre_joueur(api: ApiFootball) -> int:
+def _lire_json(chemin: Path, defaut=None):
+    return json.loads(chemin.read_text(encoding="utf-8")) if chemin.exists() else defaut
+
+
+def _choisir(candidats: list[dict], nom: str, quoi: str) -> int:
+    cible = normaliser_nom(nom)
+    exacts = [c for c in candidats
+              if cible in (normaliser_nom(c.get("name")), normaliser_nom(c.get("fullName")))]
+    if len(exacts) == 1:
+        return exacts[0]["id"]
+    apercu = ", ".join(f"{c.get('name')} ({c['id']})" for c in candidats[:10]) or "aucun"
+    raise ApiError(f"{quoi} « {nom} » : {len(exacts)} correspondance(s) exacte(s). "
+                   f"Candidats : {apercu}. Définis l'identifiant à la main.")
+
+
+def resoudre_identifiants(api: Highlightly, raw_dir: Path) -> dict:
+    chemin = raw_dir / "identifiants.json"
+    ids = _lire_json(chemin, {}) or {}
+    if TEAM_ID:
+        ids["team_id"] = TEAM_ID
     if PLAYER_ID:
-        return PLAYER_ID
-    res = api.get("players", team=TEAM_ID, season=SEASON, search=PLAYER_SEARCH)["response"]
-    if len(res) != 1:
-        raise ApiError(f"{len(res)} joueurs trouvés pour « {PLAYER_SEARCH} » : définis DIOMANDE_PLAYER_ID.")
-    pid = res[0]["player"]["id"]
-    log.warning("DIOMANDE_PLAYER_ID non défini, identifiant résolu : %s", pid)
-    return pid
+        ids["player_id"] = PLAYER_ID
+    if not ids.get("team_id"):
+        equipes, _ = api.get_pagine("teams", name=TEAM_NAME)
+        ids["team_id"] = _choisir(equipes, TEAM_NAME, "Club")
+        log.info("club %s : identifiant %s", TEAM_NAME, ids["team_id"])
+    if not ids.get("player_id"):
+        joueurs, _ = api.get_pagine("players", name=PLAYER_NAME)
+        ids["player_id"] = _choisir(joueurs, PLAYER_NAME, "Joueur")
+        log.info("joueur %s : identifiant %s", PLAYER_NAME, ids["player_id"])
+    ids.update(saison=SEASON, club=TEAM_NAME, joueur=PLAYER_NAME)
+    _ecrire_json(chemin, ids)
+    return ids
 
 
-def ingerer(api: ApiFootball, raw_dir: Path = DATA_RAW, out_dir: Path = DATA_OUT) -> dict[str, pd.DataFrame]:
-    player_id = resoudre_joueur(api)
+def recuperer_calendrier(api: Highlightly, team_id: int, raw_dir: Path) -> list[dict]:
+    domicile, plan = api.get_pagine("matches", homeTeamId=team_id, season=SEASON)
+    exterieur, _ = api.get_pagine("matches", awayTeamId=team_id, season=SEASON)
+    _ecrire_json(raw_dir / f"calendrier_{SEASON}.json",
+                 {"domicile": domicile, "exterieur": exterieur, "plan": plan})
+    if plan.get("message"):
+        log.warning("offre %s : %s", plan.get("tier"), plan["message"])
+    vus, matchs = set(), []
+    for m in domicile + exterieur:
+        if m["id"] not in vus:
+            vus.add(m["id"])
+            matchs.append(parse_match(m, team_id))
+    return matchs
 
-    calendrier = api.get("fixtures", team=TEAM_ID, season=SEASON)
-    _ecrire_json(raw_dir / f"calendrier_{SEASON}.json", calendrier)
-    matchs = [parse_fixture(m) for m in calendrier["response"]]
-    termines = [m for m in matchs if m["statut_match"] in FINISHED_STATUSES]
+
+def _box_score_vide(payload) -> bool:
+    return not any((e.get("players") for e in (payload or [])))
+
+
+def ingerer(api: Highlightly, raw_dir: Path = DATA_RAW, out_dir: Path = DATA_OUT,
+            maintenant: datetime | None = None) -> dict[str, pd.DataFrame]:
+    maintenant = maintenant or datetime.now(timezone.utc)
+    ids = resoudre_identifiants(api, raw_dir)
+    matchs = recuperer_calendrier(api, ids["team_id"], raw_dir)
+    termines = [m for m in matchs if m["statut_match"] in FINISHED_STATES]
     log.info("%s matchs au calendrier, %s terminés", len(matchs), len(termines))
 
-    journal = _charger_journal(raw_dir)
+    journal = {e["match_id"]: e for e in _lire_json(raw_dir / "journal.json", [])}
     nouveaux = 0
     for m in sorted(termines, key=lambda x: x["date_utc"]):
         chemin = raw_dir / "matchs" / f"{m['match_id']}.json"
         if chemin.exists():
-            continue
+            recent = maintenant - datetime.fromisoformat(m["date_utc"].replace("Z", "+00:00")) < DELAI_NOUVEL_ESSAI
+            if not (recent and _box_score_vide(_lire_json(chemin))):
+                continue
         try:
-            payload = api.get("fixtures/players", fixture=m["match_id"])
+            payload = api.get(f"box-score/{m['match_id']}")
         except QuotaExhausted as exc:
             log.warning("%s : arrêt, la suite sera récupérée à la prochaine exécution", exc)
             break
         empreinte = _ecrire_json(chemin, payload)
-        journal.append({
+        journal[m["match_id"]] = {
             "match_id": m["match_id"],
             "fichier": f"matchs/{m['match_id']}.json",
             "sha256": empreinte,
-            "ingere_le": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        })
+            "box_score_vide": _box_score_vide(payload),
+            "ingere_le": maintenant.isoformat(timespec="seconds"),
+        }
         nouveaux += 1
         log.info("match %s archivé (%s, %s)", m["match_id"], m["adversaire"], m["date_utc"][:10])
-    _ecrire_journal(raw_dir, journal)
-    log.info("%s nouveau(x) match(s) archivé(s)", nouveaux)
+    lignes_journal = sorted(journal.values(), key=lambda e: e["match_id"])
+    _ecrire_json(raw_dir / "journal.json", lignes_journal)
+    log.info("%s match(s) archivé(s), %s requête(s) utilisée(s), quota restant : %s",
+             nouveaux, api.nb_requetes, api.quota_restant)
 
-    tables = construire_tables(matchs, raw_dir, player_id, journal)
+    tables = construire_tables(matchs, raw_dir, ids["player_id"], lignes_journal)
     out_dir.mkdir(parents=True, exist_ok=True)
     for nom, df in tables.items():
         df.to_csv(out_dir / f"{nom}.csv", index=False, encoding="utf-8")
@@ -101,19 +157,10 @@ def ingerer(api: ApiFootball, raw_dir: Path = DATA_RAW, out_dir: Path = DATA_OUT
     return tables
 
 
-def _charger_journal(raw_dir: Path) -> list[dict]:
-    chemin = raw_dir / "journal.json"
-    return json.loads(chemin.read_text(encoding="utf-8")) if chemin.exists() else []
-
-
-def _ecrire_journal(raw_dir: Path, journal: list[dict]) -> None:
-    (raw_dir / "journal.json").write_text(
-        json.dumps(journal, ensure_ascii=False, indent=1), encoding="utf-8"
-    )
-
-
-def construire_tables(matchs: list[dict], raw_dir: Path, player_id: int, journal: list[dict]) -> dict[str, pd.DataFrame]:
+def construire_tables(matchs: list[dict], raw_dir: Path, player_id: int | None,
+                      journal: list[dict]) -> dict[str, pd.DataFrame]:
     dim_match = pd.DataFrame(matchs).sort_values("date_utc").reset_index(drop=True)
+    dim_match.insert(1, "club", TEAM_NAME)
     dim_competition = (
         dim_match[["competition_id", "competition"]].drop_duplicates().sort_values("competition_id")
     )
@@ -121,8 +168,7 @@ def construire_tables(matchs: list[dict], raw_dir: Path, player_id: int, journal
     for m in matchs:
         chemin = raw_dir / "matchs" / f"{m['match_id']}.json"
         if chemin.exists():
-            payload = json.loads(chemin.read_text(encoding="utf-8"))
-            lignes.append(parse_player_match(payload, player_id, m["match_id"]))
+            lignes.append(parse_box_score(_lire_json(chemin), player_id, PLAYER_NAME, m["match_id"]))
     fact = pd.DataFrame(lignes)
     if not fact.empty:
         fact = fact.merge(dim_match[["match_id", "date_utc"]], on="match_id").sort_values("date_utc")
@@ -138,7 +184,7 @@ def construire_tables(matchs: list[dict], raw_dir: Path, player_id: int, journal
 
 def main() -> int:
     try:
-        api = ApiFootball()
+        api = Highlightly()
         ingerer(api)
     except ApiError as exc:
         log.error("%s", exc)

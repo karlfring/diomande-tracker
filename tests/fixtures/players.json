@@ -1,0 +1,22 @@
+{
+ "data": [
+  {
+   "id": 999001,
+   "name": "Yan Diomande",
+   "fullName": "Yan Diomandé"
+  },
+  {
+   "id": 999002,
+   "name": "Moussa Diomande"
+  }
+ ],
+ "pagination": {
+  "totalCount": 2,
+  "offset": 0,
+  "limit": 100
+ },
+ "plan": {
+  "tier": "BASIC",
+  "message": "Some results might be hidden with FREE tier."
+ }
+}

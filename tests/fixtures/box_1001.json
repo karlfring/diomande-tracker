@@ -1,0 +1,81 @@
+[
+ {
+  "team": {
+   "id": 541,
+   "name": "Real Madrid"
+  },
+  "players": [
+   {
+    "id": 999001,
+    "name": "Yan Diomande",
+    "fullName": "Yan Diomande",
+    "isCaptain": false,
+    "minutesPlayed": 78,
+    "isSubstitute": false,
+    "offsides": 1,
+    "matchRating": "7.6",
+    "position": "Forward",
+    "shirtNumber": 21,
+    "statistics": {
+     "goalsScored": 1,
+     "assists": null,
+     "shotsTotal": 3,
+     "shotsOnTarget": 2,
+     "passesTotal": 24,
+     "passesSuccessful": 19,
+     "passesKey": 2,
+     "dribblesTotal": 6,
+     "dribblesSuccessful": 4,
+     "duelsTotal": 11,
+     "duelsWon": 7,
+     "fouledByOthers": 3,
+     "fouledOthers": 1,
+     "tacklesTotal": 1,
+     "interceptionsTotal": null,
+     "cardsYellow": 0,
+     "cardsRed": 0,
+     "penaltiesScored": 0,
+     "penaltiesMissed": 0,
+     "expectedGoals": 0.42,
+     "expectedAssists": 0.18
+    }
+   },
+   {
+    "id": 888,
+    "name": "Vinicius Junior",
+    "fullName": "Vinicius Junior",
+    "isCaptain": false,
+    "minutesPlayed": 90,
+    "isSubstitute": false,
+    "offsides": 1,
+    "matchRating": "7.1",
+    "position": "Forward",
+    "shirtNumber": 21,
+    "statistics": {
+     "goalsScored": 0
+    }
+   }
+  ]
+ },
+ {
+  "team": {
+   "id": 533,
+   "name": "Villarreal"
+  },
+  "players": [
+   {
+    "id": 777,
+    "name": "Gerard Moreno",
+    "fullName": "Gerard Moreno",
+    "isCaptain": false,
+    "minutesPlayed": 90,
+    "isSubstitute": false,
+    "offsides": 1,
+    "matchRating": null,
+    "position": "Forward",
+    "shirtNumber": 21,
+    "statistics": {}
+   }
+  ]
+ }
+]

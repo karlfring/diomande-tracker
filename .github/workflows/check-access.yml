@@ -1,7 +1,8 @@
 name: Vérification de l'accès à l'API
 
 # Lancement manuel uniquement (onglet Actions > Run workflow).
-# Consomme 3 requêtes : offre, saison choisie, identifiant du joueur.
+# Consomme 4 requêtes : club, calendrier, joueur, un box score.
+# Le résultat s'affiche dans les annotations du run.
 on:
   workflow_dispatch:
     inputs:
@@ -16,7 +17,7 @@ jobs:
   verifier:
     runs-on: ubuntu-latest
     env:
-      APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
+      HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
       DIOMANDE_SEASON: ${{ inputs.saison }}
     steps:
       - uses: actions/checkout@v4

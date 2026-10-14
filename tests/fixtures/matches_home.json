@@ -1,0 +1,100 @@
+{
+ "data": [
+  {
+   "id": 1001,
+   "round": "Regular Season - 5",
+   "date": "2026-09-20T19:00:00.000Z",
+   "country": {
+    "code": "ES",
+    "name": "Spain"
+   },
+   "homeTeam": {
+    "id": 541,
+    "name": "Real Madrid"
+   },
+   "awayTeam": {
+    "id": 533,
+    "name": "Villarreal"
+   },
+   "league": {
+    "id": 140,
+    "season": 2026,
+    "name": "LaLiga"
+   },
+   "state": {
+    "description": "Finished",
+    "score": {
+     "current": "1 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "id": 1003,
+   "round": "Regular Season - 5",
+   "date": "2026-10-04T19:00:00.000Z",
+   "country": {
+    "code": "ES",
+    "name": "Spain"
+   },
+   "homeTeam": {
+    "id": 541,
+    "name": "Real Madrid"
+   },
+   "awayTeam": {
+    "id": 546,
+    "name": "Getafe"
+   },
+   "league": {
+    "id": 143,
+    "season": 2026,
+    "name": "Copa del Rey"
+   },
+   "state": {
+    "description": "Finished after extra time",
+    "score": {
+     "current": "3 - 2",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "id": 1004,
+   "round": "Regular Season - 5",
+   "date": "2026-10-21T19:00:00.000Z",
+   "country": {
+    "code": "ES",
+    "name": "Spain"
+   },
+   "homeTeam": {
+    "id": 541,
+    "name": "Real Madrid"
+   },
+   "awayTeam": {
+    "id": 50,
+    "name": "Manchester City"
+   },
+   "league": {
+    "id": 2,
+    "season": 2026,
+    "name": "UEFA Champions League"
+   },
+   "state": {
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  }
+ ],
+ "pagination": {
+  "totalCount": 3,
+  "offset": 0,
+  "limit": 100
+ },
+ "plan": {
+  "tier": "BASIC",
+  "message": "Some results might be hidden with FREE tier."
+ }
+}
