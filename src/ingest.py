@@ -3,6 +3,7 @@
 Usage :
     python src/ingest.py                 # saison en cours (2026, Real Madrid)
     DIOMANDE_SEASON=2025 python src/ingest.py   # saison passée (RB Leipzig)
+    python src/ingest.py --hors-ligne    # reconstruit les tables depuis l'archive
 
 À chaque exécution :
   1. retrouve les identifiants du club et du joueur (une seule fois par
@@ -49,6 +50,7 @@ log = logging.getLogger("ingest")
 # Un box score vide juste après un match peut être un simple retard de mise
 # à jour : on le redemande pendant ce délai, puis on le considère définitif.
 DELAI_NOUVEL_ESSAI = timedelta(days=7)
+COLONNES_JOURNAL = ["match_id", "fichier", "sha256", "box_score_vide", "ingere_le"]
 
 
 def _ecrire_json(chemin: Path, payload) -> str:
@@ -178,11 +180,37 @@ def construire_tables(matchs: list[dict], raw_dir: Path, player_id: int | None,
         "dim_match": dim_match,
         "dim_competition": dim_competition,
         "fact_joueur_match": fact,
-        "fact_ingestion": pd.DataFrame(journal),
+        "fact_ingestion": pd.DataFrame(journal, columns=COLONNES_JOURNAL),
     }
 
 
+def reconstruire(raw_dir: Path = DATA_RAW, out_dir: Path = DATA_OUT) -> dict[str, pd.DataFrame]:
+    """Reconstruit les tables depuis l'archive, sans aucune requête."""
+    ids = _lire_json(raw_dir / "identifiants.json")
+    cal = _lire_json(raw_dir / f"calendrier_{SEASON}.json")
+    if not ids or not cal:
+        raise ApiError(f"Archive incomplète dans {raw_dir} : lance d'abord une ingestion.")
+    vus, matchs = set(), []
+    for m in cal["domicile"] + cal["exterieur"]:
+        if m["id"] not in vus:
+            vus.add(m["id"])
+            matchs.append(parse_match(m, ids["team_id"]))
+    tables = construire_tables(matchs, raw_dir, ids["player_id"], _lire_json(raw_dir / "journal.json", []))
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for nom, df in tables.items():
+        df.to_csv(out_dir / f"{nom}.csv", index=False, encoding="utf-8")
+        log.info("écrit %-22s %4d lignes", f"{nom}.csv", len(df))
+    return tables
+
+
 def main() -> int:
+    if "--hors-ligne" in sys.argv:
+        try:
+            reconstruire()
+        except ApiError as exc:
+            log.error("%s", exc)
+            return 1
+        return 0
     try:
         api = Highlightly()
         ingerer(api)

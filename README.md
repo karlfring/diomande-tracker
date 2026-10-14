@@ -7,7 +7,7 @@ et alimente un tableau de bord pour suivre son impact et son évolution.
   une saison complète.
 - **Ensuite : saison 2026-2027 au Real Madrid**, suivie en continu.
 
-> Projet en construction. Étape actuelle : vérification de l'accès aux données.
+> Projet en construction. Saison 2025-2026 ingérée ; prochaine étape : le tableau de bord.
 
 ## Source de données
 
@@ -23,7 +23,7 @@ décisives, tirs, xG, xA, passes clés, dribbles, duels, fautes subies.
 | API-Football, offre gratuite | Vérifié par le workflow d'accès : saisons 2022 à 2024 uniquement, ni 2025-26 ni 2026-27 | écartée tant qu'elle est payante pour ces saisons |
 | Understat | Accès automatisé interdit par son fichier robots.txt | écartée |
 | Sites protégés contre les robots | Contourner ces protections n'est pas acceptable | écartés |
-| Highlightly, offre gratuite | Toutes les ligues, box score avec xG et xA | **retenue**, accès à confirmer par le workflow de vérification |
+| Highlightly, offre gratuite | Toutes les ligues, box score avec xG et xA, accès à 2025-26 vérifié | **retenue** |
 
 ## Démarrage
 
@@ -37,7 +37,9 @@ export DIOMANDE_SEASON=2025              # 2025 = RB Leipzig, 2026 = Real Madrid
 python src/check_access.py               # 4 requêtes : club, calendrier, joueur, un box score
 python src/ingest.py                     # récupère les matchs terminés de la saison
 
-python -m pytest tests/ -q               # 22 tests, sans réseau
+python src/ingest.py --hors-ligne        # reconstruit les tables depuis l'archive, sans requête
+
+python -m pytest tests/ -q               # 24 tests, sans réseau
 ```
 
 ## Fonctionnement
@@ -58,14 +60,30 @@ Un garde-fou arrête l'ingestion avant d'épuiser le quota ; les matchs restants
 sont repris à l'exécution suivante. Un box score vide juste après un match est
 redemandé pendant sept jours, le temps que la source le complète.
 
+## Version 0 : saison 2025-2026 au RB Leipzig
+
+44 matchs au calendrier, dont 6 amicaux exclus. Sur les 38 matchs officiels
+(Bundesliga et DFB Pokal), Diomande en a joué 36 : 31 comme titulaire et 5 en
+entrant en jeu, pour 2 717 minutes, 13 buts, 9 passes décisives, 7,3 xG et
+9,9 xA.
+
+Contrôle de cohérence : en Bundesliga, le pipeline compte 33 matchs joués,
+12 buts et 8 passes décisives, comme la fiche du joueur publiée par
+[The Analyst](https://theanalyst.com/players/6478/yan-diomande).
+
 ## Modèle de données
 
 | Table | Grain | Contenu |
 |---|---|---|
 | `dim_match` | un match du club | date, club, compétition, adversaire, domicile, score, résultat |
 | `dim_competition` | une compétition | identifiant et nom |
-| `fact_joueur_match` | un match terminé | statut (titulaire, entré en jeu, sur le banc, n'a pas joué, données indisponibles), minutes, note et statistiques de Diomande |
+| `fact_joueur_match` | un match officiel terminé | statut (titulaire, entré en jeu, sur le banc, n'a pas joué, données indisponibles), minutes, note et statistiques de Diomande |
 | `fact_ingestion` | un fichier archivé | fichier, empreinte SHA-256, box score vide ou non, horodatage |
+
+Deux règles de lecture de la source :
+
+- un xG vide quand le joueur n'a pas tiré vaut 0 ;
+- une expulsion compte le rouge direct comme le second jaune.
 
 Le statut « données indisponibles » distingue un box score vide d'un match où
 le joueur n'a pas joué : une absence de données n'est jamais comptée comme
@@ -90,6 +108,6 @@ secret `HIGHLIGHTLY_KEY`.
   workflow de vérification le contrôle sur un vrai box score, et chaque box
   score vide est signalé dans `fact_ingestion`.
 - Les tests utilisent des réponses construites selon la structure documentée
-  de l'API, avec des valeurs fictives. Ils seront complétés par de vraies
-  réponses dès la première ingestion.
+  de l'API, avec des valeurs fictives. Les vraies réponses sont archivées dans
+  `data/raw/` et servent au contrôle de cohérence ci-dessus.
 - Les matchs en sélection nationale ne sont pas encore suivis.

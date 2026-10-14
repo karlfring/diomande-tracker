@@ -104,7 +104,15 @@ def test_entre_en_jeu_et_xa_textuel():
     assert ligne["statut"] == "entré en jeu"
     assert ligne["passes_decisives"] == 1
     assert ligne["xa"] == pytest.approx(0.35)
-    assert ligne["xg"] is None
+    assert ligne["xg"] == 0.0            # aucun tir
+
+
+def test_xg_vide_sans_tir_vaut_zero():
+    box = charger("box_1003.json")
+    box[0]["players"][0]["statistics"].update(shotsTotal=0, cardsSecondYellow=1)
+    ligne = parse_box_score(box, PID, NOM, 1003)
+    assert ligne["xg"] == 0.0
+    assert ligne["expulse"] is True
 
 
 def test_sur_le_banc_sans_statistiques():
@@ -163,6 +171,12 @@ def test_box_score_vide_redemande_seulement_s_il_est_recent(tmp_path):
     assert [a for a in api.appels if a.startswith("box-score")] == ["box-score/1003"]
     statuts = dict(zip(tables["fact_joueur_match"]["match_id"], tables["fact_joueur_match"]["statut"]))
     assert statuts == {1001: "données indisponibles", 1002: "sur le banc", 1003: "entré en jeu"}
+
+
+def test_reconstruction_hors_ligne_identique(tmp_path):
+    _, tables = lancer(tmp_path)
+    refaites = ingest.reconstruire(raw_dir=tmp_path / "raw", out_dir=tmp_path / "out2")
+    assert refaites["fact_joueur_match"].equals(tables["fact_joueur_match"])
 
 
 def test_tables_et_journal(tmp_path):

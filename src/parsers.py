@@ -96,7 +96,7 @@ _COMPTAGES = {
     "penaltys_rates": "penaltiesMissed",
 }
 _DECIMALES = {"xg": "expectedGoals", "xa": "expectedAssists"}
-COLONNES_STATS = ["hors_jeu", *_COMPTAGES, *_DECIMALES]
+COLONNES_STATS = ["hors_jeu", *_COMPTAGES, *_DECIMALES, "expulse"]
 
 
 def _trouver_joueur(payload, player_id: int | None, player_name: str):
@@ -155,4 +155,9 @@ def parse_box_score(payload, player_id: int | None, player_name: str, match_id: 
         ligne[col] = (_int(s.get(cle)) or 0) if a_joue else None
     for col, cle in _DECIMALES.items():
         ligne[col] = _float(s.get(cle)) if a_joue else None
+    # La source laisse xG vide quand le joueur n'a pas tiré : c'est un xG nul.
+    if a_joue and ligne["xg"] is None and ligne["tirs"] == 0:
+        ligne["xg"] = 0.0
+    # Expulsion : carton rouge direct ou second carton jaune
+    ligne["expulse"] = bool((_int(s.get("cardsRed")) or 0) + (_int(s.get("cardsSecondYellow")) or 0)) if a_joue else None
     return ligne
