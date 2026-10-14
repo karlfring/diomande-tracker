@@ -1,0 +1,83 @@
+{
+ "errors": [],
+ "response": [
+  {
+   "team": {
+    "id": 541,
+    "name": "Real Madrid"
+   },
+   "players": [
+    {
+     "player": {
+      "id": 999001,
+      "name": "Y. Diomande"
+     },
+     "statistics": [
+      {
+       "games": {
+        "minutes": null,
+        "number": 21,
+        "position": "F",
+        "rating": null,
+        "captain": false,
+        "substitute": true
+       },
+       "offsides": null,
+       "shots": {
+        "total": null,
+        "on": null
+       },
+       "goals": {
+        "total": null,
+        "conceded": 0,
+        "assists": null,
+        "saves": null
+       },
+       "passes": {
+        "total": null,
+        "key": null,
+        "accuracy": null
+       },
+       "tackles": {
+        "total": null,
+        "blocks": null,
+        "interceptions": null
+       },
+       "duels": {
+        "total": null,
+        "won": null
+       },
+       "dribbles": {
+        "attempts": null,
+        "success": null,
+        "past": null
+       },
+       "fouls": {
+        "drawn": null,
+        "committed": null
+       },
+       "cards": {
+        "yellow": 0,
+        "red": 0
+       },
+       "penalty": {
+        "won": null,
+        "commited": null,
+        "scored": 0,
+        "missed": 0,
+        "saved": null
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "team": {
+    "id": 546,
+    "name": "Getafe"
+   },
+   "players": []
+  }
+ ]
+}

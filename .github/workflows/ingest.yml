@@ -1,0 +1,45 @@
+name: Ingestion des matchs
+
+# Lundi et jeudi matin : couvre les matchs du week-end et de milieu de semaine.
+on:
+  schedule:
+    - cron: "23 6 * * 1,4"
+  workflow_dispatch:
+
+jobs:
+  ingerer:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
+      DIOMANDE_PLAYER_ID: ${{ vars.DIOMANDE_PLAYER_ID }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Tests
+        run: python -m pytest tests/ -q
+
+      - name: Ingestion
+        run: python src/ingest.py
+
+      - name: Commit des nouvelles données
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "Aucun nouveau match."
+          else
+            git commit -m "data: matchs au $(date -u +%Y-%m-%d)"
+            git push
+          fi
