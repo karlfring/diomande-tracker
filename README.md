@@ -7,7 +7,8 @@ et alimente un tableau de bord pour suivre son impact et son évolution.
   une saison complète.
 - **Ensuite : saison 2026-2027 au Real Madrid**, suivie en continu.
 
-> Projet en construction. Saison 2025-2026 ingérée ; prochaine étape : le tableau de bord.
+> Saison 2025-2026 ingérée et présentée dans un tableau de bord interactif.
+> Étude de cas avec captures : [portfolio de Karl Akpovi](https://karlfring.github.io/portfolio/diomande.html).
 
 ## Source de données
 
@@ -36,6 +37,7 @@ export DIOMANDE_SEASON=2025              # 2025 = RB Leipzig, 2026 = Real Madrid
 
 python src/check_access.py               # 4 requêtes : club, calendrier, joueur, un box score
 python src/ingest.py                     # récupère les matchs terminés de la saison
+python src/export_dashboard.py           # assemble data/dashboard/matchs.json
 
 python src/ingest.py --hors-ligne        # reconstruit les tables depuis l'archive, sans requête
 
@@ -73,6 +75,23 @@ Contrôle de cohérence : en Bundesliga, le pipeline compte 33 matchs joués,
 12 buts et 8 passes décisives, comme la fiche du joueur publiée par
 [The Analyst](https://theanalyst.com/players/6478/yan-diomande).
 
+## Tableau de bord
+
+Le tableau de bord lit `data/dashboard/matchs.json` et fait tous ses calculs
+dans la page. Un filtre de compétition (toutes, Bundesliga, DFB Pokal) met
+toute la page à jour.
+
+| Section | Ce qu'elle montre |
+|---|---|
+| En-tête | la phrase à retenir et cinq chiffres clés : buts, passes décisives, matchs joués, minutes, note moyenne |
+| La saison, match par match | une barre par match (temps de jeu, statut), les buts et passes en pastilles, et la fiche du match choisi |
+| Buts et passes, comparés aux attentes | buts et passes cumulés face aux xG et xA, avec l'écart |
+| Sa note, match après match | la note de chaque match et sa moyenne sur les cinq derniers |
+| Ce qu'il produit | ses actions par 90 minutes ou en total, et ses taux de réussite |
+| Tous les matchs | le détail des matchs, triable ; un clic sur une ligne ouvre la fiche du match |
+
+Captures et analyse de la saison : [étude de cas](https://karlfring.github.io/portfolio/diomande.html).
+
 ## Modèle de données
 
 | Table | Grain | Contenu |
@@ -103,6 +122,18 @@ Deux workflows GitHub Actions, lancés depuis l'onglet Actions :
 
 À configurer dans le dépôt (Settings > Secrets and variables > Actions) : le
 secret `HIGHLIGHTLY_KEY`.
+
+## Suite
+
+- **Saison 2026-2027 au Real Madrid** : elle sera ajoutée quand il aura
+  disputé assez de matchs pour une analyse solide. Le pipeline et le tableau
+  de bord sont déjà prêts à recevoir une seconde saison.
+- **Comparaison avec les ailiers des cinq grands championnats** (en
+  préparation) : situer ses statistiques par 90 minutes parmi les ailiers à
+  900 minutes et plus. Les statistiques de saison de l'API ne donnent ni xG ni
+  xA : la comparaison passera par les box scores de tous les matchs (environ
+  1 750 sur une saison) et par le profil de chaque joueur, qui donne son poste
+  détaillé (ailier gauche, ailier droit).
 
 ## Limites connues
 
