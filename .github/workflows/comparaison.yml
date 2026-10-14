@@ -1,0 +1,65 @@
+name: Collecte de la comparaison (ailiers du top 5)
+
+# Collecte progressive des box scores des cinq grands championnats (saison
+# 2025-26) puis du profil des attaquants et milieux à 900 minutes et plus.
+# Offre gratuite : chaque nuit, la collecte reprend où elle s'est arrêtée et
+# laisse 15 requêtes du jour au suivi de Diomande.
+#
+# Elle n'écrit que dans data/raw/comparaison/, data/processed/comparaison/ et
+# data/dashboard/comparaison.json : le suivi de Diomande et son tableau de
+# bord ne changent pas.
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/comparaison.py"
+      - ".github/workflows/comparaison.yml"
+
+concurrency:
+  group: comparaison
+  cancel-in-progress: false
+
+jobs:
+  collecter:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Tests
+        run: python -m pytest tests/ -q
+
+      - name: Collecte
+        run: python src/comparaison.py
+
+      - name: Commit des nouvelles données
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for chemin in data/raw/comparaison data/processed/comparaison data/dashboard/comparaison.json; do
+            if [ -e "$chemin" ]; then git add "$chemin"; fi
+          done
+          if git diff --staged --quiet; then
+            echo "Rien de nouveau."
+          else
+            resume=$(python -c "import json; e = json.load(open('data/raw/comparaison/2025/progression.json')); b = e.get('box_scores') or {}; print(f\"{b.get('archives')} box scores sur {b.get('total')}\")" 2>/dev/null || echo "progression")
+            git commit -m "data: comparaison 2025, ${resume}"
+            git pull --rebase
+            git push
+          fi

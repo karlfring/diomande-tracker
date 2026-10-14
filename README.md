@@ -41,7 +41,10 @@ python src/export_dashboard.py           # assemble data/dashboard/matchs.json
 
 python src/ingest.py --hors-ligne        # reconstruit les tables depuis l'archive, sans requête
 
-python -m pytest tests/ -q               # 24 tests, sans réseau
+python src/comparaison.py                # comparaison : reprend la collecte dans la limite du quota
+python src/comparaison.py --hors-ligne   # comparaison : tables et export depuis l'archive
+
+python -m pytest tests/ -q               # 24 tests du suivi et 9 de la comparaison, sans réseau
 ```
 
 ## Fonctionnement
@@ -112,13 +115,15 @@ une absence du joueur.
 
 ## Automatisation
 
-Deux workflows GitHub Actions, lancés depuis l'onglet Actions :
+Trois workflows GitHub Actions :
 
-- `check-access.yml` vérifie l'accès pour une saison et affiche le résultat
-  dans les annotations du run ;
+- `check-access.yml`, lancé à la main depuis l'onglet Actions, vérifie l'accès
+  pour une saison et affiche le résultat dans les annotations du run ;
 - `ingest.yml` ingère une saison et commite les nouvelles données. Son
   déclenchement automatique (lundi et jeudi matin) sera activé pour la saison
-  en cours une fois l'accès vérifié.
+  en cours une fois l'accès vérifié ;
+- `comparaison.yml` reprend chaque nuit la collecte de la comparaison et
+  commite les nouvelles réponses archivées.
 
 À configurer dans le dépôt (Settings > Secrets and variables > Actions) : le
 secret `HIGHLIGHTLY_KEY`.
@@ -128,12 +133,40 @@ secret `HIGHLIGHTLY_KEY`.
 - **Saison 2026-2027 au Real Madrid** : elle sera ajoutée quand il aura
   disputé assez de matchs pour une analyse solide. Le pipeline et le tableau
   de bord sont déjà prêts à recevoir une seconde saison.
-- **Comparaison avec les ailiers des cinq grands championnats** (en
-  préparation) : situer ses statistiques par 90 minutes parmi les ailiers à
-  900 minutes et plus. Les statistiques de saison de l'API ne donnent ni xG ni
-  xA : la comparaison passera par les box scores de tous les matchs (environ
-  1 750 sur une saison) et par le profil de chaque joueur, qui donne son poste
-  détaillé (ailier gauche, ailier droit).
+- **Comparaison avec les ailiers des cinq grands championnats** (collecte en
+  cours) : situer ses statistiques par 90 minutes parmi les ailiers à
+  900 minutes et plus. Voir la section suivante.
+
+## Comparaison avec les ailiers du top 5 (en cours)
+
+Les statistiques de saison de l'API (`/players/{id}/statistics`) ne donnent ni
+xG ni xA, et l'API n'a pas d'endpoint d'effectif. `src/comparaison.py` passe
+donc par les matchs, pour la saison 2025-2026 :
+
+1. **Championnats** : Premier League, LaLiga, Serie A, Bundesliga et Ligue 1,
+   retrouvés par leur nom exact dans leur pays.
+2. **Calendriers** : environ 20 requêtes pour les cinq championnats.
+3. **Box scores** : une requête par match terminé, environ 1 750. Les matchs
+   du RB Leipzig déjà archivés par le suivi sont relus, sans requête.
+4. **Postes détaillés** : une fois tous les box scores archivés, le profil de
+   chaque attaquant et milieu à 900 minutes et plus (environ 800 requêtes)
+   donne son poste détaillé. Les ailiers sont les joueurs dont le poste
+   principal est « Left Winger » ou « Right Winger ».
+5. **Export** : `data/dashboard/comparaison.json`, une ligne par ailier à
+   900 minutes et plus : actions par 90 minutes, taux de réussite et
+   percentiles parmi les ailiers. Il n'est écrit qu'une fois la collecte complète.
+
+Avec l'offre gratuite, la collecte prend environ un mois : le workflow
+`comparaison.yml` la reprend chaque nuit et laisse 15 requêtes du jour au
+suivi de Diomande. Son avancement est dans
+`data/raw/comparaison/2025/progression.json`. Les réponses brutes sont
+archivées en JSON compressé, avec leur empreinte SHA-256, dans
+`data/raw/comparaison/2025/`.
+
+Mêmes règles de lecture que le suivi : comptages absents à 0, xG vide sans
+tir à 0. Un xA vide compte pour 0 et chaque cas est compté
+(`xa_manquants`). La collecte n'écrit jamais dans les dossiers du suivi de
+Diomande ni dans `data/dashboard/matchs.json`.
 
 ## Limites connues
 
