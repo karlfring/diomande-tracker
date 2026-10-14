@@ -1,0 +1,27 @@
+{
+ "ENG": {
+  "id": 33973,
+  "nom": "Premier League",
+  "pays": "England"
+ },
+ "ESP": {
+  "id": 119924,
+  "nom": "La Liga",
+  "pays": "Spain"
+ },
+ "FRA": {
+  "id": 52695,
+  "nom": "Ligue 1",
+  "pays": "France"
+ },
+ "GER": {
+  "id": 67162,
+  "nom": "Bundesliga",
+  "pays": "Germany"
+ },
+ "ITA": {
+  "id": 115669,
+  "nom": "Serie A",
+  "pays": "Italy"
+ }
+}

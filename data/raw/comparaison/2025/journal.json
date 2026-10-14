@@ -1,0 +1,134 @@
+[
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173503403",
+  "fichier": "box_scores/1173503403.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "d6eb80d3f8680c31e4d84cdb9f126dc42fed1df3bee949bb4d63df0016878394",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173504254",
+  "fichier": "box_scores/1173504254.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "424743467bddd2d4815c6477e73987094ca86afb5df8aaafe80a321947469c59",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173505105",
+  "fichier": "box_scores/1173505105.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "34d9ece2e2028e49da385df999ce569ff4cf8bf853a4b4284a50e6d578743c93",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173506807",
+  "fichier": "box_scores/1173506807.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "276ab9d1c4c24619d28dbd3ae26cc8998686e283f62e1c46408053dc440e50c9",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173507658",
+  "fichier": "box_scores/1173507658.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "212c3edc61e36db5984dd5c71b08972a28cfa31c48588a93dcb21dce86c4a5cb",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173508509",
+  "fichier": "box_scores/1173508509.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "813d163c381e89b1e6bd9fe583401e5eb2ece0ae2dd9a450fb35a12916740776",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1180934335",
+  "fichier": "box_scores/1180934335.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "f6ce810c69e9aeeda9961bbf8935f8defb60bdb8bd370d17c95aaf750990bbbe",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1180936037",
+  "fichier": "box_scores/1180936037.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "21ecda803189d92868f24982fa430445ef210657ff9c21c468a83c12dd265ff4",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1180937739",
+  "fichier": "box_scores/1180937739.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "d3886d0b6c508ba2816cad178e4f9cfcbb371a97d73c0014b97fbfc35f2cc456",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1180938590",
+  "fichier": "box_scores/1180938590.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "805c4aec2a1a885d79f2dbda954a21c33ddb91ad53dd46effcd2c012d86f0628",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183587753",
+  "fichier": "box_scores/1183587753.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "3467c0ff76bb7296534d98ae1ea6387aeaa9ce99da796971c1dd452afd0074e1",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183592008",
+  "fichier": "box_scores/1183592008.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "1286cea49a8ab74d53af17e9dd99a0cde2daadedf88bcd79f727c79969ddd408",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183592859",
+  "fichier": "box_scores/1183592859.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "de7c85a4a58b26b5077b2e9e9d796b356dd77d37f82f5c610c38bbf675a56028",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183595412",
+  "fichier": "box_scores/1183595412.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "origine": "API",
+  "sha256": "9cf7ee3ddfb83d0aac5e07d869462694b100e9de3a363dd097a164a0845151f8",
+  "vide": false
+ },
+ {
+  "cle": "players/82718090",
+  "fichier": "profils/82718090.json.gz",
+  "ingere_le": "2026-10-14T14:51:07+00:00",
+  "sha256": "a995a656c58c88f4b501dc09b168a7bf63228ed6a4ebafcb57f22de901c4c944"
+ }
+]
