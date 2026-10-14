@@ -137,7 +137,12 @@ def test_identifiants_retrouves_par_nom_exact(tmp_path):
     assert (ids["team_id"], ids["player_id"]) == (RM, PID)   # pas Castilla, pas Moussa
 
 
-def test_seuls_les_matchs_termines_sont_demandes(tmp_path):
+def test_amical_marque_non_officiel():
+    m = parse_match(charger("matches_away.json")["data"][1], RM)
+    assert m["officiel"] is False
+
+
+def test_seuls_les_matchs_officiels_termines_sont_demandes(tmp_path):
     api, _ = lancer(tmp_path)
     assert sorted(a for a in api.appels if a.startswith("box-score")) == [
         "box-score/1001", "box-score/1002", "box-score/1003"]
@@ -165,7 +170,7 @@ def test_tables_et_journal(tmp_path):
     fact = tables["fact_joueur_match"]
     assert list(fact["match_id"]) == [1001, 1002, 1003]       # ordre chronologique
     assert list(fact["numero_match"]) == [1, 2, 3]
-    assert len(tables["dim_match"]) == 4
+    assert len(tables["dim_match"]) == 5
     assert set(tables["fact_ingestion"]["match_id"]) == {1001, 1002, 1003}
     assert tables["fact_ingestion"]["sha256"].str.len().eq(64).all()
     assert (tmp_path / "out" / "fact_joueur_match.csv").exists()

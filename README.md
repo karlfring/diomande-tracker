@@ -37,7 +37,7 @@ export DIOMANDE_SEASON=2025              # 2025 = RB Leipzig, 2026 = Real Madrid
 python src/check_access.py               # 4 requêtes : club, calendrier, joueur, un box score
 python src/ingest.py                     # récupère les matchs terminés de la saison
 
-python -m pytest tests/ -q               # 21 tests, sans réseau
+python -m pytest tests/ -q               # 22 tests, sans réseau
 ```
 
 ## Fonctionnement
@@ -46,7 +46,7 @@ python -m pytest tests/ -q               # 21 tests, sans réseau
    (pas de confusion avec la réserve du club ou un homonyme), puis mémorisés
    dans `data/raw/<saison>/identifiants.json`.
 2. **Calendrier** : deux requêtes récupèrent les matchs à domicile et à
-   l'extérieur du club sur la saison, toutes compétitions.
+   l'extérieur du club sur la saison, toutes compétitions. Les matchs amicaux restent au calendrier mais sont exclus de l'analyse.
 3. **Matchs terminés** : pour chaque match jamais archivé, une requête récupère
    le box score. La réponse brute est archivée dans `data/raw/<saison>/matchs/`,
    avec son empreinte SHA-256 dans `data/raw/<saison>/journal.json`.

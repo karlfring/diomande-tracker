@@ -118,8 +118,8 @@ def ingerer(api: Highlightly, raw_dir: Path = DATA_RAW, out_dir: Path = DATA_OUT
     maintenant = maintenant or datetime.now(timezone.utc)
     ids = resoudre_identifiants(api, raw_dir)
     matchs = recuperer_calendrier(api, ids["team_id"], raw_dir)
-    termines = [m for m in matchs if m["statut_match"] in FINISHED_STATES]
-    log.info("%s matchs au calendrier, %s terminés", len(matchs), len(termines))
+    termines = [m for m in matchs if m["statut_match"] in FINISHED_STATES and m["officiel"]]
+    log.info("%s matchs au calendrier, %s matchs officiels terminés", len(matchs), len(termines))
 
     journal = {e["match_id"]: e for e in _lire_json(raw_dir / "journal.json", [])}
     nouveaux = 0

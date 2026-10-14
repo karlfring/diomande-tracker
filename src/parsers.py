@@ -5,6 +5,8 @@ from __future__ import annotations
 import re
 import unicodedata
 
+from config import MOTS_AMICAUX
+
 
 def _int(v) -> int | None:
     if v is None or v == "":
@@ -51,13 +53,15 @@ def parse_match(m: dict, team_id: int) -> dict:
         resultat = "V" if pour > contre else ("N" if pour == contre else "D")
     adversaire = away if a_domicile else home
     ligue = m.get("league") or {}
+    nom_competition = ligue.get("name") or ""
     return {
         "match_id": m["id"],
         "date_utc": m["date"],
         "statut_match": etat.get("description"),
         "saison": ligue.get("season"),
         "competition_id": ligue.get("id"),
-        "competition": ligue.get("name"),
+        "competition": nom_competition,
+        "officiel": not any(mot in nom_competition.lower() for mot in MOTS_AMICAUX),
         "journee": m.get("round"),
         "domicile": a_domicile,
         "adversaire_id": adversaire["id"],

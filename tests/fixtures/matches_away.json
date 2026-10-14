@@ -28,10 +28,39 @@
      "penalties": null
     }
    }
+  },
+  {
+   "id": 1005,
+   "round": "Regular Season - 5",
+   "date": "2026-08-10T18:00:00.000Z",
+   "country": {
+    "code": "ES",
+    "name": "Spain"
+   },
+   "homeTeam": {
+    "id": 548,
+    "name": "Real Sociedad"
+   },
+   "awayTeam": {
+    "id": 541,
+    "name": "Real Madrid"
+   },
+   "league": {
+    "id": 667,
+    "season": 2026,
+    "name": "Friendlies Clubs"
+   },
+   "state": {
+    "description": "Finished",
+    "score": {
+     "current": "1 - 1",
+     "penalties": null
+    }
+   }
   }
  ],
  "pagination": {
-  "totalCount": 1,
+  "totalCount": 2,
   "offset": 0,
   "limit": 100
  },

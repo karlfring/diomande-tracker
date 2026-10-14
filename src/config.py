@@ -52,5 +52,9 @@ REQUEST_TIMEOUT_S = 30
 MAX_RETRIES = 3
 MIN_DAILY_QUOTA = 5   # on s'arrête avant d'épuiser le quota du jour
 
+# Compétitions ignorées pour l'analyse : les matchs amicaux restent dans le
+# calendrier (colonne `officiel` à False) mais leur box score n'est pas demandé.
+MOTS_AMICAUX = ("friendl", "amical")
+
 # États Highlightly d'un match terminé
 FINISHED_STATES = {"Finished", "Finished after penalties", "Finished after extra time"}
