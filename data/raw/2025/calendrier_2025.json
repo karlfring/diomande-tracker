@@ -1,0 +1,1506 @@
+{
+ "domicile": [
+  {
+   "awayTeam": {
+    "id": 159070,
+    "logo": "https://highlightly.net/soccer/images/teams/159070.png",
+    "name": "FC St. Pauli"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-05-09T13:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181701086,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 33",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 155666,
+    "logo": "https://highlightly.net/soccer/images/teams/155666.png",
+    "name": "Union Berlin"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-04-24T18:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181685768,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 31",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "3 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 139497,
+    "logo": "https://highlightly.net/soccer/images/teams/139497.png",
+    "name": "Borussia Mönchengladbach"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-04-11T13:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181669599,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 29",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 142901,
+    "logo": "https://highlightly.net/soccer/images/teams/142901.png",
+    "name": "1899 Hoffenheim"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-03-20T19:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181655132,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 27",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "5 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 145454,
+    "logo": "https://highlightly.net/soccer/images/teams/145454.png",
+    "name": "FC Augsburg"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-03-07T14:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181638963,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 25",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 141199,
+    "logo": "https://highlightly.net/soccer/images/teams/141199.png",
+    "name": "Borussia Dortmund"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-02-21T17:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181623645,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 23",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 2",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 137795,
+    "logo": "https://highlightly.net/soccer/images/teams/137795.png",
+    "name": "VfL Wolfsburg"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-02-15T16:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181616837,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 22",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 2",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 140348,
+    "logo": "https://highlightly.net/soccer/images/teams/140348.png",
+    "name": "FSV Mainz 05"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-01-31T14:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181601519,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 20",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 2",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 134391,
+    "logo": "https://highlightly.net/soccer/images/teams/134391.png",
+    "name": "Bayern Munich"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-01-17T17:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181585350,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 18",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 5",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 136944,
+    "logo": "https://highlightly.net/soccer/images/teams/136944.png",
+    "name": "SC Freiburg"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-01-14T19:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181578542,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 17",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 143752,
+    "logo": "https://highlightly.net/soccer/images/teams/143752.png",
+    "name": "Bayer Leverkusen"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-12-20T17:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181563224,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 15",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 3",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 144603,
+    "logo": "https://highlightly.net/soccer/images/teams/144603.png",
+    "name": "Eintracht Frankfurt"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-12-06T17:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181547906,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 13",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "6 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 153113,
+    "logo": "https://highlightly.net/soccer/images/teams/153113.png",
+    "name": "FC Magdeburg"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-12-02T20:00:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1263958746,
+   "league": {
+    "id": 69715,
+    "logo": "https://highlightly.net/soccer/images/leagues/69715.png",
+    "name": "DFB Pokal",
+    "season": 2025
+   },
+   "round": "Round of 16",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "3 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 138646,
+    "logo": "https://highlightly.net/soccer/images/teams/138646.png",
+    "name": "Werder Bremen"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-11-23T14:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181532588,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 11",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 147156,
+    "logo": "https://highlightly.net/soccer/images/teams/147156.png",
+    "name": "VfB Stuttgart"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-11-01T14:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181516419,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 9",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "3 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 149709,
+    "logo": "https://highlightly.net/soccer/images/teams/149709.png",
+    "name": "Hamburger SV"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-10-18T13:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181501101,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 7",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 164176,
+    "logo": "https://highlightly.net/soccer/images/teams/164176.png",
+    "name": "FC Koln"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-09-20T16:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181478975,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 4",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "3 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 153964,
+    "logo": "https://highlightly.net/soccer/images/teams/153964.png",
+    "name": "FC Heidenheim"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-08-30T13:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1181462806,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 2",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 425433,
+    "logo": "https://highlightly.net/soccer/images/teams/425433.png",
+    "name": "Atalanta"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2025-08-02T13:00:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1209549210,
+   "league": {
+    "id": 568401,
+    "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+    "name": "Friendlies Clubs",
+    "season": 2025
+   },
+   "round": "Club Friendlies 5",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 2",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 82480,
+    "logo": "https://highlightly.net/soccer/images/teams/82480.png",
+    "name": "Toulouse"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2025-07-26T13:30:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1201370249,
+   "league": {
+    "id": 568401,
+    "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+    "name": "Friendlies Clubs",
+    "season": 2025
+   },
+   "round": "Club Friendlies 5",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "7 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 6188405,
+    "logo": "https://highlightly.net/soccer/images/teams/6188405.png",
+    "name": "Baník Souš"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2025-01-06T11:00:00.000Z",
+   "homeTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "id": 1134468884,
+   "league": {
+    "id": 568401,
+    "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+    "name": "Friendlies Clubs",
+    "season": 2025
+   },
+   "round": "Club Friendlies 5",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "10 - 0",
+     "penalties": null
+    }
+   }
+  }
+ ],
+ "exterieur": [
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-05-16T13:30:00.000Z",
+   "homeTeam": {
+    "id": 136944,
+    "logo": "https://highlightly.net/soccer/images/teams/136944.png",
+    "name": "SC Freiburg"
+   },
+   "id": 1181707043,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 34",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "4 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-05-02T16:30:00.000Z",
+   "homeTeam": {
+    "id": 143752,
+    "logo": "https://highlightly.net/soccer/images/teams/143752.png",
+    "name": "Bayer Leverkusen"
+   },
+   "id": 1181688321,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 32",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "4 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-04-18T16:30:00.000Z",
+   "homeTeam": {
+    "id": 144603,
+    "logo": "https://highlightly.net/soccer/images/teams/144603.png",
+    "name": "Eintracht Frankfurt"
+   },
+   "id": 1181675556,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 30",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 3",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-04-04T13:30:00.000Z",
+   "homeTeam": {
+    "id": 138646,
+    "logo": "https://highlightly.net/soccer/images/teams/138646.png",
+    "name": "Werder Bremen"
+   },
+   "id": 1181664493,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 28",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 2",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-03-15T18:30:00.000Z",
+   "homeTeam": {
+    "id": 147156,
+    "logo": "https://highlightly.net/soccer/images/teams/147156.png",
+    "name": "VfB Stuttgart"
+   },
+   "id": 1181648324,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 26",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-03-01T18:30:00.000Z",
+   "homeTeam": {
+    "id": 149709,
+    "logo": "https://highlightly.net/soccer/images/teams/149709.png",
+    "name": "Hamburger SV"
+   },
+   "id": 1181631304,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 24",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 2",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-02-11T19:45:00.000Z",
+   "homeTeam": {
+    "id": 134391,
+    "logo": "https://highlightly.net/soccer/images/teams/134391.png",
+    "name": "Bayern Munich"
+   },
+   "id": 1267533797,
+   "league": {
+    "id": 69715,
+    "logo": "https://highlightly.net/soccer/images/leagues/69715.png",
+    "name": "DFB Pokal",
+    "season": 2025
+   },
+   "round": "Quarter-finals",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-02-08T14:30:00.000Z",
+   "homeTeam": {
+    "id": 164176,
+    "logo": "https://highlightly.net/soccer/images/teams/164176.png",
+    "name": "FC Koln"
+   },
+   "id": 1181605774,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 21",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 2",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-01-27T19:30:00.000Z",
+   "homeTeam": {
+    "id": 159070,
+    "logo": "https://highlightly.net/soccer/images/teams/159070.png",
+    "name": "FC St. Pauli"
+   },
+   "id": 1181570883,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 16",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2026-01-24T14:30:00.000Z",
+   "homeTeam": {
+    "id": 153964,
+    "logo": "https://highlightly.net/soccer/images/teams/153964.png",
+    "name": "FC Heidenheim"
+   },
+   "id": 1181593009,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 19",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "0 - 3",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-12-12T19:30:00.000Z",
+   "homeTeam": {
+    "id": 155666,
+    "logo": "https://highlightly.net/soccer/images/teams/155666.png",
+    "name": "Union Berlin"
+   },
+   "id": 1181556416,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 14",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "3 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-11-28T19:30:00.000Z",
+   "homeTeam": {
+    "id": 139497,
+    "logo": "https://highlightly.net/soccer/images/teams/139497.png",
+    "name": "Borussia Mönchengladbach"
+   },
+   "id": 1181536843,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 12",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "0 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-11-08T14:30:00.000Z",
+   "homeTeam": {
+    "id": 142901,
+    "logo": "https://highlightly.net/soccer/images/teams/142901.png",
+    "name": "1899 Hoffenheim"
+   },
+   "id": 1181524078,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 10",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "3 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-10-28T19:45:00.000Z",
+   "homeTeam": {
+    "id": 1124104,
+    "logo": "https://highlightly.net/soccer/images/teams/1124104.png",
+    "name": "Energie Cottbus"
+   },
+   "id": 1245407797,
+   "league": {
+    "id": 69715,
+    "logo": "https://highlightly.net/soccer/images/leagues/69715.png",
+    "name": "DFB Pokal",
+    "season": 2025
+   },
+   "round": "2nd Round",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 4",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-10-25T13:30:00.000Z",
+   "homeTeam": {
+    "id": 145454,
+    "logo": "https://highlightly.net/soccer/images/teams/145454.png",
+    "name": "FC Augsburg"
+   },
+   "id": 1181504505,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 8",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "0 - 6",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-10-04T13:30:00.000Z",
+   "homeTeam": {
+    "id": 141199,
+    "logo": "https://highlightly.net/soccer/images/teams/141199.png",
+    "name": "Borussia Dortmund"
+   },
+   "id": 1181491740,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 6",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-09-27T13:30:00.000Z",
+   "homeTeam": {
+    "id": 137795,
+    "logo": "https://highlightly.net/soccer/images/teams/137795.png",
+    "name": "VfL Wolfsburg"
+   },
+   "id": 1181488336,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 5",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "0 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-09-13T13:30:00.000Z",
+   "homeTeam": {
+    "id": 140348,
+    "logo": "https://highlightly.net/soccer/images/teams/140348.png",
+    "name": "FSV Mainz 05"
+   },
+   "id": 1181470465,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 3",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "0 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-08-22T18:30:00.000Z",
+   "homeTeam": {
+    "id": 134391,
+    "logo": "https://highlightly.net/soccer/images/teams/134391.png",
+    "name": "Bayern Munich"
+   },
+   "id": 1181450892,
+   "league": {
+    "id": 67162,
+    "logo": "https://highlightly.net/soccer/images/leagues/67162.png",
+    "name": "Bundesliga",
+    "season": 2025
+   },
+   "round": "Regular Season - 1",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "6 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "DE",
+    "logo": "https://highlightly.net/soccer/images/countries/DE.svg",
+    "name": "Germany"
+   },
+   "date": "2025-08-16T13:30:00.000Z",
+   "homeTeam": {
+    "id": 161623,
+    "logo": "https://highlightly.net/soccer/images/teams/161623.png",
+    "name": "SV Sandhausen"
+   },
+   "id": 1173491489,
+   "league": {
+    "id": 69715,
+    "logo": "https://highlightly.net/soccer/images/leagues/69715.png",
+    "name": "DFB Pokal",
+    "season": 2025
+   },
+   "round": "1st Round",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 4",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2025-08-09T16:00:00.000Z",
+   "homeTeam": {
+    "id": 99500,
+    "logo": "https://highlightly.net/soccer/images/teams/99500.png",
+    "name": "Lens"
+   },
+   "id": 1216798879,
+   "league": {
+    "id": 568401,
+    "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+    "name": "Friendlies Clubs",
+    "season": 2025
+   },
+   "round": "Club Friendlies 5",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2025-07-19T13:30:00.000Z",
+   "homeTeam": {
+    "id": 7964442,
+    "logo": "https://highlightly.net/soccer/images/teams/7964442.png",
+    "name": "ZFC Meuselwitz"
+   },
+   "id": 1194313757,
+   "league": {
+    "id": 568401,
+    "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+    "name": "Friendlies Clubs",
+    "season": 2025
+   },
+   "round": "Club Friendlies 5",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "0 - 3",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2025-05-28T22:00:00.000Z",
+   "homeTeam": {
+    "id": 109712,
+    "logo": "https://highlightly.net/soccer/images/teams/109712.png",
+    "name": "Santos"
+   },
+   "id": 1170647447,
+   "league": {
+    "id": 568401,
+    "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+    "name": "Friendlies Clubs",
+    "season": 2025
+   },
+   "round": "Club Friendlies 3",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 3",
+     "penalties": null
+    }
+   }
+  }
+ ],
+ "plan": {
+  "message": "All data available with current plan.",
+  "tier": "BASIC"
+ }
+}
