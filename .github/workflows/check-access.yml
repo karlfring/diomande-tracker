@@ -1,0 +1,20 @@
+name: Vérification de l'accès à l'API
+
+# Lancement manuel uniquement (onglet Actions > Run workflow).
+# Consomme 3 requêtes : offre, saison en cours, identifiant du joueur.
+on:
+  workflow_dispatch:
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    env:
+      APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python src/check_access.py
