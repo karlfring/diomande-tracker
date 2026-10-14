@@ -53,6 +53,8 @@ python -m pytest tests/ -q               # 24 tests, sans réseau
    le box score. La réponse brute est archivée dans `data/raw/<saison>/matchs/`,
    avec son empreinte SHA-256 dans `data/raw/<saison>/journal.json`.
 4. **Tables** : reconstruites à partir de l'archive dans `data/processed/<saison>/`.
+5. **Tableau de bord** : `src/export_dashboard.py` assemble toutes les saisons dans
+   `data/dashboard/matchs.json`, une ligne par match officiel.
 
 Un match déjà archivé n'est jamais redemandé : l'exécution est idempotente.
 Une saison complète coûte environ 45 requêtes, puis deux ou trois par semaine.
