@@ -1,0 +1,1302 @@
+{
+ "domicile": [
+  {
+   "awayTeam": {
+    "id": 452665,
+    "logo": "https://highlightly.net/soccer/images/teams/452665.png",
+    "name": "Athletic Club"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2027-02-14T16:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336554152,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 24",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 462877,
+    "logo": "https://highlightly.net/soccer/images/teams/462877.png",
+    "name": "Real Betis"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2027-01-24T16:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336530324,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 21",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 873910,
+    "logo": "https://highlightly.net/soccer/images/teams/873910.png",
+    "name": "LASK Linz"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2027-01-19T20:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1391995951,
+   "league": {
+    "id": 2486,
+    "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+    "name": "UEFA Champions League",
+    "season": 2026
+   },
+   "round": "League Stage - 7",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 459473,
+    "logo": "https://highlightly.net/soccer/images/teams/459473.png",
+    "name": "Levante"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2027-01-10T16:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336513304,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 19",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 465430,
+    "logo": "https://highlightly.net/soccer/images/teams/465430.png",
+    "name": "Getafe"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2027-01-03T16:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336504794,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 18",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 619461,
+    "logo": "https://highlightly.net/soccer/images/teams/619461.png",
+    "name": "Osasuna"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-12-13T16:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336487774,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 16",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 462026,
+    "logo": "https://highlightly.net/soccer/images/teams/462026.png",
+    "name": "Alavés"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-11-29T16:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336470754,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 14",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 168431,
+    "logo": "https://highlightly.net/soccer/images/teams/168431.png",
+    "name": "PSV Eindhoven"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2026-11-24T20:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1391994249,
+   "league": {
+    "id": 2486,
+    "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+    "name": "UEFA Champions League",
+    "season": 2026
+   },
+   "round": "League Stage - 5",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 458622,
+    "logo": "https://highlightly.net/soccer/images/teams/458622.png",
+    "name": "Celta de Vigo"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-11-22T16:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336463095,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 13",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 148007,
+    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+    "name": "RB Leipzig"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2026-10-21T19:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1391995100,
+   "league": {
+    "id": 2486,
+    "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+    "name": "UEFA Champions League",
+    "season": 2026
+   },
+   "round": "League Stage - 3",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 456920,
+    "logo": "https://highlightly.net/soccer/images/teams/456920.png",
+    "name": "Sevilla FC"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-10-18T19:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336428204,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 9",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "4 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 454367,
+    "logo": "https://highlightly.net/soccer/images/teams/454367.png",
+    "name": "Villarreal"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-10-10T19:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336420545,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 8",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 620312,
+    "logo": "https://highlightly.net/soccer/images/teams/620312.png",
+    "name": "Rayo Vallecano"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-09-12T19:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336393313,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 5",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "4 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 430539,
+    "logo": "https://highlightly.net/soccer/images/teams/430539.png",
+    "name": "Inter"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2026-09-08T19:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1391993398,
+   "league": {
+    "id": 2486,
+    "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+    "name": "UEFA Champions League",
+    "season": 2026
+   },
+   "round": "League Stage - 1",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 456069,
+    "logo": "https://highlightly.net/soccer/images/teams/456069.png",
+    "name": "Malaga"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-08-30T15:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336377144,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 3",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "4 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 467132,
+    "logo": "https://highlightly.net/soccer/images/teams/467132.png",
+    "name": "Real Sociedad"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-08-26T19:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336360124,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 1",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "4 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 427986,
+    "logo": "https://highlightly.net/soccer/images/teams/427986.png",
+    "name": "Fiorentina"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2026-08-01T16:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1352508700,
+   "league": {
+    "id": 568401,
+    "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+    "name": "Friendlies Clubs",
+    "season": 2026
+   },
+   "round": "Club Friendlies",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 2",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 457771,
+    "logo": "https://highlightly.net/soccer/images/teams/457771.png",
+    "name": "Leganes"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2026-07-28T16:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1365558785,
+   "league": {
+    "id": 568401,
+    "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+    "name": "Friendlies Clubs",
+    "season": 2026
+   },
+   "round": "Club Friendlies",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "4 - 1",
+     "penalties": null
+    }
+   }
+  }
+ ],
+ "exterieur": [
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2027-02-07T16:00:00.000Z",
+   "homeTeam": {
+    "id": 467132,
+    "logo": "https://highlightly.net/soccer/images/teams/467132.png",
+    "name": "Real Sociedad"
+   },
+   "id": 1336548195,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 23",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2027-02-02T19:00:00.000Z",
+   "homeTeam": {
+    "id": 467132,
+    "logo": "https://highlightly.net/soccer/images/teams/467132.png",
+    "name": "Real Sociedad"
+   },
+   "id": 1360114087,
+   "league": {
+    "id": 473940,
+    "logo": "https://highlightly.net/soccer/images/leagues/473940.png",
+    "name": "Super Cup",
+    "season": 2026
+   },
+   "round": "Semi-finals",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2027-01-31T16:00:00.000Z",
+   "homeTeam": {
+    "id": 620312,
+    "logo": "https://highlightly.net/soccer/images/teams/620312.png",
+    "name": "Rayo Vallecano"
+   },
+   "id": 1336538834,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 22",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2027-01-27T20:00:00.000Z",
+   "homeTeam": {
+    "id": 468834,
+    "logo": "https://highlightly.net/soccer/images/teams/468834.png",
+    "name": "Shakhtar Donetsk"
+   },
+   "id": 1392000206,
+   "league": {
+    "id": 2486,
+    "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+    "name": "UEFA Champions League",
+    "season": 2026
+   },
+   "round": "League Stage - 8",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2027-01-17T16:00:00.000Z",
+   "homeTeam": {
+    "id": 456069,
+    "logo": "https://highlightly.net/soccer/images/teams/456069.png",
+    "name": "Malaga"
+   },
+   "id": 1336520963,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 20",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-12-20T16:00:00.000Z",
+   "homeTeam": {
+    "id": 463728,
+    "logo": "https://highlightly.net/soccer/images/teams/463728.png",
+    "name": "Deportivo La Coruña"
+   },
+   "id": 1336493731,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 17",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2026-12-09T20:00:00.000Z",
+   "homeTeam": {
+    "id": 36526,
+    "logo": "https://highlightly.net/soccer/images/teams/36526.png",
+    "name": "Arsenal"
+   },
+   "id": 1391904894,
+   "league": {
+    "id": 2486,
+    "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+    "name": "UEFA Champions League",
+    "season": 2026
+   },
+   "round": "League Stage - 6",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-12-06T16:00:00.000Z",
+   "homeTeam": {
+    "id": 452665,
+    "logo": "https://highlightly.net/soccer/images/teams/452665.png",
+    "name": "Athletic Club"
+   },
+   "id": 1336474158,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 15",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-11-07T20:00:00.000Z",
+   "homeTeam": {
+    "id": 453516,
+    "logo": "https://highlightly.net/soccer/images/teams/453516.png",
+    "name": "Valencia"
+   },
+   "id": 1336454585,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 12",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2026-11-04T17:45:00.000Z",
+   "homeTeam": {
+    "id": 490109,
+    "logo": "https://highlightly.net/soccer/images/teams/490109.png",
+    "name": "AEK Athens FC"
+   },
+   "id": 1391901490,
+   "league": {
+    "id": 2486,
+    "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+    "name": "UEFA Champions League",
+    "season": 2026
+   },
+   "round": "League Stage - 4",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-11-01T15:15:00.000Z",
+   "homeTeam": {
+    "id": 3970699,
+    "logo": "https://highlightly.net/soccer/images/teams/3970699.png",
+    "name": "Racing Santander"
+   },
+   "id": 1336445224,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 11",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-10-25T20:00:00.000Z",
+   "homeTeam": {
+    "id": 450963,
+    "logo": "https://highlightly.net/soccer/images/teams/450963.png",
+    "name": "Barcelona"
+   },
+   "id": 1336433310,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 10",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2026-10-14T19:00:00.000Z",
+   "homeTeam": {
+    "id": 423731,
+    "logo": "https://highlightly.net/soccer/images/teams/423731.png",
+    "name": "AS Roma"
+   },
+   "id": 1391908298,
+   "league": {
+    "id": 2486,
+    "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+    "name": "UEFA Champions League",
+    "season": 2026
+   },
+   "round": "League Stage - 2",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "3 - 4",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-09-20T14:15:00.000Z",
+   "homeTeam": {
+    "id": 451814,
+    "logo": "https://highlightly.net/soccer/images/teams/451814.png",
+    "name": "Atlético Madrid"
+   },
+   "id": 1336406078,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 7",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-09-15T19:30:00.000Z",
+   "homeTeam": {
+    "id": 679031,
+    "logo": "https://highlightly.net/soccer/images/teams/679031.png",
+    "name": "Elche"
+   },
+   "id": 1336400972,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 6",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "2 - 3",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-09-04T19:00:00.000Z",
+   "homeTeam": {
+    "id": 462877,
+    "logo": "https://highlightly.net/soccer/images/teams/462877.png",
+    "name": "Real Betis"
+   },
+   "id": 1336381399,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 4",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 0",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2026-08-22T19:30:00.000Z",
+   "homeTeam": {
+    "id": 460324,
+    "logo": "https://highlightly.net/soccer/images/teams/460324.png",
+    "name": "Espanyol"
+   },
+   "id": 1336366081,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 2",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 2",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2026-08-16T15:00:00.000Z",
+   "homeTeam": {
+    "id": 148858,
+    "logo": "https://highlightly.net/soccer/images/teams/148858.png",
+    "name": "FC Schalke 04"
+   },
+   "id": 1367807978,
+   "league": {
+    "id": 568401,
+    "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+    "name": "Friendlies Clubs",
+    "season": 2026
+   },
+   "round": "Club Friendlies",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "0 - 3",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2026-08-12T19:00:00.000Z",
+   "homeTeam": {
+    "id": 463728,
+    "logo": "https://highlightly.net/soccer/images/teams/463728.png",
+    "name": "Deportivo La Coruña"
+   },
+   "id": 1354734065,
+   "league": {
+    "id": 568401,
+    "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+    "name": "Friendlies Clubs",
+    "season": 2026
+   },
+   "round": "Club Friendlies",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "0 - 1",
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "World",
+    "logo": "https://highlightly.net/soccer/images/countries/World.png",
+    "name": "World"
+   },
+   "date": "2026-08-08T17:00:00.000Z",
+   "homeTeam": {
+    "id": 554785,
+    "logo": "https://highlightly.net/soccer/images/teams/554785.png",
+    "name": "Ferencvárosi TC"
+   },
+   "id": 1365668564,
+   "league": {
+    "id": 568401,
+    "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+    "name": "Friendlies Clubs",
+    "season": 2026
+   },
+   "round": "Club Friendlies",
+   "state": {
+    "clock": 90,
+    "description": "Finished",
+    "score": {
+     "current": "1 - 2",
+     "penalties": null
+    }
+   }
+  }
+ ],
+ "plan": {
+  "message": "All data available with current plan.",
+  "tier": "BASIC"
+ }
+}
