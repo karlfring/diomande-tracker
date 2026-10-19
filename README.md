@@ -119,9 +119,11 @@ Trois workflows GitHub Actions :
 
 - `check-access.yml`, lancé à la main depuis l'onglet Actions, vérifie l'accès
   pour une saison et affiche le résultat dans les annotations du run ;
-- `ingest.yml` ingère une saison et commite les nouvelles données. Son
-  déclenchement automatique (lundi et jeudi matin) sera activé pour la saison
-  en cours une fois l'accès vérifié ;
+- `ingest.yml` ingère une saison et commite les nouvelles données. Il tourne
+  automatiquement le lundi et le jeudi matin pour la saison en cours au Real
+  Madrid, dont l'accès gratuit a été vérifié. Il partage le quota de 100
+  requêtes par jour avec la comparaison : les matchs restants sont repris au
+  passage suivant ;
 - `comparaison.yml` reprend chaque nuit la collecte de la comparaison et
   commite les nouvelles réponses archivées.
 
