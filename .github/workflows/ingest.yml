@@ -2,9 +2,9 @@ name: Ingestion des matchs
 
 on:
   # Lundi et jeudi matin : couvre les matchs du week-end et de milieu de
-  # semaine. Activé une fois l'accès à la saison en cours vérifié.
-  # schedule:
-  #   - cron: "23 6 * * 1,4"
+  # semaine. Les lancements planifiés suivent la saison en cours (2026).
+  schedule:
+    - cron: "23 6 * * 1,4"
   workflow_dispatch:
     inputs:
       saison:

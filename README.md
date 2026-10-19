@@ -24,7 +24,7 @@ décisives, tirs, xG, xA, passes clés, dribbles, duels, fautes subies.
 | API-Football, offre gratuite | Vérifié par le workflow d'accès : saisons 2022 à 2024 uniquement, ni 2025-26 ni 2026-27 | écartée tant qu'elle est payante pour ces saisons |
 | Understat | Accès automatisé interdit par son fichier robots.txt | écartée |
 | Sites protégés contre les robots | Contourner ces protections n'est pas acceptable | écartés |
-| Highlightly, offre gratuite | Toutes les ligues, box score avec xG et xA, accès à 2025-26 vérifié | **retenue** |
+| Highlightly, offre gratuite | Toutes les ligues, box score avec xG et xA, accès à 2025-26 et 2026-27 vérifié | **retenue** |
 
 ## Démarrage
 
