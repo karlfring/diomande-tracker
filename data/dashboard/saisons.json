@@ -1,0 +1,18 @@
+[
+ {
+  "saison": 2025,
+  "club": "RB Leipzig",
+  "matchs_joues_club": 38,
+  "matchs_analyses": 38,
+  "matchs_en_attente": 0,
+  "derniere_collecte": "2026-10-14"
+ },
+ {
+  "saison": 2026,
+  "club": "Real Madrid",
+  "matchs_joues_club": 11,
+  "matchs_analyses": 2,
+  "matchs_en_attente": 9,
+  "derniere_collecte": "2026-10-19"
+ }
+]

@@ -3,6 +3,11 @@ tableau de bord : une ligne par match officiel terminé.
 
 Usage :
     python src/export_dashboard.py      -> data/dashboard/matchs.json
+                                           data/dashboard/saisons.json
+
+saisons.json dit, pour chaque saison, combien de matchs officiels le club a
+déjà joués et combien sont analysés : une saison en cours peut être
+incomplète le temps que la collecte rattrape son retard.
 """
 
 from __future__ import annotations
@@ -18,6 +23,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import DATA_OUT_ROOT, ROOT  # noqa: E402
 
 SORTIE = ROOT / "data" / "dashboard" / "matchs.json"
+SORTIE_SAISONS = ROOT / "data" / "dashboard" / "saisons.json"
+TERMINES = {"Finished", "Finished after penalties", "Finished after extra time"}
 
 COLONNES = [
     "match_id", "saison", "club", "numero_match", "date", "competition", "adversaire",
@@ -48,12 +55,37 @@ def assembler(racine: Path = DATA_OUT_ROOT) -> pd.DataFrame:
     return tout
 
 
+def couverture(racine: Path = DATA_OUT_ROOT) -> list[dict]:
+    """Par saison : matchs officiels joués par le club, matchs analysés, date
+    de la dernière collecte."""
+    lignes = []
+    for dossier in sorted(p for p in racine.iterdir() if p.is_dir() and p.name.isdigit()):
+        matchs = pd.read_csv(dossier / "dim_match.csv")
+        fait = pd.read_csv(dossier / "fact_joueur_match.csv")
+        journal = pd.read_csv(dossier / "fact_ingestion.csv")
+        joues = matchs[matchs["officiel"] & matchs["statut_match"].isin(TERMINES)]
+        analyses = joues["match_id"].isin(fait["match_id"]).sum()
+        lignes.append({
+            "saison": int(dossier.name),
+            "club": str(matchs["club"].iloc[0]),
+            "matchs_joues_club": int(len(joues)),
+            "matchs_analyses": int(analyses),
+            "matchs_en_attente": int(len(joues) - analyses),
+            "derniere_collecte": str(journal["ingere_le"].max())[:10] if len(journal) else None,
+        })
+    return lignes
+
+
 def main() -> int:
     df = assembler()
     SORTIE.parent.mkdir(parents=True, exist_ok=True)
     lignes = json.loads(df.to_json(orient="records", force_ascii=False))
     SORTIE.write_text(json.dumps(lignes, ensure_ascii=False, indent=1), encoding="utf-8")
+    saisons = couverture()
+    SORTIE_SAISONS.write_text(json.dumps(saisons, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(lignes)} matchs écrits dans {SORTIE.relative_to(ROOT)}")
+    for s in saisons:
+        print(f"saison {s['saison']} ({s['club']}) : {s['matchs_analyses']} analysés sur {s['matchs_joues_club']} joués")
     return 0
 
 
