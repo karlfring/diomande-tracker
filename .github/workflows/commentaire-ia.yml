@@ -1,0 +1,53 @@
+name: Commentaire IA d'un match
+
+# Lancement manuel (onglet Actions > Run workflow). Un appel au modèle.
+# Le résultat (texte, faits fournis, vérification) est archivé dans
+# data/ia/commentaires/ et résumé dans les annotations du run.
+on:
+  workflow_dispatch:
+    inputs:
+      match:
+        description: "Identifiant du match (vide = dernier match joué)"
+        required: false
+        default: ""
+
+jobs:
+  commenter:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Tests
+        run: python -m pytest tests/test_commentaire_ia.py -q
+      - name: Commentaire
+        id: ia
+        run: |
+          set +e
+          if [ -n "${{ inputs.match }}" ]; then ARGS="--match ${{ inputs.match }}"; fi
+          python src/commentaire_ia.py $ARGS | tee sortie.txt
+          code=${PIPESTATUS[0]}
+          echo "::notice::$(tr '\n' ' ' < sortie.txt)"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: Archive
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ia/ || true
+          if ! git diff --staged --quiet; then
+            git commit -m "ia: commentaire de match"
+            git pull --rebase
+            git push
+          fi
+      - name: Résultat
+        run: |
+          if [ "${{ steps.ia.outputs.code }}" = "1" ]; then echo "::error::Appel au modèle impossible"; exit 1; fi
+          if [ "${{ steps.ia.outputs.code }}" = "2" ]; then echo "::warning::Vérification échouée : voir les problèmes dans l'archive"; fi

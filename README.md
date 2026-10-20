@@ -113,6 +113,37 @@ Le statut « données indisponibles » distingue un box score vide d'un match o�
 le joueur n'a pas joué : une absence de données n'est jamais comptée comme
 une absence du joueur.
 
+## Commentaire de match par IA générative
+
+`src/commentaire_ia.py` fait rédiger par un modèle de langage (Mistral, via
+son API) un court commentaire sur le dernier match de Diomande, puis vérifie
+le texte avant de l'archiver.
+
+1. **Des faits, et seulement eux.** Le modèle reçoit les statistiques du
+   match (score, minutes, note, buts, xG…) avec une consigne stricte :
+   n'utiliser que ces faits et répondre en JSON (titre, commentaire, chiffres
+   cités).
+2. **Une vérification automatique.** Chaque nombre écrit par le modèle doit
+   exister dans les faits fournis, et chaque chiffre cité doit valoir
+   exactement la statistique correspondante : « 2 buts » est refusé si le
+   joueur en a marqué un. Un modèle peut inventer un chiffre avec assurance ;
+   ce contrôle le détecte.
+3. **Une archive traçable.** `data/ia/commentaires/<match>.json` garde la
+   consigne, les faits envoyés, la réponse, le résultat de la vérification et
+   le nombre de tokens consommés.
+
+Seules des statistiques sportives publiques sont envoyées au modèle. Limite
+connue : un nombre écrit en toutes lettres (« trois ») n'est pas contrôlé.
+
+```bash
+export MISTRAL_API_KEY=ta_cle       # PowerShell : $env:MISTRAL_API_KEY="ta_cle"
+python src/commentaire_ia.py                     # dernier match joué
+python src/commentaire_ia.py --match 1336360124  # un match précis
+```
+
+Le workflow `commentaire-ia.yml` fait la même chose depuis l'onglet Actions,
+avec le secret `MISTRAL_API_KEY`.
+
 ## Automatisation
 
 Trois workflows GitHub Actions :
