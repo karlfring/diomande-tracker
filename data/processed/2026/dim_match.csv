@@ -15,7 +15,7 @@ match_id,club,date_utc,statut_match,saison,competition_id,competition,officiel,j
 1336420545,Real Madrid,2026-10-10T19:00:00.000Z,Finished,2026,119924,La Liga,True,Regular Season - 8,True,454367,Villarreal,1.0,0.0,V
 1391908298,Real Madrid,2026-10-14T19:00:00.000Z,Finished,2026,2486,UEFA Champions League,True,League Stage - 2,False,423731,AS Roma,4.0,3.0,V
 1336428204,Real Madrid,2026-10-18T19:00:00.000Z,Finished,2026,119924,La Liga,True,Regular Season - 9,True,456920,Sevilla FC,4.0,1.0,V
-1391995100,Real Madrid,2026-10-21T19:00:00.000Z,Not started,2026,2486,UEFA Champions League,True,League Stage - 3,True,148007,RB Leipzig,,,
+1391995100,Real Madrid,2026-10-21T19:00:00.000Z,Finished,2026,2486,UEFA Champions League,True,League Stage - 3,True,148007,RB Leipzig,4.0,1.0,V
 1336433310,Real Madrid,2026-10-25T20:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 10,False,450963,Barcelona,,,
 1336445224,Real Madrid,2026-11-01T15:15:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 11,False,3970699,Racing Santander,,,
 1391901490,Real Madrid,2026-11-04T17:45:00.000Z,Not started,2026,2486,UEFA Champions League,True,League Stage - 4,False,490109,AEK Athens FC,,,
@@ -37,3 +37,4 @@ match_id,club,date_utc,statut_match,saison,competition_id,competition,officiel,j
 1360114087,Real Madrid,2027-02-02T19:00:00.000Z,Not started,2026,473940,Super Cup,True,Semi-finals,False,467132,Real Sociedad,,,
 1336548195,Real Madrid,2027-02-07T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 23,False,467132,Real Sociedad,,,
 1336554152,Real Madrid,2027-02-14T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 24,True,452665,Athletic Club,,,
+1336565215,Real Madrid,2027-02-21T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 25,False,456920,Sevilla FC,,,

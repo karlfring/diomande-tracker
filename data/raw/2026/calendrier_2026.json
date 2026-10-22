@@ -332,10 +332,10 @@
    },
    "round": "League Stage - 3",
    "state": {
-    "clock": null,
-    "description": "Not started",
+    "clock": 90,
+    "description": "Finished",
     "score": {
-     "current": null,
+     "current": "4 - 1",
      "penalties": null
     }
    }
@@ -614,6 +614,40 @@
   }
  ],
  "exterieur": [
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2027-02-21T16:00:00.000Z",
+   "homeTeam": {
+    "id": 456920,
+    "logo": "https://highlightly.net/soccer/images/teams/456920.png",
+    "name": "Sevilla FC"
+   },
+   "id": 1336565215,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 25",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
   {
    "awayTeam": {
     "id": 461175,

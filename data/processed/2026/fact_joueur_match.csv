@@ -1,3 +1,11 @@
 match_id,player_id,statut,minutes,poste,note,capitaine,hors_jeu,buts,passes_decisives,tirs,tirs_cadres,passes,passes_reussies,passes_cles,dribbles_tentes,dribbles_reussis,duels,duels_gagnes,fautes_subies,fautes_commises,tacles,interceptions,cartons_jaunes,cartons_rouges,penaltys_marques,penaltys_rates,xg,xa,expulse,numero_match
 1336366081,82718090,entré en jeu,26,Forward,6.31,False,0,0,0,0,0,11,10,1,3,1,3,1,0,0,0,0,0,0,0,0,0.0,0.05,False,1
 1336360124,82718090,entré en jeu,10,Forward,6.7,False,0,0,0,0,0,6,3,0,1,1,3,2,0,0,0,0,0,0,0,0,0.0,0.0,False,2
+1336377144,82718090,entré en jeu,25,Forward,6.99,False,0,0,0,0,0,14,13,1,1,1,1,1,0,0,0,0,0,0,0,0,0.0,0.05,False,3
+1336381399,82718090,entré en jeu,26,Forward,6.25,False,0,0,0,0,0,10,8,0,1,1,3,1,0,1,0,0,0,0,0,0,0.0,0.01,False,4
+1391993398,82718090,entré en jeu,11,Forward,6.69,False,0,0,0,1,1,2,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0.02,0.01,False,5
+1336393313,82718090,titulaire,72,Midfielder,7.15,False,0,0,0,1,0,26,24,2,4,3,14,9,3,1,3,2,0,0,0,0,0.04,0.09,False,6
+1336400972,82718090,titulaire,89,Midfielder,7.21,False,0,0,1,0,0,29,20,3,9,7,19,12,3,2,2,1,1,0,0,0,0.1,0.3,True,7
+1336406078,82718090,entré en jeu,36,Forward,7.27,False,1,0,0,1,1,10,9,0,6,4,12,9,5,0,0,0,0,0,0,0,0.07,0.01,False,8
+1336420545,82718090,titulaire,86,Midfielder,8.25,False,0,1,0,2,1,28,24,3,5,2,14,6,1,0,3,0,0,0,0,0,0.24,0.04,False,9
+1391908298,82718090,titulaire,78,Midfielder,7.12,False,0,0,1,2,0,30,25,1,7,6,18,13,4,0,2,4,0,0,0,0,0.04,0.02,False,10
