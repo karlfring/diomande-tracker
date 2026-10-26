@@ -57,6 +57,20 @@
  },
  {
   "box_score_vide": false,
+  "fichier": "matchs/1336428204.json",
+  "ingere_le": "2026-10-26T13:19:34+00:00",
+  "match_id": 1336428204,
+  "sha256": "c2edfb08b2b21e0766301f885eef87720e8cafd1010966f47005270e598700c7"
+ },
+ {
+  "box_score_vide": false,
+  "fichier": "matchs/1336433310.json",
+  "ingere_le": "2026-10-26T13:19:34+00:00",
+  "match_id": 1336433310,
+  "sha256": "5c169cb9b7adcd97cac511b25666f88be602a62372996349fc4757cea4dccbf0"
+ },
+ {
+  "box_score_vide": false,
   "fichier": "matchs/1391908298.json",
   "ingere_le": "2026-10-22T12:06:36+00:00",
   "match_id": 1391908298,
@@ -68,5 +82,12 @@
   "ingere_le": "2026-10-22T12:06:36+00:00",
   "match_id": 1391993398,
   "sha256": "8d27b67939e7e0f32f380ee2c27691ab468b6171802ef205ed0e01491150d5c9"
+ },
+ {
+  "box_score_vide": false,
+  "fichier": "matchs/1391995100.json",
+  "ingere_le": "2026-10-26T13:19:34+00:00",
+  "match_id": 1391995100,
+  "sha256": "147a90d257bbc9aa1f3ee48ee02cd2e26df973e6d0413e9d2716381ade9a97d8"
  }
 ]

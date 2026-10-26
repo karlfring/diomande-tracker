@@ -1048,10 +1048,10 @@
    },
    "round": "Regular Season - 10",
    "state": {
-    "clock": null,
-    "description": "Not started",
+    "clock": 90,
+    "description": "Finished",
     "score": {
-     "current": null,
+     "current": "1 - 2",
      "penalties": null
     }
    }
