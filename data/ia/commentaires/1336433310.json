@@ -1,0 +1,85 @@
+{
+ "match_id": 1336433310,
+ "genere_le": "2026-10-28T08:19:27+00:00",
+ "fournisseur": "gemini",
+ "modele": "gemini-flash-lite-latest",
+ "temperature": 0.2,
+ "consigne": "Tu es analyste football pour un tableau de bord de suivi de joueur.\nRédige un court commentaire en français sur la performance de Yan Diomande lors du match décrit.\n\nRègles :\n- Utilise uniquement les faits fournis. N'invente aucun chiffre, aucun nom, aucun événement.\n- Dans le commentaire, écris les nombres en chiffres, exactement comme dans les faits, avec une virgule pour les décimales (0,23).\n- Dans \"chiffres_cites\", chaque \"valeur\" est un nombre JSON avec un point pour les décimales (0.23).\n- 3 phrases au plus, ton neutre et factuel, sans superlatifs.\n- S'il n'a pas joué, dis-le simplement.\n\nRéponds uniquement avec un objet JSON de cette forme :\n{\"titre\": \"...\", \"commentaire\": \"...\", \"chiffres_cites\": [{\"libelle\": \"...\", \"valeur\": 0}]}",
+ "faits": {
+  "date": "25 octobre 2026",
+  "club": "Real Madrid",
+  "competition": "La Liga",
+  "adversaire": "Barcelona",
+  "lieu": "Extérieur",
+  "score": "2 - 1",
+  "resultat": "victoire",
+  "statut": "titulaire",
+  "minutes": 89,
+  "note": 6.32,
+  "buts": 0,
+  "passes_decisives": 0,
+  "xg": 0.13,
+  "xa": 0.04,
+  "tirs": 1,
+  "tirs_cadres": 0,
+  "passes_cles": 0,
+  "dribbles_reussis": 4,
+  "dribbles_tentes": 7,
+  "duels_gagnes": 9,
+  "duels": 16
+ },
+ "reponse": {
+  "titre": "Performance de Yan Diomande contre Barcelona",
+  "commentaire": "Titulaire lors de la victoire 2 - 1 du Real Madrid à l'extérieur contre Barcelona le 25 octobre 2026, Yan Diomande a joué 89 minutes et obtenu une note de 6,32. Il a tenté 1 tir sans trouver le cadre, affichant un xG de 0,13 et un xA de 0,04. Sur le plan des duels et de la percussion, il a réussi 4 dribbles sur 7 et remporté 9 duels sur 16.",
+  "chiffres_cites": [
+   {
+    "libelle": "minutes",
+    "valeur": 89
+   },
+   {
+    "libelle": "note",
+    "valeur": 6.32
+   },
+   {
+    "libelle": "xg",
+    "valeur": 0.13
+   },
+   {
+    "libelle": "xa",
+    "valeur": 0.04
+   },
+   {
+    "libelle": "tirs",
+    "valeur": 1
+   },
+   {
+    "libelle": "dribbles_reussis",
+    "valeur": 4
+   },
+   {
+    "libelle": "dribbles_tentes",
+    "valeur": 7
+   },
+   {
+    "libelle": "duels_gagnes",
+    "valeur": 9
+   },
+   {
+    "libelle": "duels",
+    "valeur": 16
+   }
+  ]
+ },
+ "verification": {
+  "valide": false,
+  "problemes": [
+   "chiffre cité faux : dribbles_tentes = 7, attendu 4",
+   "chiffre cité faux : duels_gagnes = 9, attendu 16"
+  ]
+ },
+ "usage": {
+  "completion_tokens": 298,
+  "prompt_tokens": 427,
+  "total_tokens": 725
+ }
+}
