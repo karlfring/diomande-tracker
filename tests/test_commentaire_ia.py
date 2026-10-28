@@ -166,3 +166,11 @@ def test_virgule_decimale_dans_le_json_reparee():
     lu = ia.lire_json(brut)
     assert lu["chiffres_cites"][0]["valeur"] == 6.32
     assert lu["commentaire"] == "Note de 6,32."
+
+
+def test_libelle_identique_au_champ_reconnu():
+    # Cas réel du 28 octobre 2026 : « dribbles_tentes = 7 » était comparé aux dribbles réussis
+    faits = ia.faits_du_match(MATCH)
+    contenu = json.loads(reponse("Il a réussi 3 dribbles sur 5 et gagné 7 duels sur 11.",
+                                 [("dribbles_reussis", 3), ("dribbles_tentes", 5), ("duels_gagnes", 7), ("duels", 11)]))
+    assert ia.verifier(contenu, faits) == {"valide": True, "problemes": []}

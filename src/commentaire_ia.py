@@ -237,8 +237,12 @@ _LIBELLES = [
 ]
 
 
-def _champ(libelle: str) -> str | None:
-    l = unicodedata.normalize("NFKD", str(libelle)).encode("ascii", "ignore").decode().lower()
+def _champ(libelle: str, faits: dict | None = None) -> str | None:
+    l = unicodedata.normalize("NFKD", str(libelle)).encode("ascii", "ignore").decode().lower().strip()
+    # Le modèle reprend souvent le nom exact du champ (« dribbles_tentes »)
+    if faits is not None and l.replace(" ", "_") in faits:
+        return l.replace(" ", "_")
+    l = l.replace("_", " ")
     for motif, champ in _LIBELLES:
         if motif in l:
             return champ
@@ -263,7 +267,7 @@ def verifier(contenu: dict, faits: dict) -> dict:
         except (TypeError, ValueError):
             problemes.append(f"valeur illisible : {c}")
             continue
-        champ = _champ(c.get("libelle", ""))
+        champ = _champ(c.get("libelle", ""), faits)
         if champ in faits and faits[champ] is not None:
             if v != round(float(faits[champ]), 2):
                 problemes.append(f"chiffre cité faux : {c.get('libelle')} = {v:g}, attendu {faits[champ]}")
