@@ -1,6 +1,6 @@
 {
  "match_id": 1336433310,
- "genere_le": "2026-10-28T08:19:27+00:00",
+ "genere_le": "2026-10-28T08:23:02+00:00",
  "fournisseur": "gemini",
  "modele": "gemini-flash-lite-latest",
  "temperature": 0.2,
@@ -30,11 +30,11 @@
  },
  "reponse": {
   "titre": "Performance de Yan Diomande contre Barcelona",
-  "commentaire": "Titulaire lors de la victoire 2 - 1 du Real Madrid à l'extérieur contre Barcelona le 25 octobre 2026, Yan Diomande a joué 89 minutes et obtenu une note de 6,32. Il a tenté 1 tir sans trouver le cadre, affichant un xG de 0,13 et un xA de 0,04. Sur le plan des duels et de la percussion, il a réussi 4 dribbles sur 7 et remporté 9 duels sur 16.",
+  "commentaire": "Titulaire lors de la victoire 2 - 1 du Real Madrid à l'extérieur contre Barcelona le 25 octobre 2026, Yan Diomande a disputé 89 minutes pour une note de 6,32. Il a affiché un xG de 0,13 et un xA de 0,04, tout en réussissant 4 dribbles sur 7 tentés et 9 duels gagnés sur 16.",
   "chiffres_cites": [
    {
     "libelle": "minutes",
-    "valeur": 89
+    "valeur": 89.0
    },
    {
     "libelle": "note",
@@ -49,37 +49,30 @@
     "valeur": 0.04
    },
    {
-    "libelle": "tirs",
-    "valeur": 1
-   },
-   {
     "libelle": "dribbles_reussis",
-    "valeur": 4
+    "valeur": 4.0
    },
    {
     "libelle": "dribbles_tentes",
-    "valeur": 7
+    "valeur": 7.0
    },
    {
     "libelle": "duels_gagnes",
-    "valeur": 9
+    "valeur": 9.0
    },
    {
     "libelle": "duels",
-    "valeur": 16
+    "valeur": 16.0
    }
   ]
  },
  "verification": {
-  "valide": false,
-  "problemes": [
-   "chiffre cité faux : dribbles_tentes = 7, attendu 4",
-   "chiffre cité faux : duels_gagnes = 9, attendu 16"
-  ]
+  "valide": true,
+  "problemes": []
  },
  "usage": {
-  "completion_tokens": 298,
+  "completion_tokens": 361,
   "prompt_tokens": 427,
-  "total_tokens": 725
+  "total_tokens": 788
  }
 }
