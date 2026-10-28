@@ -25,6 +25,7 @@ import json
 import os
 import re
 import sys
+import time
 import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
@@ -42,11 +43,13 @@ FOURNISSEURS = {
         "url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
         "cle": "GEMINI_API_KEY",
         "modele": "gemini-flash-latest",
+        "secours": ["gemini-flash-lite-latest"],
     },
     "mistral": {
         "url": "https://api.mistral.ai/v1/chat/completions",
         "cle": "MISTRAL_API_KEY",
         "modele": "mistral-small-latest",
+        "secours": [],
     },
 }
 
@@ -63,6 +66,9 @@ def fournisseur() -> tuple[str, dict]:
     return nom, f
 
 TEMPERATURE = 0.2          # faible : on veut un texte fidèle, pas créatif
+TENTATIVES = 3             # par modèle, en cas de surcharge ou de limite de débit
+ATTENTE_S = 10             # attente avant la 2e tentative, doublée ensuite
+CODES_TEMPORAIRES = {429, 500, 502, 503, 504}
 MATCHS = ROOT / "data" / "dashboard" / "matchs.json"
 SORTIE = ROOT / "data" / "ia" / "commentaires"
 
@@ -141,10 +147,32 @@ def appeler_modele(faits: dict, session: requests.Session | None = None, cle: st
         ],
     }
     s = session or requests.Session()
-    r = s.post(f["url"], json=corps, timeout=60,
-               headers={"Authorization": f"Bearer {cle}", "Content-Type": "application/json"})
-    if r.status_code >= 400:
-        raise ErreurIA(f"HTTP {r.status_code} : {r.text[:300]}")
+    entetes = {"Authorization": f"Bearer {cle}", "Content-Type": "application/json"}
+    erreurs = []
+    # Un modèle surchargé (503) ou une limite de débit (429) sont passagers :
+    # on réessaie en espaçant les appels, puis on passe au modèle de secours.
+    for modele in [f["modele"], *f.get("secours", [])]:
+        corps["model"] = modele
+        for tentative in range(TENTATIVES):
+            if tentative:
+                time.sleep(ATTENTE_S * 2 ** (tentative - 1))
+            try:
+                r = s.post(f["url"], json=corps, timeout=60, headers=entetes)
+            except requests.RequestException as exc:
+                erreurs.append(f"{modele} : {exc}")
+                continue
+            if r.status_code in CODES_TEMPORAIRES:
+                erreurs.append(f"{modele} : HTTP {r.status_code}")
+                continue
+            if r.status_code >= 400:
+                raise ErreurIA(f"HTTP {r.status_code} : {r.text[:300]}")
+            f["modele"] = modele
+            break
+        else:
+            continue
+        break
+    else:
+        raise ErreurIA("Modèle indisponible après plusieurs tentatives : " + " ; ".join(erreurs))
     reponse = r.json()
     texte = reponse["choices"][0]["message"]["content"]
     try:

@@ -32,12 +32,20 @@ class FausseReponse:
 
 
 class FausseSession:
-    def __init__(self, contenu, code=200):
+    def __init__(self, contenu, code=200, codes=None):
         self.contenu, self.code, self.corps = contenu, code, None
+        self.codes, self.modeles = list(codes or []), []
 
     def post(self, url, json=None, **kwargs):
-        self.corps = json
-        return FausseReponse(self.contenu, self.code)
+        self.corps = dict(json)
+        self.modeles.append(json["model"])
+        code = self.codes.pop(0) if self.codes else self.code
+        return FausseReponse(self.contenu, code)
+
+
+@pytest.fixture(autouse=True)
+def sans_attente(monkeypatch):
+    monkeypatch.setattr(ia, "ATTENTE_S", 0)
 
 
 def reponse(commentaire, chiffres=()):
@@ -120,3 +128,28 @@ def test_fournisseur_choisi_selon_la_cle(monkeypatch):
     r = ia.appeler_modele({"buts": 1}, session=session)
     assert r["fournisseur"] == "gemini"
     assert session.corps["model"] == "gemini-flash-latest"
+
+
+def test_surcharge_puis_succes(monkeypatch):
+    monkeypatch.setenv("LLM_FOURNISSEUR", "gemini")
+    monkeypatch.setenv("GEMINI_API_KEY", "test")
+    session = FausseSession(reponse("Il a marqué 1 but."), codes=[503, 503])
+    r = ia.appeler_modele({"buts": 1}, session=session)
+    assert session.modeles == ["gemini-flash-latest"] * 3
+    assert r["modele"] == "gemini-flash-latest"
+
+
+def test_bascule_sur_le_modele_de_secours(monkeypatch):
+    monkeypatch.setenv("LLM_FOURNISSEUR", "gemini")
+    monkeypatch.setenv("GEMINI_API_KEY", "test")
+    session = FausseSession(reponse("Il a marqué 1 but."), codes=[503, 503, 503])
+    r = ia.appeler_modele({"buts": 1}, session=session)
+    assert session.modeles[-1] == "gemini-flash-lite-latest"
+    assert r["modele"] == "gemini-flash-lite-latest"
+
+
+def test_toujours_indisponible(monkeypatch):
+    monkeypatch.setenv("LLM_FOURNISSEUR", "gemini")
+    monkeypatch.setenv("GEMINI_API_KEY", "test")
+    with pytest.raises(ia.ErreurIA, match="indisponible"):
+        ia.appeler_modele({"buts": 1}, session=FausseSession("{}", code=503))
