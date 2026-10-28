@@ -115,8 +115,8 @@ une absence du joueur.
 
 ## Commentaire de match par IA générative
 
-`src/commentaire_ia.py` fait rédiger par un modèle de langage (Mistral, via
-son API) un court commentaire sur le dernier match de Diomande, puis vérifie
+`src/commentaire_ia.py` fait rédiger par un modèle de langage (Gemini ou
+Mistral, via leur API de type chat completions) un court commentaire sur le dernier match de Diomande, puis vérifie
 le texte avant de l'archiver.
 
 1. **Des faits, et seulement eux.** Le modèle reçoit les statistiques du
@@ -136,13 +136,14 @@ Seules des statistiques sportives publiques sont envoyées au modèle. Limite
 connue : un nombre écrit en toutes lettres (« trois ») n'est pas contrôlé.
 
 ```bash
-export MISTRAL_API_KEY=ta_cle       # PowerShell : $env:MISTRAL_API_KEY="ta_cle"
+export GEMINI_API_KEY=ta_cle        # PowerShell : $env:GEMINI_API_KEY="ta_cle" (ou MISTRAL_API_KEY)
 python src/commentaire_ia.py                     # dernier match joué
 python src/commentaire_ia.py --match 1336360124  # un match précis
 ```
 
 Le workflow `commentaire-ia.yml` fait la même chose depuis l'onglet Actions,
-avec le secret `MISTRAL_API_KEY`.
+avec le secret `GEMINI_API_KEY` (ou `MISTRAL_API_KEY`). Le fournisseur se
+choisit selon la clé disponible, ou avec `LLM_FOURNISSEUR`.
 
 ## Automatisation
 

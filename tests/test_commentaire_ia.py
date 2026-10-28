@@ -100,7 +100,8 @@ def test_reponse_non_json_refusee(monkeypatch):
 
 
 def test_cle_absente(monkeypatch):
-    monkeypatch.delenv("MISTRAL_API_KEY", raising=False)
+    for nom in ("MISTRAL_API_KEY", "GEMINI_API_KEY", "LLM_FOURNISSEUR"):
+        monkeypatch.delenv(nom, raising=False)
     with pytest.raises(ia.ErreurIA, match="Clé absente"):
         ia.appeler_modele({"a": 1}, session=FausseSession("{}"))
 
@@ -109,3 +110,13 @@ def test_erreur_http(monkeypatch):
     monkeypatch.setenv("MISTRAL_API_KEY", "test")
     with pytest.raises(ia.ErreurIA, match="401"):
         ia.appeler_modele({"a": 1}, session=FausseSession("Unauthorized", code=401))
+
+
+def test_fournisseur_choisi_selon_la_cle(monkeypatch):
+    monkeypatch.delenv("LLM_FOURNISSEUR", raising=False)
+    monkeypatch.delenv("MISTRAL_API_KEY", raising=False)
+    monkeypatch.setenv("GEMINI_API_KEY", "test")
+    session = FausseSession(reponse("Il a marqué 1 but."))
+    r = ia.appeler_modele({"buts": 1}, session=session)
+    assert r["fournisseur"] == "gemini"
+    assert session.corps["model"] == "gemini-flash-latest"

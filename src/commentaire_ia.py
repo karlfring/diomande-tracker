@@ -1,7 +1,8 @@
 """Commentaire de match rédigé par un modèle de langage, puis vérifié.
 
 Usage :
-    export MISTRAL_API_KEY=ta_cle        (PowerShell : $env:MISTRAL_API_KEY="ta_cle")
+    export GEMINI_API_KEY=ta_cle         (PowerShell : $env:GEMINI_API_KEY="ta_cle")
+    (ou MISTRAL_API_KEY ; LLM_FOURNISSEUR=gemini|mistral force le choix)
     python src/commentaire_ia.py                     # dernier match joué
     python src/commentaire_ia.py --match 1336360124  # un match précis
 
@@ -34,9 +35,33 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from config import ROOT  # noqa: E402
 
-API_URL = "https://api.mistral.ai/v1/chat/completions"
-API_KEY_ENV = "MISTRAL_API_KEY"
-MODELE = os.environ.get("MISTRAL_MODEL", "mistral-small-latest")
+# Deux fournisseurs possibles, avec la même interface de type « chat
+# completions » : le code ne dépend pas d'un seul fournisseur de modèle.
+FOURNISSEURS = {
+    "gemini": {
+        "url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+        "cle": "GEMINI_API_KEY",
+        "modele": "gemini-flash-latest",
+    },
+    "mistral": {
+        "url": "https://api.mistral.ai/v1/chat/completions",
+        "cle": "MISTRAL_API_KEY",
+        "modele": "mistral-small-latest",
+    },
+}
+
+
+def fournisseur() -> tuple[str, dict]:
+    """Le fournisseur choisi par LLM_FOURNISSEUR, sinon le premier dont la clé existe."""
+    nom = os.environ.get("LLM_FOURNISSEUR")
+    if not nom:
+        nom = next((n for n, f in FOURNISSEURS.items() if os.environ.get(f["cle"])), "gemini")
+    if nom not in FOURNISSEURS:
+        raise ErreurIA(f"Fournisseur inconnu : {nom} (choix : {', '.join(FOURNISSEURS)}).")
+    f = dict(FOURNISSEURS[nom])
+    f["modele"] = os.environ.get("LLM_MODELE", f["modele"])
+    return nom, f
+
 TEMPERATURE = 0.2          # faible : on veut un texte fidèle, pas créatif
 MATCHS = ROOT / "data" / "dashboard" / "matchs.json"
 SORTIE = ROOT / "data" / "ia" / "commentaires"
@@ -102,11 +127,12 @@ def choisir_match(matchs: list[dict], match_id: int | None) -> dict:
 
 # --- 2. L'appel au modèle -----------------------------------------------------
 def appeler_modele(faits: dict, session: requests.Session | None = None, cle: str | None = None) -> dict:
-    cle = cle or os.environ.get(API_KEY_ENV)
+    nom, f = fournisseur()
+    cle = cle or os.environ.get(f["cle"])
     if not cle:
-        raise ErreurIA(f"Clé absente : définis la variable d'environnement {API_KEY_ENV}.")
+        raise ErreurIA(f"Clé absente : définis la variable d'environnement {f['cle']} ({nom}).")
     corps = {
-        "model": MODELE,
+        "model": f["modele"],
         "temperature": TEMPERATURE,
         "response_format": {"type": "json_object"},
         "messages": [
@@ -115,7 +141,7 @@ def appeler_modele(faits: dict, session: requests.Session | None = None, cle: st
         ],
     }
     s = session or requests.Session()
-    r = s.post(API_URL, json=corps, timeout=60,
+    r = s.post(f["url"], json=corps, timeout=60,
                headers={"Authorization": f"Bearer {cle}", "Content-Type": "application/json"})
     if r.status_code >= 400:
         raise ErreurIA(f"HTTP {r.status_code} : {r.text[:300]}")
@@ -125,7 +151,7 @@ def appeler_modele(faits: dict, session: requests.Session | None = None, cle: st
         contenu = json.loads(texte)
     except json.JSONDecodeError as exc:
         raise ErreurIA(f"Le modèle n'a pas renvoyé de JSON valide : {texte[:200]}") from exc
-    return {"contenu": contenu, "brut": reponse}
+    return {"contenu": contenu, "brut": reponse, "fournisseur": nom, "modele": f["modele"]}
 
 
 # --- 3. La vérification -------------------------------------------------------
@@ -207,7 +233,8 @@ def generer(match_id: int | None = None, session: requests.Session | None = None
     archive = {
         "match_id": match["match_id"],
         "genere_le": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "modele": MODELE,
+        "fournisseur": resultat["fournisseur"],
+        "modele": resultat["modele"],
         "temperature": TEMPERATURE,
         "consigne": CONSIGNE,
         "faits": faits,
