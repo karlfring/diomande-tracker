@@ -153,3 +153,9 @@ def test_toujours_indisponible(monkeypatch):
     monkeypatch.setenv("GEMINI_API_KEY", "test")
     with pytest.raises(ia.ErreurIA, match="indisponible"):
         ia.appeler_modele({"buts": 1}, session=FausseSession("{}", code=503))
+
+
+def test_json_entoure_de_balises_markdown():
+    assert ia.lire_json('```json\n{"titre": "x"}\n```') == {"titre": "x"}
+    assert ia.lire_json('Voici : {"titre": "x"} fin') == {"titre": "x"}
+    assert ia.lire_json('{"titre": "coupé') is None

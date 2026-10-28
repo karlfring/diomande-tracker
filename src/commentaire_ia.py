@@ -66,6 +66,7 @@ def fournisseur() -> tuple[str, dict]:
     return nom, f
 
 TEMPERATURE = 0.2          # faible : on veut un texte fidèle, pas créatif
+MAX_TOKENS = 2048          # marge pour les modèles qui « réfléchissent » avant de répondre
 TENTATIVES = 3             # par modèle, en cas de surcharge ou de limite de débit
 ATTENTE_S = 10             # attente avant la 2e tentative, doublée ensuite
 CODES_TEMPORAIRES = {429, 500, 502, 503, 504}
@@ -140,6 +141,7 @@ def appeler_modele(faits: dict, session: requests.Session | None = None, cle: st
     corps = {
         "model": f["modele"],
         "temperature": TEMPERATURE,
+        "max_tokens": MAX_TOKENS,
         "response_format": {"type": "json_object"},
         "messages": [
             {"role": "system", "content": CONSIGNE},
@@ -174,12 +176,29 @@ def appeler_modele(faits: dict, session: requests.Session | None = None, cle: st
     else:
         raise ErreurIA("Modèle indisponible après plusieurs tentatives : " + " ; ".join(erreurs))
     reponse = r.json()
-    texte = reponse["choices"][0]["message"]["content"]
-    try:
-        contenu = json.loads(texte)
-    except json.JSONDecodeError as exc:
-        raise ErreurIA(f"Le modèle n'a pas renvoyé de JSON valide : {texte[:200]}") from exc
+    choix = reponse["choices"][0]
+    texte = choix["message"]["content"] or ""
+    contenu = lire_json(texte)
+    if contenu is None:
+        raise ErreurIA(f"Le modèle n'a pas renvoyé de JSON valide (arrêt : {choix.get('finish_reason')}) : {texte[:1500]}")
     return {"contenu": contenu, "brut": reponse, "fournisseur": nom, "modele": f["modele"]}
+
+
+def lire_json(texte: str) -> dict | None:
+    """Lit l'objet JSON de la réponse, même entouré de ```json ... ``` ou de texte."""
+    texte = texte.strip()
+    if texte.startswith("```"):
+        texte = re.sub(r"^```(?:json)?\s*|\s*```$", "", texte)
+    try:
+        return json.loads(texte)
+    except json.JSONDecodeError:
+        debut, fin = texte.find("{"), texte.rfind("}")
+        if debut != -1 and fin > debut:
+            try:
+                return json.loads(texte[debut:fin + 1])
+            except json.JSONDecodeError:
+                return None
+        return None
 
 
 # --- 3. La vérification -------------------------------------------------------
