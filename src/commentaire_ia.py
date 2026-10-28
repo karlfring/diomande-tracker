@@ -81,7 +81,8 @@ Rédige un court commentaire en français sur la performance de Yan Diomande lor
 
 Règles :
 - Utilise uniquement les faits fournis. N'invente aucun chiffre, aucun nom, aucun événement.
-- Écris les nombres en chiffres, exactement comme dans les faits (décimales avec une virgule).
+- Dans le commentaire, écris les nombres en chiffres, exactement comme dans les faits, avec une virgule pour les décimales (0,23).
+- Dans "chiffres_cites", chaque "valeur" est un nombre JSON avec un point pour les décimales (0.23).
 - 3 phrases au plus, ton neutre et factuel, sans superlatifs.
 - S'il n'a pas joué, dis-le simplement.
 
@@ -189,6 +190,8 @@ def lire_json(texte: str) -> dict | None:
     texte = texte.strip()
     if texte.startswith("```"):
         texte = re.sub(r"^```(?:json)?\s*|\s*```$", "", texte)
+    # Réparation d'une erreur fréquente : « "valeur": 6,32 » au lieu de 6.32
+    texte = re.sub(r'("valeur"\s*:\s*-?\d+),(\d+)', r"\1.\2", texte)
     try:
         return json.loads(texte)
     except json.JSONDecodeError:

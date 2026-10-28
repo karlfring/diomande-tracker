@@ -159,3 +159,10 @@ def test_json_entoure_de_balises_markdown():
     assert ia.lire_json('```json\n{"titre": "x"}\n```') == {"titre": "x"}
     assert ia.lire_json('Voici : {"titre": "x"} fin') == {"titre": "x"}
     assert ia.lire_json('{"titre": "coupé') is None
+
+
+def test_virgule_decimale_dans_le_json_reparee():
+    brut = '{"titre": "x", "commentaire": "Note de 6,32.", "chiffres_cites": [{"libelle": "note", "valeur": 6,32}]}'
+    lu = ia.lire_json(brut)
+    assert lu["chiffres_cites"][0]["valeur"] == 6.32
+    assert lu["commentaire"] == "Note de 6,32."
