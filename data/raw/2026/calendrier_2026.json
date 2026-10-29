@@ -2,6 +2,40 @@
  "domicile": [
   {
    "awayTeam": {
+    "id": 453516,
+    "logo": "https://highlightly.net/soccer/images/teams/453516.png",
+    "name": "Valencia"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
+   "date": "2027-02-28T16:00:00.000Z",
+   "homeTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "id": 1336573725,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 26",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
     "id": 452665,
     "logo": "https://highlightly.net/soccer/images/teams/452665.png",
     "name": "Athletic Club"
