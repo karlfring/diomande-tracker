@@ -2899,11 +2899,38 @@
  },
  {
   "championnat": "ITA",
+  "cle": "box-score/1172837070",
+  "fichier": "box_scores/1172837070.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "bb4554475a0fc43903cdd983bf9f59decf4c23ef812257957c642396fa3e6069",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172837921",
+  "fichier": "box_scores/1172837921.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "a7bba966a0b3025d51d90c791b72527801afe7ca7fc684589833fee43023acf4",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
   "cle": "box-score/1172838772",
   "fichier": "box_scores/1172838772.json.gz",
   "ingere_le": "2026-10-31T08:30:01+00:00",
   "origine": "API",
   "sha256": "ca2b0cb3ed6fa493a444faf724a6cc660258c199a6108fd8a51ea5153b2ca5ef",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172839623",
+  "fichier": "box_scores/1172839623.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "07d0499d8d2edd8f629d7d02a88b442e3c02429db2dd80ae7011ad0c87b6f9d0",
   "vide": false
  },
  {
@@ -2931,6 +2958,123 @@
   "ingere_le": "2026-10-31T08:30:01+00:00",
   "origine": "API",
   "sha256": "373cfa61dcd920232d0c7cea515d470524d9943cb3932717eac65d7b689603f4",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172843027",
+  "fichier": "box_scores/1172843027.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "db08beba4b78b882148c56bafc64e740540326be49b7fe8f0cd678a507a06f82",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172843878",
+  "fichier": "box_scores/1172843878.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "93b3837c17748c6cacdd1c8c9f42ef278bebbb9ef70f13c5f45f402938e1b660",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172844729",
+  "fichier": "box_scores/1172844729.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "96971a843014f1313d442799b3df4f942354dedcf00b00fb0da6cb82efdb8f46",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172845580",
+  "fichier": "box_scores/1172845580.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "333aa4febce0da4346ad88cd1b0ce8b10be7df569b24996042e57e1f1f2ed852",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172846431",
+  "fichier": "box_scores/1172846431.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "f7134a4efa52574e864c21ac8030145b7c1dd213f21c2ba043910ff8403451c2",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172847282",
+  "fichier": "box_scores/1172847282.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "d11f90759cb845970694a74b483d355600f99eb36564a53cc08738f1bf87d9b9",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172848133",
+  "fichier": "box_scores/1172848133.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "2760fd19cefaa71baa56af6415634c589fb33f8a3d741f715b0be9f700c24da9",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172848984",
+  "fichier": "box_scores/1172848984.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "ae118b03adb864e874f77c103ef1d74bee2902fc63f5527fa796e594509c93f1",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172849835",
+  "fichier": "box_scores/1172849835.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "0588be3a1e0557f898489cd89e614c91cc749dfda6c62618b9758d7722339dc7",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172850686",
+  "fichier": "box_scores/1172850686.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "f5c1f8cdb9d5f33a652c837497eaf6cd21f43470108de562495afa04df225904",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172851537",
+  "fichier": "box_scores/1172851537.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "71d32d530ce6e8192c8eef99d74731b8ca2ca8b16f20ad282461874decaa4503",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172857494",
+  "fichier": "box_scores/1172857494.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "6cca37e1cb93bd5856c691e399da9ab1ef19a55d236f14d48db0b738ac63e4c6",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172860047",
+  "fichier": "box_scores/1172860047.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "01c908021c2f1bf49efd3aa9d43a940e084d30a0adba8e920bc5d7157e6f04d3",
   "vide": false
  },
  {
@@ -5806,6 +5950,15 @@
  },
  {
   "championnat": "ENG",
+  "cle": "box-score/1173775723",
+  "fichier": "box_scores/1173775723.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "fe11f816866443156a443f3dd244777b1365f7b20a9e33d2b45af03dd3066c6d",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
   "cle": "box-score/1173776574",
   "fichier": "box_scores/1173776574.json.gz",
   "ingere_le": "2026-10-31T08:30:01+00:00",
@@ -5824,11 +5977,38 @@
  },
  {
   "championnat": "ENG",
+  "cle": "box-score/1173778276",
+  "fichier": "box_scores/1173778276.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "1ea0c8e8a5a1b264278fe2b70e2dabc1a1e9ccb46b41c02b56c4d9bfe7f7859c",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173779127",
+  "fichier": "box_scores/1173779127.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "1bdf0fcf46d1538a9f0b9a67d9d933c350baab580a1312886059b7da2386cc59",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
   "cle": "box-score/1173779978",
   "fichier": "box_scores/1173779978.json.gz",
   "ingere_le": "2026-10-31T08:30:01+00:00",
   "origine": "API",
   "sha256": "56a9a092bed8e00640e40b86f3081f80a9281bae01f5613386addd7d477db60b",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173780829",
+  "fichier": "box_scores/1173780829.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "44d759a982e8aa234457e716d96bf7e5237f18ac6df40581f13d54829ca9f276",
   "vide": false
  },
  {
@@ -5842,11 +6022,119 @@
  },
  {
   "championnat": "ENG",
+  "cle": "box-score/1173782531",
+  "fichier": "box_scores/1173782531.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "60f9ec14e7972d867e1b1336fafcfecff30b8cb5f2031f4abec0b714c66becb1",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
   "cle": "box-score/1173783382",
   "fichier": "box_scores/1173783382.json.gz",
   "ingere_le": "2026-10-31T08:30:01+00:00",
   "origine": "API",
   "sha256": "a69ac15d66b0090f0e0f47768106154a3789d3fcf05ce5660d4b49fb72d95d2b",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173784233",
+  "fichier": "box_scores/1173784233.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "a63a1d3b46be51d9200160c7edee37e99aa62abbd31cc1a11476075782c87bd7",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173785084",
+  "fichier": "box_scores/1173785084.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "a80f1c2baef190636b6186db363054232a8eb403112255f0471d8d1b442f3371",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173785935",
+  "fichier": "box_scores/1173785935.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "d502dc5d9ab2cd9b5566b386d459802e84ff57b07b37f2a2c41647609c33de95",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173786786",
+  "fichier": "box_scores/1173786786.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "1ea5aa0bec7e39a905aed761c32d1b8f9096e52786b08a2a742404c795688c23",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173787637",
+  "fichier": "box_scores/1173787637.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "4644f8809e55990220f502f0f8616eaf98680ee674b175171a53c1f222f37a8a",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173788488",
+  "fichier": "box_scores/1173788488.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "1459df3dd457f761b1f2c677ea513438ebd57e9d0565fa1b1b31363bec438384",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173789339",
+  "fichier": "box_scores/1173789339.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "4b0a7780c0b39c5bcbee761333c03b06852f9000fa972f52a7392373716cdf70",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173790190",
+  "fichier": "box_scores/1173790190.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "50a3f059ea011d6b4af574ed5641f1604a3812e0ce75019d910125d63a248fb2",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173791041",
+  "fichier": "box_scores/1173791041.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "2fe1b102ba175fb523e6c312234cf45aa9ee338bd71c6ff81414f113f0c2b610",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173791892",
+  "fichier": "box_scores/1173791892.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "2669e27430f88790d1594ea9d0eb600400205a7191bdf82dfa48009ecfb4ef75",
+  "vide": false
+ },
+ {
+  "championnat": "ENG",
+  "cle": "box-score/1173797849",
+  "fichier": "box_scores/1173797849.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "a79c40b0f6736b4faf572a41051aeeab34248a24787a388eae94b41f7a72f33d",
   "vide": false
  },
  {
@@ -7930,6 +8218,15 @@
  },
  {
   "championnat": "FRA",
+  "cle": "box-score/1181128363",
+  "fichier": "box_scores/1181128363.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "7743ef128b8a082388583a2eae87131867389f0af793e8b4f8e44311c6e1b054",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
   "cle": "box-score/1181129214",
   "fichier": "box_scores/1181129214.json.gz",
   "ingere_le": "2026-10-30T08:44:35+00:00",
@@ -8205,6 +8502,141 @@
   "ingere_le": "2026-10-31T08:30:01+00:00",
   "origine": "API",
   "sha256": "841e02ba38359a6abafd70c4689ca8eb730c05811e572dd476bb3fa1fbdb104b",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181157297",
+  "fichier": "box_scores/1181157297.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "61b2f92f53fd6b0bf5d291ddbc845bb3b006a6947ecdfed4cfcda88cd0829b6a",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181158148",
+  "fichier": "box_scores/1181158148.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "6887abe7bc73589102fe1c8593d090ba93590e7ad5d09f1bbb9292e789ee9040",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181158999",
+  "fichier": "box_scores/1181158999.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "dfbb9adf9e4f45e9ba9df0776b83817516a9c8e9f20b128a416c91ecb8e9bf6a",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181159850",
+  "fichier": "box_scores/1181159850.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "391d6b7f8713f07fed81035e70e2114482b9ed77c595ff4ce4fbe52d12ccc25c",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181160701",
+  "fichier": "box_scores/1181160701.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "d940141f6a64d3e802e0867b6efccd0ddba8bb8a726eaa522a7cf1fd3568a59c",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181161552",
+  "fichier": "box_scores/1181161552.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "9c1ebb2eb03b9015a230dbef7d2f7cee1f4798badb1cb30b892460fedbe65798",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181162403",
+  "fichier": "box_scores/1181162403.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "55d4389af6e217b172f3eebadfa14cb112967f38001a5db7d774b5b9f938d2a7",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181163254",
+  "fichier": "box_scores/1181163254.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "78e170cde81f1d334e0e6dcb9eecd3d00d59b7774d19915f56c5696af3f3a335",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181164105",
+  "fichier": "box_scores/1181164105.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "5e098998ccc79489460e9074b381da30ebb632c3fa141f7821a823eedec6cd8d",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181164956",
+  "fichier": "box_scores/1181164956.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "fedda5fb7d601b1f461ee51f55fc7bdaa88e2c9eb899f9fe57d327fa4a35bb26",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181165807",
+  "fichier": "box_scores/1181165807.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "6af11aa0352d706a93db5cb8309498cf3c00069a5e48435d0949e07cdaf6e849",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181166658",
+  "fichier": "box_scores/1181166658.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "11588acf42641216a4dd2cc14c0fcd1062fa4cb54b8c717cd2d12427ffffe526",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181167509",
+  "fichier": "box_scores/1181167509.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "5e63c4fc9239e1587e2732008e427cc87f7f5c36c2b44c7e4cd9d52ecb5a2c0d",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181168360",
+  "fichier": "box_scores/1181168360.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "6e0ecc26d581ffb4f58f99f918c01d8d98b9f89316372a96670d8ad0a70cc4a5",
+  "vide": false
+ },
+ {
+  "championnat": "FRA",
+  "cle": "box-score/1181172615",
+  "fichier": "box_scores/1181172615.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "bea3d692bf1a39266244363569d690c315ab2be7ad9b9247821fd225c9f77ee4",
   "vide": false
  },
  {
@@ -10567,11 +10999,38 @@
  },
  {
   "championnat": "GER",
+  "cle": "box-score/1181673854",
+  "fichier": "box_scores/1181673854.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "a3512e94ca651595709602afb47dae59b3038f3bf0fa2086957d479e4d03a0be",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181674705",
+  "fichier": "box_scores/1181674705.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "0720aa4dfbbea73cbe47320cb508e40c5838de6a73a537654f4b009f5e173e9c",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
   "cle": "box-score/1181675556",
   "fichier": "box_scores/1181675556.json.gz",
   "ingere_le": "2026-10-31T08:30:01+00:00",
   "origine": "archive du suivi de Diomande",
   "sha256": "ff4e8759f181aaccde109fa0a31dda5f0fa80adf236418a05499d2d7852d1193",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181676407",
+  "fichier": "box_scores/1181676407.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "e24809885803d59b9f1c249f680573792006bc7c00f13063648b1994a6f24315",
   "vide": false
  },
  {
@@ -10608,6 +11067,123 @@
   "ingere_le": "2026-10-31T08:30:01+00:00",
   "origine": "API",
   "sha256": "efa45c01a899ce29a3fcf234765f15b1f8852ea625c2db178681b19f810ac4fa",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181680662",
+  "fichier": "box_scores/1181680662.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "b00c8c5ee5431abee2d134d5b41919f49f02934c91bf81faba89f23c23a0a3f9",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181681513",
+  "fichier": "box_scores/1181681513.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "a40bebbbee76461e02d631fbcbaa8fa1354174e44e29be4657cf11ad3c05f691",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181682364",
+  "fichier": "box_scores/1181682364.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "774839e24502b2fbc0702edf6447ce3df31a9971220f6955be1b8c47dcd5a027",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181683215",
+  "fichier": "box_scores/1181683215.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "99dbf6205bf2b17425c93ebb45379ccdeeeedc42900ba6ac0fb9b97ae291a2fb",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181684066",
+  "fichier": "box_scores/1181684066.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "1cb3a9c937d70091b657e7657da7264278308fa6779dbf4a26368b00d370ca4e",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181684917",
+  "fichier": "box_scores/1181684917.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "66a3467814365fa1e83a252089b5e84c8a8eee403577455a35768d759a9c2e55",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181685768",
+  "fichier": "box_scores/1181685768.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "archive du suivi de Diomande",
+  "sha256": "ebe1a389f4f9cf7c1a8239c2c409d8d137d568ea030dbcbf24edc0f22109a701",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181686619",
+  "fichier": "box_scores/1181686619.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "4c0e8c2004c104f53b7c7fad0776dee73d920979a127743051d90ef0f805ee62",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181687470",
+  "fichier": "box_scores/1181687470.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "80dd4de65276b03956850d3fdfc82688c753673c36c465bb4f9bbfd3f2f29431",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181689172",
+  "fichier": "box_scores/1181689172.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "cd971cf2ee6be16fb71e4f99a2f7137b9377525a0311af1a260e489803421202",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181690874",
+  "fichier": "box_scores/1181690874.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "e60e2b486a4a66d8e4716f130d0dd73b6a67eabbbb7f3bc3a5f71bb10ba25305",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181692576",
+  "fichier": "box_scores/1181692576.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "02a2c25a9d7aedbae357ef6252a04aca661ff74b6d0673e3b808b17fc0952df2",
+  "vide": false
+ },
+ {
+  "championnat": "GER",
+  "cle": "box-score/1181694278",
+  "fichier": "box_scores/1181694278.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "c0ca86865e367876cca7b40f6596c84283c89e68d713766586c5597d58d111ca",
   "vide": false
  },
  {
@@ -13398,6 +13974,204 @@
   "ingere_le": "2026-10-31T08:30:01+00:00",
   "origine": "API",
   "sha256": "2a35192708e8456f4608f8d3aa0f8444297f45a1d4aab331640f6a39177e9f5d",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183851563",
+  "fichier": "box_scores/1183851563.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "13e586c5160b59a8f9dba74139084c631ec616074818efdc393110dc8dbfeab9",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183852414",
+  "fichier": "box_scores/1183852414.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "7e09ea762f9e78f7bd2205d7bbdbe2d00ffda46d7be5f7d74e5585b981679662",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183853265",
+  "fichier": "box_scores/1183853265.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "998c9d58e33c0e2f47386ce9f08faa094d2331d88616a594d148d4de9299e050",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183854116",
+  "fichier": "box_scores/1183854116.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "9a86782f7f12b10055b7491fbafe90e8c19f4ad19bd34ad7dd2ac65cfd66700a",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183854967",
+  "fichier": "box_scores/1183854967.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "e72747d20d2bade49e057a150b50e52ebcb9680ba18f546e5b29c2ad87e9667b",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183855818",
+  "fichier": "box_scores/1183855818.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "4dc16dd8fd248777f0fbb6461f8ed0eba933c275f64c0ef8a9203825f10867e1",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183856669",
+  "fichier": "box_scores/1183856669.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "cb401cb67e123fc8e16ba1fb125c87a829f0493a3a9267c09d127e6009234c50",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183857520",
+  "fichier": "box_scores/1183857520.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "b6924b639d79d9a19898010f84efce946eccb1ac8b392b6405e06b4850ddd289",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183858371",
+  "fichier": "box_scores/1183858371.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "bb737d8ca663e0114623dea1a9491e0f824c96a63adc6c75a6f7a006c03411c5",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183859222",
+  "fichier": "box_scores/1183859222.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "5c322e684aed383e49bc662236f659db1d683a24fe8d9c35405c74980e380244",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183860073",
+  "fichier": "box_scores/1183860073.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "63521ccdc34b2131c4060c3af4d96054ea643573a7d22f74874fc1dd4ba4e35c",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183860924",
+  "fichier": "box_scores/1183860924.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "63f0eb07c3b00c1d3d53faccd512f2abb567f1d4e0b6d3fdc8327ece932440a6",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183861775",
+  "fichier": "box_scores/1183861775.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "d13ca1823ec8d78e0a139fee8a09fc060d386a3ff1133165ad66af073243b0ef",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183862626",
+  "fichier": "box_scores/1183862626.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "73b6b4dfecebfeb5826c235ea9b4553fb87d44b9459b39d5f9570fd781a2e44d",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183863477",
+  "fichier": "box_scores/1183863477.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "437f32c5ffd5024bcba4c2225f7d7c9648e45c74c7cc576775c0a08bac79f2dc",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183864328",
+  "fichier": "box_scores/1183864328.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "e9ec29abb4e2fba57faf73af6f05444c120e70e12aca9086500c6ad4dac0d31b",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183865179",
+  "fichier": "box_scores/1183865179.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "4707709320e85d7fe8b1bbbac9a7cd7cc8997c1d512f2e00dbb0cdd2473d5310",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183866030",
+  "fichier": "box_scores/1183866030.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "3ba8525cc3d825982e62bd88096e0e368e35b5fc3ca7caf6fef1cac7500f06ae",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183866881",
+  "fichier": "box_scores/1183866881.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "36405f15e702c2d5dab6f39a1a575cb7bfab2b74e429fc068ae2773b06aad038",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183867732",
+  "fichier": "box_scores/1183867732.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "23daa784f2bae962c5242aeac02edc811bddd2a77a41de42fce925344c737556",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183872838",
+  "fichier": "box_scores/1183872838.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "f939a2d33020cb8d9879fdf3ff6315e4b1295caedbb19692359ff9e6972d5846",
+  "vide": false
+ },
+ {
+  "championnat": "ESP",
+  "cle": "box-score/1183876242",
+  "fichier": "box_scores/1183876242.json.gz",
+  "ingere_le": "2026-11-01T09:22:40+00:00",
+  "origine": "API",
+  "sha256": "ecb9f853177d385ebc3c6f5ed2d30b6b9bcaf96d1a2b1c126fd66a93b8a81ba9",
   "vide": false
  },
  {
