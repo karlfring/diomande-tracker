@@ -1,32 +1,32 @@
 {
  "arret": "réserve de 15 requêtes atteinte (15 restantes)",
  "box_scores": {
-  "archives": 1662,
+  "archives": 1748,
   "erreurs": 0,
   "total": 1751,
   "vides": 0
  },
  "complet": false,
- "maj": "2026-11-02T09:37:48+00:00",
+ "maj": "2026-11-03T09:40:47+00:00",
  "par_championnat": {
   "ENG": {
-   "box_scores": 359,
+   "box_scores": 380,
    "matchs_termines": 380
   },
   "ESP": {
-   "box_scores": 351,
+   "box_scores": 379,
    "matchs_termines": 380
   },
   "FRA": {
-   "box_scores": 295,
+   "box_scores": 305,
    "matchs_termines": 305
   },
   "GER": {
-   "box_scores": 297,
+   "box_scores": 306,
    "matchs_termines": 306
   },
   "ITA": {
-   "box_scores": 360,
+   "box_scores": 378,
    "matchs_termines": 380
   }
  },
