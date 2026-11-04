@@ -3402,6 +3402,24 @@
   "vide": false
  },
  {
+  "championnat": "ITA",
+  "cle": "box-score/1172884726",
+  "fichier": "box_scores/1172884726.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "origine": "API",
+  "sha256": "35ddb57f5b2995db84ad0b049d351a0131cc460e7c01d933a74abb61f8189103",
+  "vide": false
+ },
+ {
+  "championnat": "ITA",
+  "cle": "box-score/1172885577",
+  "fichier": "box_scores/1172885577.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "origine": "API",
+  "sha256": "bd94f8630b4a67da18493276aec786d018aeec04c84038c937b1c6d8306a23cf",
+  "vide": false
+ },
+ {
   "championnat": "ENG",
   "cle": "box-score/1173503403",
   "fichier": "box_scores/1173503403.json.gz",
@@ -15732,9 +15750,510 @@
   "vide": false
  },
  {
+  "championnat": "ESP",
+  "cle": "box-score/1183910282",
+  "fichier": "box_scores/1183910282.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "origine": "API",
+  "sha256": "c98d3c47c7c3a30983404ca2aa2e5f07763b79dbb79c498e80ff7b32c3d94436",
+  "vide": false
+ },
+ {
+  "cle": "players/101262",
+  "fichier": "profils/101262.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "4de75a7064fd0b9707157138e4488b17839dd7f8d210165dfdf6f8bc09aba0a0"
+ },
+ {
+  "cle": "players/101423",
+  "fichier": "profils/101423.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "6bc083c3036af780c7ab7089df2a4929176e6cc1a3b2a828e94ba44ce82ca14a"
+ },
+ {
+  "cle": "players/101745",
+  "fichier": "profils/101745.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "20e5e2b562306ff6253fa31a55f10eaa770323292b035b61e422e8ecbe680583"
+ },
+ {
+  "cle": "players/102550",
+  "fichier": "profils/102550.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "6a44b8f257321455e95575314fe232e6f715779c92c3e1ec6619ba87ad101446"
+ },
+ {
+  "cle": "players/102711",
+  "fichier": "profils/102711.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "c4474a66f54029595b30cca4cf8ffb9ac5b3534d7d03f3beb602747117466dd9"
+ },
+ {
+  "cle": "players/106253",
+  "fichier": "profils/106253.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "380a7e828b2c6044e8924b96eb87c22bd24580d91f54d0508a8185395b32847c"
+ },
+ {
+  "cle": "players/112371",
+  "fichier": "profils/112371.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "bf583612b6558aee71a0a2b68455f1881b7407c13aca3fb089b92f346b8ee993"
+ },
+ {
+  "cle": "players/115108",
+  "fichier": "profils/115108.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "8131329d10572a32571e209033f9a76271e04323a21ef9c877a642b8814bf648"
+ },
+ {
+  "cle": "players/115269",
+  "fichier": "profils/115269.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "6262073e21ad77eaba9267417e6de0ab8a89a536e04ee10a2600efb3ed64907f"
+ },
+ {
+  "cle": "players/116557",
+  "fichier": "profils/116557.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "44993ab83a391f04447932859f4c5e92611e6731e3a878ef858ab49b6112474b"
+ },
+ {
+  "cle": "players/117040",
+  "fichier": "profils/117040.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "33e7558cd6494e9e292adf8f5e000145ad0bcd46dfc0191e58b81c824f3b51f6"
+ },
+ {
+  "cle": "players/119938",
+  "fichier": "profils/119938.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "69849dbe12afa8ae76765b9ba4b047835518b35519b655adcdb9cbd63e92db75"
+ },
+ {
+  "cle": "players/120421",
+  "fichier": "profils/120421.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "a3c1fb8ffc6cd2e8897228672a841f7606a93ad287465dba3452abdc6ed98b82"
+ },
+ {
+  "cle": "players/12068",
+  "fichier": "profils/12068.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "cdae0f3086af7693916f6e80f075b1e2589995919fc2803910a45d89725efa36"
+ },
+ {
+  "cle": "players/121548",
+  "fichier": "profils/121548.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "2bff7006924741799bf8437b3718c9e67d77a35e253d10e8f0e41989829e0f10"
+ },
+ {
+  "cle": "players/121870",
+  "fichier": "profils/121870.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "4f38c72f507738b2f395acc11d46f8cf4f2b65a4af01114121238da42870b324"
+ },
+ {
+  "cle": "players/122836",
+  "fichier": "profils/122836.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "a6dd2d316eb013f4b2e7cc792a8f2b7e1daf12ad974e1b1a063583404815a4a9"
+ },
+ {
+  "cle": "players/125412",
+  "fichier": "profils/125412.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "b7cddd0dfe5d60b4f0557196aebdd51a2d9e1f34fe732df10603bad288a73ee4"
+ },
+ {
+  "cle": "players/126056",
+  "fichier": "profils/126056.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "67ea0ecbfeaa390b7e1b40fa4bdde8d5fa0a50cae639c6dbd69bd3df3a2add32"
+ },
+ {
+  "cle": "players/126700",
+  "fichier": "profils/126700.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "5e23f0e83d94b6341c7b68cfea60235054a5283b1ab3d41e88baafbe2e69f165"
+ },
+ {
+  "cle": "players/127666",
+  "fichier": "profils/127666.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "9d8aec415d27ad88651ddce7e01bee39f12bf94187fc644eff3fa94bda289799"
+ },
+ {
+  "cle": "players/127988",
+  "fichier": "profils/127988.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "9a39f1b986d0767fe9aff6e7acc20e09953e82ada438115c86f19bedacad7acb"
+ },
+ {
+  "cle": "players/13195",
+  "fichier": "profils/13195.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "8deb2fac1554b7abf8409cda5a9b7b7e74dd7f2782f3b586474075f7c7ab84a6"
+ },
+ {
+  "cle": "players/13517",
+  "fichier": "profils/13517.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "8b571274256691eaade99b000b65fc8079a8b13755429fe67a2adbc09469fd34"
+ },
+ {
+  "cle": "players/13839",
+  "fichier": "profils/13839.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "29452d2ba0eacc5c8cb430a2bc58f6ee40a63ee54d7d583e2d26b1e85fb5a779"
+ },
+ {
+  "cle": "players/16576",
+  "fichier": "profils/16576.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "b600c0543f4d1afb82e28f19b3ea242b18d7088c7dd2dc510b03ff8c13be044d"
+ },
+ {
+  "cle": "players/17381",
+  "fichier": "profils/17381.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "3446c809b7261a96d6705ec0e7b36fa3cdb1dd09c6bfeb3212195c70b5afd059"
+ },
+ {
+  "cle": "players/17703",
+  "fichier": "profils/17703.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "255febadb89f3c8170fdd193f4daab4a313238e8df566b712cbcddf95272d349"
+ },
+ {
+  "cle": "players/17864",
+  "fichier": "profils/17864.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "89ea72db09a0517afab3cccabc19a908ca3600849f36f8abf6597dc02a51601e"
+ },
+ {
+  "cle": "players/18830",
+  "fichier": "profils/18830.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "423532420d8f354bd34d666f5ac30c64112c9faeb1b6ed93883feb956a740a73"
+ },
+ {
+  "cle": "players/19474",
+  "fichier": "profils/19474.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "4a4408d5f89e38bcd5b4323abdcd5b4dede532702c4fa574339393bdaae8de67"
+ },
+ {
+  "cle": "players/23177",
+  "fichier": "profils/23177.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "95f3bc2854e7029aa83e81849ad03bdcb10bee6db8f1988de334a81f08ba8ab3"
+ },
+ {
+  "cle": "players/24787",
+  "fichier": "profils/24787.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "fe4376c946dbf07ad9a361f64ca669086bec75f66e585ce8732893492dcc5c39"
+ },
+ {
+  "cle": "players/28168",
+  "fichier": "profils/28168.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "120d2814e6a93e5fd41b6e12c1b48c315899b4c1beba1eaaced148628b6253e2"
+ },
+ {
+  "cle": "players/2891",
+  "fichier": "profils/2891.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "0a74835d8315f59ca7f6b1ef8ff84f3f1c11f3513ace7c66f57d0b73c6895c76"
+ },
+ {
+  "cle": "players/29778",
+  "fichier": "profils/29778.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "61d427f4e6651f1ec53ee2dce8a0b417036de72158fa6497fdadde9438ad7a59"
+ },
+ {
+  "cle": "players/32837",
+  "fichier": "profils/32837.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "22e1eb5c8bc2273f50abaf500a58ff496f3f48e4f3a7eff11c5b5ab3927fe0f1"
+ },
+ {
+  "cle": "players/3374",
+  "fichier": "profils/3374.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "85cec3a6433f58422c666dbca692496cd9c365979c62ec41461a47b2ba8c302a"
+ },
+ {
+  "cle": "players/34769",
+  "fichier": "profils/34769.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "3149d0a14cf9555d5a288a62003fd081380082cba2e0f8d95132f369b1965502"
+ },
+ {
+  "cle": "players/35091",
+  "fichier": "profils/35091.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "82e671e471de0df9314c623fbc4d68a58e01d68bfaa6a9db097fb870c6054e3a"
+ },
+ {
+  "cle": "players/35413",
+  "fichier": "profils/35413.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "99d72327e688202c37fa29ca191ef3232e32495165ca0b606088e9b76c14b37b"
+ },
+ {
+  "cle": "players/36540",
+  "fichier": "profils/36540.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "82e43de24a3390d62aa3bfba101735306a164e6875e44840ca1818987d38771a"
+ },
+ {
+  "cle": "players/3696",
+  "fichier": "profils/3696.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "4ffadaf6900d5a70ac433785b984baf4f1d8c5808d26a7a9a032b374ac622b71"
+ },
+ {
+  "cle": "players/37345",
+  "fichier": "profils/37345.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "26982a3b297750cfdb527328bdebb501462158c5d50949f081fb20c925f6576b"
+ },
+ {
+  "cle": "players/39921",
+  "fichier": "profils/39921.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "f481ea43f61f2c6b7e4a43c381702a7f2e4f651bdc1a7fbcc884f6aceae3c6eb"
+ },
+ {
+  "cle": "players/40243",
+  "fichier": "profils/40243.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "6ab02f3b10cefcbae95c7d6f419c43d9457eb62525e2750348dedf3f003d0a22"
+ },
+ {
+  "cle": "players/4340",
+  "fichier": "profils/4340.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "d944f4bd27a3210f456314e32ad571ae24e363c47d5950d6492bd4697ba896bb"
+ },
+ {
+  "cle": "players/43463",
+  "fichier": "profils/43463.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "d38b9f683c4fe48cb33e9c8abe35c041ae4e2e062d0c80dfaddc00c79e51cb49"
+ },
+ {
+  "cle": "players/43946",
+  "fichier": "profils/43946.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "6f87e52a620a370e859745ad676287749fad4fdf80a65084c306910a6b33a7cf"
+ },
+ {
+  "cle": "players/44912",
+  "fichier": "profils/44912.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "671ed59085d323f98168c5e65305216b8331cc49ee270614d64cf06ab801a00b"
+ },
+ {
+  "cle": "players/47166",
+  "fichier": "profils/47166.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "786a56de0d9801564f5333036d7e978c9f213986f7617808f998d046cbda8c0f"
+ },
+ {
+  "cle": "players/47327",
+  "fichier": "profils/47327.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "bfd385e71379b626ba73c20ec9cc0ec615ec0feb7762157cd27b6efbd8c10792"
+ },
+ {
+  "cle": "players/49420",
+  "fichier": "profils/49420.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "6968b060bc3099a2b28f1097771d4a3adbe94c66e890bfb71de66ebaae8581e7"
+ },
+ {
+  "cle": "players/52479",
+  "fichier": "profils/52479.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "31b3a18ae8b4f6b53edf5ea299ef6e16cb221d299857e261ae0b0ddc288b7979"
+ },
+ {
+  "cle": "players/52962",
+  "fichier": "profils/52962.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "1475463de99664378f295f714c61ee5bfbb0e191e71ab70cdb58ee97908d409a"
+ },
+ {
+  "cle": "players/53123",
+  "fichier": "profils/53123.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "5dd3899a352b109d1dc1155cc051f387a04a05ab5de83c3644341f5084a43eba"
+ },
+ {
+  "cle": "players/65681",
+  "fichier": "profils/65681.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "b8c9fdaac084a8d5e19369cdb7e3451112b3ad707923acd20e8cff97db4f5856"
+ },
+ {
+  "cle": "players/66003",
+  "fichier": "profils/66003.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "1c4b04ed8accd937d949d772211cd3b0a87b3e63000abffe7ec3118cbca26bb0"
+ },
+ {
+  "cle": "players/66808",
+  "fichier": "profils/66808.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "624d72f11f2100a0dfd518c157270800d6e0d48325a8ee99f8cfda162ea815b8"
+ },
+ {
+  "cle": "players/66969",
+  "fichier": "profils/66969.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "9be8099728fd9253672e91b9d733a1d4d5c9d063df15f3a7411f5736903fb32d"
+ },
+ {
+  "cle": "players/67452",
+  "fichier": "profils/67452.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "b75106507ed759297a9dbc1c28b186d7c58ec72ff2cf6e98c6de4a4cf3a53c9f"
+ },
+ {
+  "cle": "players/67935",
+  "fichier": "profils/67935.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "2fdeb50c8044034ecc3c3d1206457a49104eed8bbbd0afac025307be04c94fdb"
+ },
+ {
+  "cle": "players/7238",
+  "fichier": "profils/7238.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "3ae1db6aa088654ea96f2f4610f9d04647080fb9089ed36ccd074315cc500088"
+ },
+ {
+  "cle": "players/7399",
+  "fichier": "profils/7399.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "877dd3e1a7869bd753d9e80729dd40164285c885e5ed2ee19b366709bbe22e6a"
+ },
+ {
+  "cle": "players/77917",
+  "fichier": "profils/77917.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "119298b243da4c548eeec446475c34cb2937606bae4ea793282d4b1d375013ea"
+ },
+ {
+  "cle": "players/8043",
+  "fichier": "profils/8043.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "48ffb9bb64ccdebe1d054e3a480d4a8b94718bb9a9e44c9e8ff88d7408f7dbb8"
+ },
+ {
+  "cle": "players/80976",
+  "fichier": "profils/80976.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "6f3538f2457e3aef53f3369bab7b1330d421020e5e4e094809af8ef6edf3079e"
+ },
+ {
+  "cle": "players/8204",
+  "fichier": "profils/8204.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "2b0d6541fd4f68fb7a8d7734df907b2b606b16eca408ae6e21230e21b2cb083f"
+ },
+ {
+  "cle": "players/82264",
+  "fichier": "profils/82264.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "dec10b426b1502ad2736f330a54d08c80753b367e5b2ce3b2fa2384f6714bb1e"
+ },
+ {
+  "cle": "players/82425",
+  "fichier": "profils/82425.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "fda3a05761f528b39cadeec8243d2f72ff1c4f65d74668bc2708e7a8cfcd09f5"
+ },
+ {
+  "cle": "players/82586",
+  "fichier": "profils/82586.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "3fa58437883ae383a50016b7e0e22723358d8d53539278b336f01106ee2e77e0"
+ },
+ {
   "cle": "players/82718090",
   "fichier": "profils/82718090.json.gz",
   "ingere_le": "2026-10-14T14:51:07+00:00",
   "sha256": "a995a656c58c88f4b501dc09b168a7bf63228ed6a4ebafcb57f22de901c4c944"
+ },
+ {
+  "cle": "players/83713",
+  "fichier": "profils/83713.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "3ecf7ad1896fdcb48b4425b1336f88f3936578e3d3a80df60230152faab905ed"
+ },
+ {
+  "cle": "players/84035",
+  "fichier": "profils/84035.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "646e0ec390025ecaf6850458556d448b29f9108708ee711ab507893d90829997"
+ },
+ {
+  "cle": "players/86772",
+  "fichier": "profils/86772.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "b214ce782e201f0a12dd73c6b12c3e202634c003565d0c74894fe8c4d02ba415"
+ },
+ {
+  "cle": "players/87255",
+  "fichier": "profils/87255.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "ef07679ffc7f4ceb6bab69f374d188e567df03393b6762008b809cd465ead44c"
+ },
+ {
+  "cle": "players/87416",
+  "fichier": "profils/87416.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "0b3081a6e11dcbd7edc6aa5213c25ed0199458d8fd43c029afa26972b9674ba4"
+ },
+ {
+  "cle": "players/89026",
+  "fichier": "profils/89026.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "aaf6ee7b467fb2d23df95c9465fa6797aa3fbb188c867ed1d603e80d5eb91930"
+ },
+ {
+  "cle": "players/90797",
+  "fichier": "profils/90797.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "1aaa946fd1c90cb7700bed82bb9ecc2873fe9d3b4d91a39ebc1b2e944d430fde"
+ },
+ {
+  "cle": "players/9170",
+  "fichier": "profils/9170.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "87db273253fab1b356f1177f69ed12d33d2ef6a3f9935094c849c5a0f724a05b"
+ },
+ {
+  "cle": "players/92729",
+  "fichier": "profils/92729.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "07e84fbf3a4ee43c24f14180f654f25bdcf0b23b7f84bb1c3fc8058e044a0f10"
+ },
+ {
+  "cle": "players/9653",
+  "fichier": "profils/9653.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "3ea94920a3f681a2a3461aa0354e7713afd87811f3cc061e4b29ee269928193f"
+ },
+ {
+  "cle": "players/98042",
+  "fichier": "profils/98042.json.gz",
+  "ingere_le": "2026-11-04T09:26:34+00:00",
+  "sha256": "1615901a19e0227ef337548a30c649fbd58f37c84ba2c38628c71e35883370e7"
  }
 ]
