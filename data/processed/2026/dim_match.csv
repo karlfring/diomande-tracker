@@ -19,7 +19,7 @@ match_id,club,date_utc,statut_match,saison,competition_id,competition,officiel,j
 1336433310,Real Madrid,2026-10-25T20:00:00.000Z,Finished,2026,119924,La Liga,True,Regular Season - 10,False,450963,Barcelona,2.0,1.0,V
 1336445224,Real Madrid,2026-11-01T15:15:00.000Z,Finished,2026,119924,La Liga,True,Regular Season - 11,False,3970699,Racing Santander,3.0,0.0,V
 1391901490,Real Madrid,2026-11-04T17:45:00.000Z,Finished,2026,2486,UEFA Champions League,True,League Stage - 4,False,490109,AEK Athens FC,3.0,2.0,V
-1336454585,Real Madrid,2026-11-07T20:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 12,False,453516,Valencia,,,
+1336454585,Real Madrid,2026-11-07T20:00:00.000Z,Finished,2026,119924,La Liga,True,Regular Season - 12,False,453516,Valencia,3.0,0.0,V
 1336463095,Real Madrid,2026-11-22T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 13,True,458622,Celta de Vigo,,,
 1391994249,Real Madrid,2026-11-24T20:00:00.000Z,Not started,2026,2486,UEFA Champions League,True,League Stage - 5,True,168431,PSV Eindhoven,,,
 1336470754,Real Madrid,2026-11-29T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 14,True,462026,Alavés,,,
