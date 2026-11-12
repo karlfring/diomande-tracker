@@ -20,9 +20,10 @@ match_id,club,date_utc,statut_match,saison,competition_id,competition,officiel,j
 1336445224,Real Madrid,2026-11-01T15:15:00.000Z,Finished,2026,119924,La Liga,True,Regular Season - 11,False,3970699,Racing Santander,3.0,0.0,V
 1391901490,Real Madrid,2026-11-04T17:45:00.000Z,Finished,2026,2486,UEFA Champions League,True,League Stage - 4,False,490109,AEK Athens FC,3.0,2.0,V
 1336454585,Real Madrid,2026-11-07T20:00:00.000Z,Finished,2026,119924,La Liga,True,Regular Season - 12,False,453516,Valencia,3.0,0.0,V
-1336463095,Real Madrid,2026-11-22T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 13,True,458622,Celta de Vigo,,,
+1336463095,Real Madrid,2026-11-21T20:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 13,True,458622,Celta de Vigo,,,
 1391994249,Real Madrid,2026-11-24T20:00:00.000Z,Not started,2026,2486,UEFA Champions League,True,League Stage - 5,True,168431,PSV Eindhoven,,,
-1336470754,Real Madrid,2026-11-29T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 14,True,462026,Alavés,,,
+1336470754,Real Madrid,2026-11-28T20:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 14,True,462026,Alavés,,,
+1336548195,Real Madrid,2026-12-02T18:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 23,False,467132,Real Sociedad,,,
 1336474158,Real Madrid,2026-12-06T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 15,False,452665,Athletic Club,,,
 1391904894,Real Madrid,2026-12-09T20:00:00.000Z,Not started,2026,2486,UEFA Champions League,True,League Stage - 6,False,36526,Arsenal,,,
 1336487774,Real Madrid,2026-12-13T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 16,True,619461,Osasuna,,,
@@ -35,8 +36,8 @@ match_id,club,date_utc,statut_match,saison,competition_id,competition,officiel,j
 1392000206,Real Madrid,2027-01-27T20:00:00.000Z,Not started,2026,2486,UEFA Champions League,True,League Stage - 8,False,468834,Shakhtar Donetsk,,,
 1336538834,Real Madrid,2027-01-31T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 22,False,620312,Rayo Vallecano,,,
 1360114087,Real Madrid,2027-02-02T19:00:00.000Z,Not started,2026,473940,Super Cup,True,Semi-finals,False,467132,Real Sociedad,,,
-1336548195,Real Madrid,2027-02-07T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 23,False,467132,Real Sociedad,,,
 1336554152,Real Madrid,2027-02-14T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 24,True,452665,Athletic Club,,,
 1336565215,Real Madrid,2027-02-21T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 25,False,456920,Sevilla FC,,,
 1336573725,Real Madrid,2027-02-28T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 26,True,453516,Valencia,,,
 1336583086,Real Madrid,2027-03-07T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 27,False,454367,Villarreal,,,
+1336591596,Real Madrid,2027-03-14T16:00:00.000Z,Not started,2026,119924,La Liga,True,Regular Season - 28,True,460324,Espanyol,,,
