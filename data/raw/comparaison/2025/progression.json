@@ -1,13 +1,14 @@
 {
- "arret": "réserve de 15 requêtes atteinte (15 restantes)",
+ "ailiers": 203,
+ "arret": null,
  "box_scores": {
   "archives": 1751,
   "erreurs": 0,
   "total": 1751,
   "vides": 0
  },
- "complet": false,
- "maj": "2026-11-14T09:03:43+00:00",
+ "complet": true,
+ "maj": "2026-11-15T09:34:08+00:00",
  "par_championnat": {
   "ENG": {
    "box_scores": 380,
@@ -31,11 +32,11 @@
   }
  },
  "profils": {
-  "archives": 933,
+  "archives": 952,
   "candidats": 952,
   "erreurs": 0
  },
- "quota_restant": 15,
- "requetes": 85,
+ "quota_restant": 81,
+ "requetes": 19,
  "saison": 2025
 }

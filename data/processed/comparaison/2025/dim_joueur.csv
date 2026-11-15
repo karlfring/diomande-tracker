@@ -1,0 +1,953 @@
+player_id,poste_principal,postes_secondaires,pied
+2891,Right Winger,"Left Winger, Attacking Midfield",right
+3374,Defensive Midfield,"Centre-Back, Central Midfield",right
+3696,Left Winger,"Right Winger, Attacking Midfield",right
+4340,Right-Back,Right Midfield,right
+7238,Defensive Midfield,Central Midfield,right
+7399,Attacking Midfield,"Left Winger, Right Winger",left
+8043,Defensive Midfield,"Central Midfield, Right-Back",right
+8204,Central Midfield,Defensive Midfield,right
+9170,Second Striker,"Centre-Forward, Left Winger",left
+9653,Centre-Forward,"Left Winger, Second Striker",right
+12068,Defensive Midfield,"Central Midfield, Centre-Back",right
+13195,Right Midfield,"Right Winger, Right-Back",right
+13517,Left Winger,"Centre-Forward, Right Winger",right
+13839,Right Winger,"Centre-Forward, Second Striker",left
+16576,Right-Back,"Centre-Back, Left-Back",right
+17381,Left Winger,"Attacking Midfield, Right Winger",right
+17703,Attacking Midfield,"Central Midfield, Left Winger",right
+17864,Central Midfield,Defensive Midfield,right
+18830,Central Midfield,Defensive Midfield,right
+19474,Centre-Forward,"Right Winger, Left Winger",right
+23177,,,
+24787,Centre-Forward,"Right Winger, Left Winger",both
+28168,Attacking Midfield,Central Midfield,right
+29778,Centre-Forward,Second Striker,right
+32837,Central Midfield,"Defensive Midfield, Centre-Back",right
+34769,Centre-Forward,"Second Striker, Attacking Midfield",right
+35091,Centre-Forward,Second Striker,right
+35413,Right Winger,"Second Striker, Right Midfield",left
+36540,Right-Back,Right Midfield,right
+37345,Right-Back,"Centre-Back, Defensive Midfield",right
+39921,Left Winger,"Centre-Forward, Right Winger",right
+40243,Centre-Forward,"Right Winger, Left Winger",right
+43463,Centre-Forward,"Attacking Midfield, Left Winger",right
+43946,Central Midfield,"Defensive Midfield, Attacking Midfield",left
+44912,Centre-Forward,"Left Winger, Right Winger",right
+47166,Central Midfield,"Defensive Midfield, Right Midfield",right
+47327,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+49420,Right Winger,"Second Striker, Centre-Forward",left
+52479,Defensive Midfield,"Attacking Midfield, Central Midfield",right
+52962,Central Midfield,"Defensive Midfield, Attacking Midfield",left
+53123,Central Midfield,"Attacking Midfield, Defensive Midfield",both
+65681,Defensive Midfield,"Centre-Back, Central Midfield",right
+66003,Defensive Midfield,"Central Midfield, Attacking Midfield",left
+66808,Defensive Midfield,"Central Midfield, Centre-Back",right
+66969,Central Midfield,"Right Midfield, Attacking Midfield",right
+67452,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+67935,Centre-Forward,Right Winger,right
+77917,Left Winger,"Second Striker, Right Winger",both
+80976,Defensive Midfield,"Right-Back, Central Midfield",right
+82264,Second Striker,"Right Winger, Left Winger",right
+82425,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+82586,Attacking Midfield,"Right Winger, Left Winger",right
+83713,,,
+84035,Centre-Forward,,right
+86772,Central Midfield,Defensive Midfield,right
+87255,Central Midfield,"Attacking Midfield, Left Midfield",right
+87416,Defensive Midfield,Central Midfield,right
+89026,Right Winger,"Left Winger, Attacking Midfield",left
+90797,Left-Back,,left
+92729,Defensive Midfield,,right
+98042,Centre-Forward,Left Winger,right
+101262,Central Midfield,"Defensive Midfield, Attacking Midfield",left
+101423,Attacking Midfield,Central Midfield,right
+101745,Attacking Midfield,"Left Winger, Right Winger",left
+102550,Attacking Midfield,"Central Midfield, Right Winger",left
+102711,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+106253,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+112371,Left Winger,"Right Winger, Attacking Midfield",right
+115108,Attacking Midfield,Central Midfield,right
+115269,Attacking Midfield,"Central Midfield, Left Winger",right
+116557,Central Midfield,"Attacking Midfield, Left Winger",right
+117040,Second Striker,"Centre-Forward, Attacking Midfield",right
+119938,Right Winger,"Attacking Midfield, Left Winger",both
+120421,Defensive Midfield,"Centre-Back, Central Midfield",right
+121548,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+121870,Central Midfield,"Right Midfield, Right-Back",right
+122836,Left Winger,Centre-Forward,right
+125412,Defensive Midfield,"Central Midfield, Centre-Back",right
+126056,Attacking Midfield,"Central Midfield, Defensive Midfield",right
+126700,Second Striker,"Right Winger, Attacking Midfield",left
+127666,Attacking Midfield,"Left Winger, Right Winger",both
+127988,Centre-Forward,"Right Winger, Second Striker",left
+135716,Attacking Midfield,"Central Midfield, Second Striker",right
+138936,Left-Back,"Left Midfield, Right Midfield",right
+139097,Defensive Midfield,Central Midfield,right
+140707,Right Winger,"Left Winger, Attacking Midfield",left
+141029,Second Striker,"Right Winger, Centre-Forward",left
+141190,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+141351,Centre-Forward,"Left Winger, Right Winger",right
+141995,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+144249,Defensive Midfield,"Central Midfield, Right Midfield",right
+144410,Central Midfield,Defensive Midfield,right
+144571,Right Winger,"Centre-Forward, Second Striker",both
+145376,Defensive Midfield,Central Midfield,left
+145537,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+146503,Left Winger,"Centre-Forward, Right Winger",right
+146664,Second Striker,"Right Winger, Left Winger",right
+149079,Left Winger,"Right Winger, Centre-Forward",right
+149401,Attacking Midfield,"Left Winger, Right Winger",left
+149562,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+149884,Central Midfield,"Right Midfield, Attacking Midfield",right
+150045,Centre-Forward,"Left Winger, Right Winger",right
+153265,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+154231,Central Midfield,Defensive Midfield,right
+158578,Attacking Midfield,"Right Winger, Left Winger",right
+163408,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+175644,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+176449,Central Midfield,"Attacking Midfield, Defensive Midfield",left
+176610,Attacking Midfield,"Central Midfield, Right-Back",right
+177254,Centre-Forward,,left
+177415,Left Winger,"Right Winger, Attacking Midfield",right
+181118,Centre-Forward,"Right Winger, Second Striker",right
+181279,Central Midfield,"Defensive Midfield, Right Midfield",left
+182889,Centre-Forward,,right
+183372,Right-Back,"Right Midfield, Right Winger",right
+185304,Defensive Midfield,"Right Midfield, Right-Back",right
+186270,Defensive Midfield,Central Midfield,right
+186753,Central Midfield,"Attacking Midfield, Left Midfield",right
+187075,Attacking Midfield,"Central Midfield, Left Midfield",right
+187719,Centre-Forward,"Left Winger, Second Striker",right
+200277,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+203980,Central Midfield,Defensive Midfield,left
+204785,Defensive Midfield,"Central Midfield, Centre-Back",right
+212835,Attacking Midfield,Central Midfield,left
+212996,Defensive Midfield,"Attacking Midfield, Central Midfield",right
+213157,Attacking Midfield,"Left Winger, Second Striker",right
+218792,Attacking Midfield,"Left Winger, Central Midfield",right
+228291,Right Midfield,"Right Winger, Left Winger",right
+229096,Left Winger,"Right Winger, Left Midfield",right
+229901,Central Midfield,Defensive Midfield,right
+234248,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+234409,Defensive Midfield,"Left Winger, Right Winger",right
+234731,Central Midfield,"Attacking Midfield, Second Striker",both
+235214,Right Winger,"Left Winger, Right Midfield",left
+235375,Attacking Midfield,"Left Winger, Central Midfield",right
+235697,Central Midfield,"Attacking Midfield, Right Midfield",right
+235858,Defensive Midfield,Central Midfield,left
+236019,Centre-Forward,"Right Winger, Left Winger",right
+236663,,,
+239239,Attacking Midfield,"Central Midfield, Second Striker",right
+241010,Centre-Forward,"Left Winger, Right Winger",left
+254212,Attacking Midfield,Central Midfield,left
+264033,Central Midfield,"Defensive Midfield, Attacking Midfield",left
+264194,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+265160,Attacking Midfield,"Central Midfield, Left Midfield",left
+269346,Attacking Midfield,"Right Winger, Left Winger",left
+273049,Central Midfield,"Attacking Midfield, Left Winger",both
+273210,Right Winger,"Left Winger, Right Midfield",left
+273371,Central Midfield,"Attacking Midfield, Right Winger",right
+273854,Central Midfield,"Attacking Midfield, Right Winger",left
+274015,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+274981,Centre-Forward,Right Winger,left
+281582,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+293979,Defensive Midfield,Central Midfield,right
+298326,Defensive Midfield,"Attacking Midfield, Central Midfield",right
+300097,Centre-Forward,,right
+300258,Right Winger,"Left Winger, Right Midfield",left
+306698,Defensive Midfield,"Centre-Back, Central Midfield",right
+307664,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+308308,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+309596,Right Winger,"Attacking Midfield, Second Striker",left
+310884,Left-Back,"Right-Back, Right Midfield",right
+311528,Defensive Midfield,Central Midfield,right
+312172,Central Midfield,"Attacking Midfield, Defensive Midfield",left
+312333,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+313299,Centre-Forward,"Second Striker, Right Winger",right
+313460,Left Winger,"Second Striker, Centre-Forward",right
+327306,Centre-Forward,,right
+331975,Left Winger,"Right Winger, Attacking Midfield",left
+332297,Centre-Forward,,right
+351295,Right Winger,"Left Winger, Left-Back",left
+351456,Right Winger,"Attacking Midfield, Left Winger",left
+354998,Defensive Midfield,"Central Midfield, Right Midfield",right
+355481,Central Midfield,"Defensive Midfield, Left-Back",left
+356608,Right Winger,Left Winger,left
+356769,Left Winger,"Right Winger, Centre-Forward",right
+357252,Right Winger,"Second Striker, Left Winger",right
+367073,,,
+368200,Right-Back,"Right Midfield, Left Midfield",right
+369166,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+369649,Centre-Forward,,left
+370132,Left Winger,"Right Winger, Attacking Midfield",right
+370293,Right Winger,"Left Winger, Attacking Midfield",both
+380114,Left-Back,Left Midfield,left
+388647,Centre-Forward,"Left Winger, Right Winger",right
+396375,Centre-Forward,,right
+398790,Defensive Midfield,Central Midfield,right
+400883,Left Winger,,right
+401044,Defensive Midfield,"Central Midfield, Centre-Back",right
+401849,Centre-Forward,,right
+406196,Centre-Forward,,right
+418432,Right Winger,"Right Midfield, Attacking Midfield",left
+418915,Central Midfield,Attacking Midfield,right
+429702,Centre-Forward,,right
+436464,Left Winger,"Attacking Midfield, Right Winger",right
+440489,Defensive Midfield,Central Midfield,right
+442743,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+444997,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+447895,Left Winger,"Second Striker, Right Winger",right
+450793,Second Striker,"Left Winger, Attacking Midfield",right
+452081,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+454657,Central Midfield,Defensive Midfield,right
+464961,Centre-Forward,,right
+468020,Attacking Midfield,"Centre-Forward, Central Midfield",left
+469791,Central Midfield,Defensive Midfield,right
+470596,Defensive Midfield,"Central Midfield, Centre-Back",right
+471240,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+473011,Central Midfield,"Defensive Midfield, Centre-Back",right
+473172,Central Midfield,"Attacking Midfield, Right Midfield",right
+473333,Centre-Forward,,right
+481544,Defensive Midfield,Central Midfield,right
+484281,Right-Back,"Right Midfield, Right Winger",right
+496034,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+522760,Right Winger,"Centre-Forward, Second Striker",left
+548520,Central Midfield,Defensive Midfield,right
+552384,Centre-Forward,"Second Striker, Right Winger",right
+581042,Central Midfield,Defensive Midfield,right
+708393,Central Midfield,"Right Midfield, Defensive Midfield",right
+965510,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+966476,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+967603,Centre-Forward,"Right Winger, Left Winger",right
+967764,Centre-Forward,Second Striker,right
+975170,Central Midfield,Defensive Midfield,right
+976941,Attacking Midfield,"Left Winger, Right Winger",right
+1027817,Central Midfield,Attacking Midfield,right
+1032003,,,
+1045044,Centre-Forward,,right
+1072736,Right Winger,"Centre-Forward, Attacking Midfield",right
+1081430,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+1138907,Left Winger,"Centre-Forward, Right Winger",both
+1179801,Left Midfield,"Left-Back, Left Winger",left
+1179962,Defensive Midfield,"Central Midfield, Centre-Back",right
+1180606,Central Midfield,Attacking Midfield,left
+1180928,Right Winger,"Centre-Forward, Left Winger",left
+1217636,Attacking Midfield,"Central Midfield, Left Midfield",right
+1365917,Left Winger,"Left Midfield, Right Winger",right
+1366883,Centre-Forward,Second Striker,both
+1367366,Centre-Forward,"Right Winger, Left Winger",left
+1382500,Right-Back,"Centre-Back, Right Midfield",right
+1397634,Defensive Midfield,Central Midfield,right
+1507597,Left Winger,"Right Winger, Attacking Midfield",right
+1508080,Centre-Forward,Second Striker,right
+1605485,Right Winger,Left Winger,left
+1622551,Right Midfield,"Right Winger, Left Midfield",right
+1625771,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+1631889,Central Midfield,Defensive Midfield,right
+1637363,Defensive Midfield,Central Midfield,right
+1663123,Centre-Forward,"Left Winger, Second Striker",right
+2207142,Right Winger,"Attacking Midfield, Left Winger",right
+2211650,Right-Back,"Right Midfield, Centre-Back",right
+2306801,Left-Back,Left Midfield,left
+2317749,Defensive Midfield,"Centre-Back, Right-Back",right
+2461200,Right Winger,"Left Winger, Right Midfield",left
+2510466,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+2523507,Defensive Midfield,Central Midfield,right
+2556995,Defensive Midfield,Central Midfield,right
+2561342,Attacking Midfield,"Left Winger, Central Midfield",right
+2561503,Left-Back,"Left Midfield, Centre-Back",left
+2561825,Right Winger,"Attacking Midfield, Left Winger",left
+2993466,Left Winger,"Right Winger, Attacking Midfield",right
+3018260,Attacking Midfield,"Central Midfield, Right Winger",right
+3021480,,,
+3021641,Left Winger,"Second Striker, Right Winger",right
+3023412,Left Winger,"Left Midfield, Attacking Midfield",right
+3025022,Centre-Forward,,right
+3027920,Central Midfield,"Left Midfield, Right Midfield",left
+3030335,Right Winger,"Left Winger, Attacking Midfield",left
+3038224,Right Winger,"Attacking Midfield, Second Striker",left
+3038546,Central Midfield,"Defensive Midfield, Right Midfield",right
+3040317,Centre-Forward,,right
+3043215,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+3044020,Centre-Forward,"Second Striker, Left Winger",right
+3047723,Left Winger,"Attacking Midfield, Right Winger",left
+3048045,Centre-Forward,,right
+3054324,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+3055773,Centre-Forward,,right
+3063984,Central Midfield,"Attacking Midfield, Defensive Midfield",left
+3070585,Attacking Midfield,"Right Winger, Left Winger",right
+3079762,Left Winger,Right Winger,left
+3085397,Right Winger,"Left Winger, Right Midfield",right
+3086524,Attacking Midfield,"Right Winger, Left Winger",right
+3088939,Centre-Forward,Second Striker,left
+3089261,Left Winger,"Attacking Midfield, Left Midfield",right
+3089905,Right Midfield,"Attacking Midfield, Central Midfield",left
+3090066,Central Midfield,"Attacking Midfield, Left Midfield",right
+3091515,,,
+3094574,Attacking Midfield,"Central Midfield, Left Midfield",right
+3094735,Right Winger,"Left Winger, Attacking Midfield",left
+3098599,Attacking Midfield,"Left Winger, Right Winger",left
+3104395,Right Winger,"Left Winger, Centre-Forward",both
+3118080,Centre-Forward,"Left Winger, Right Winger",right
+3128062,Right Winger,"Centre-Forward, Second Striker",left
+3133375,,,
+3137078,Centre-Forward,"Right Winger, Left Winger",right
+3143518,Centre-Forward,"Left Winger, Right Winger",right
+3153500,Attacking Midfield,"Left Winger, Central Midfield",right
+3158491,Right Winger,Attacking Midfield,left
+3159779,Left Winger,"Centre-Forward, Attacking Midfield",right
+3191818,Left-Back,Left Midfield,left
+3192301,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+3304679,Left-Back,"Left Midfield, Centre-Back",left
+3305323,Right Winger,"Attacking Midfield, Left Winger",left
+3306128,Left Winger,"Centre-Forward, Right Winger",right
+3306289,Centre-Forward,,right
+3309348,Central Midfield,Defensive Midfield,right
+3309992,Central Midfield,Defensive Midfield,right
+3314983,Right Winger,"Second Striker, Centre-Forward",left
+3322228,Attacking Midfield,"Central Midfield, Left Midfield",right
+3322872,Central Midfield,"Attacking Midfield, Left Midfield",right
+3327219,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+3331566,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+3332210,Central Midfield,,left
+3333498,Left Winger,"Right Winger, Centre-Forward",right
+3345734,Left Winger,"Right Winger, Attacking Midfield",right
+3346378,Right Winger,"Right Midfield, Left Winger",right
+3351691,Centre-Forward,Right Winger,right
+3356038,Right Winger,"Left Winger, Attacking Midfield",left
+3367791,Defensive Midfield,Central Midfield,right
+3374553,,,
+3381798,Defensive Midfield,Central Midfield,right
+3382764,Defensive Midfield,Central Midfield,right
+3395161,Defensive Midfield,"Centre-Back, Central Midfield",right
+3397576,Central Midfield,"Defensive Midfield, Right-Back",right
+3397898,Centre-Forward,"Right Winger, Left Winger",right
+3444427,Centre-Forward,,right
+3461171,Right Midfield,"Attacking Midfield, Right Winger",left
+3463103,Centre-Forward,"Left Winger, Second Striker",right
+3472602,Right-Back,"Right Midfield, Left-Back",right
+3475661,Defensive Midfield,Central Midfield,right
+3484194,Central Midfield,Defensive Midfield,left
+3496269,Left Winger,"Centre-Forward, Right Winger",right
+3543281,Left-Back,"Left Midfield, Right-Back",left
+3544569,Centre-Forward,"Second Striker, Right Winger",right
+3557771,Right Winger,"Left Winger, Centre-Forward",both
+3565821,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+3566143,Defensive Midfield,"Central Midfield, Centre-Back",right
+3569524,Defensive Midfield,Central Midfield,right
+3569685,Attacking Midfield,"Central Midfield, Defensive Midfield",left
+3577896,Right-Back,"Right Midfield, Centre-Back",right
+3579023,Right Winger,"Attacking Midfield, Left Winger",left
+3580150,Left Winger,"Centre-Forward, Second Striker",right
+3580633,Defensive Midfield,"Centre-Back, Central Midfield",right
+3583048,Central Midfield,,right
+3584175,Central Midfield,Attacking Midfield,right
+3584658,Centre-Forward,,left
+3677716,Centre-Forward,,left
+3761597,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+3887821,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+3967355,Centre-Forward,,both
+3992632,Left Winger,"Right Winger, Second Striker",right
+3993920,Central Midfield,"Attacking Midfield, Left-Back",left
+4000199,Right-Back,"Right Midfield, Left-Back",right
+4000682,Right-Back,"Right Midfield, Centre-Back",right
+4001648,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+4005834,Right Midfield,"Left Midfield, Right Winger",right
+4007122,Centre-Forward,"Left Winger, Right Winger",right
+4009698,Defensive Midfield,Central Midfield,right
+4017909,Left Winger,"Left-Back, Left Midfield",left
+4019197,Defensive Midfield,Centre-Back,right
+4026442,Right-Back,"Right Midfield, Left Midfield",right
+4036907,Defensive Midfield,"Central Midfield, Left-Back",left
+4064116,Left Winger,"Second Striker, Centre-Forward",right
+4072971,Centre-Forward,Second Striker,left
+4073454,Defensive Midfield,"Central Midfield, Centre-Back",right
+4075547,Right Winger,"Left Winger, Left-Back",left
+4081987,Right Midfield,"Left Midfield, Right-Back",right
+4086334,Right Winger,"Left Winger, Attacking Midfield",right
+4088105,Centre-Forward,,right
+4089554,Central Midfield,"Left-Back, Left Midfield",left
+4090842,Central Midfield,"Attacking Midfield, Defensive Midfield",left
+4091647,Central Midfield,"Attacking Midfield, Defensive Midfield",left
+4099375,Attacking Midfield,"Central Midfield, Left Midfield",left
+4127389,Attacking Midfield,Right Winger,right
+4127872,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+4172308,Left-Back,Left Midfield,left
+4172469,Left-Back,"Right-Back, Left Midfield",right
+4174240,Centre-Forward,Second Striker,right
+4174401,Centre-Forward,,right
+4213685,Centre-Forward,,right
+4226082,Left Winger,"Attacking Midfield, Left Midfield",right
+4226243,Central Midfield,"Right Midfield, Attacking Midfield",right
+4227209,Centre-Forward,"Second Striker, Right Winger",right
+4236869,Left Winger,"Right Winger, Centre-Forward",left
+4262629,Centre-Forward,Second Striker,both
+4322199,Centre-Forward,,right
+4372431,Right-Back,Right Midfield,right
+4569656,Centre-Forward,,right
+4896808,Centre-Forward,,right
+4896969,Centre-Forward,,left
+4899706,Defensive Midfield,"Central Midfield, Centre-Back",right
+4900672,Left Winger,"Second Striker, Right Winger",right
+4900994,Centre-Forward,,right
+4908722,Right Winger,"Right Midfield, Left Winger",left
+4911459,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+4912264,Left Winger,"Right Winger, Attacking Midfield",right
+4915645,Left Winger,"Attacking Midfield, Second Striker",right
+4915967,Defensive Midfield,Central Midfield,right
+4916611,Right Winger,Second Striker,left
+4917416,Attacking Midfield,"Right Winger, Centre-Forward",left
+4917577,Second Striker,"Left Winger, Centre-Forward",right
+4917738,Centre-Forward,,right
+4919992,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+4920475,Central Midfield,"Defensive Midfield, Centre-Back",right
+4941244,Defensive Midfield,Central Midfield,right
+4946557,,,
+4951387,,,
+4954929,Left-Back,"Right-Back, Left Midfield",left
+4956539,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+4960564,Defensive Midfield,Central Midfield,left
+4979401,Defensive Midfield,Central Midfield,left
+4981011,Left Winger,"Attacking Midfield, Second Striker",right
+4992764,Left-Back,"Left Midfield, Centre-Back",left
+4994535,Defensive Midfield,Central Midfield,right
+5000170,Defensive Midfield,Central Midfield,right
+5006288,Centre-Forward,,right
+5013211,Right-Back,"Right Midfield, Left-Back",right
+5014660,Defensive Midfield,Central Midfield,right
+5025125,Central Midfield,"Left Midfield, Attacking Midfield",right
+5026413,Left Winger,"Right Winger, Right Midfield",right
+5035107,Central Midfield,"Defensive Midfield, Attacking Midfield",left
+5042352,Centre-Forward,Right Winger,left
+5056520,Centre-Forward,,right
+5061350,Centre-Forward,Second Striker,left
+5071493,Centre-Forward,,right
+5072781,Left Winger,"Right Winger, Second Striker",right
+5081314,,,
+5091618,Right Winger,"Right Midfield, Left Winger",right
+5100312,Central Midfield,"Right Midfield, Right-Back",right
+5290936,Right Winger,"Attacking Midfield, Left Winger",left
+5307680,,,
+5339719,Centre-Back,Defensive Midfield,right
+5456283,Defensive Midfield,,both
+5940893,Central Midfield,"Defensive Midfield, Attacking Midfield",left
+5941376,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+5943630,Right-Back,"Right Midfield, Right Winger",right
+5945401,Centre-Forward,"Attacking Midfield, Central Midfield",right
+5953934,Central Midfield,"Attacking Midfield, Left Midfield",right
+5977601,Attacking Midfield,"Right Winger, Central Midfield",left
+5981787,Defensive Midfield,Central Midfield,left
+6027511,Central Midfield,"Right Midfield, Defensive Midfield",both
+6027833,Centre-Forward,Left Winger,right
+6062126,Central Midfield,Defensive Midfield,right
+6073718,Left Winger,Right Winger,right
+6079353,Centre-Forward,"Right Winger, Attacking Midfield",right
+6099156,Right Winger,"Attacking Midfield, Left Winger",left
+6108172,Left Winger,"Centre-Forward, Right Winger",right
+6238421,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+6238743,Central Midfield,"Defensive Midfield, Attacking Midfield",left
+6238904,Centre-Forward,,right
+6246632,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+6297669,Right Midfield,"Left Midfield, Right Winger",left
+6298635,Left Winger,"Right Winger, Second Striker",right
+6302177,Central Midfield,Attacking Midfield,left
+6337436,Right-Back,"Right Midfield, Left-Back",right
+6530314,Left Winger,"Attacking Midfield, Right Winger",right
+6535788,Centre-Forward,,left
+6617898,Defensive Midfield,,right
+6626431,Attacking Midfield,"Central Midfield, Second Striker",right
+6690026,Central Midfield,"Defensive Midfield, Centre-Back",right
+6695339,Centre-Forward,,right
+6717879,Attacking Midfield,"Central Midfield, Right Winger",left
+6776000,Centre-Forward,"Attacking Midfield, Second Striker",right
+7179788,Right-Back,Right Midfield,right
+7215208,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+7388766,Centre-Forward,Right Winger,right
+7512092,Right Winger,"Left Winger, Attacking Midfield",left
+7512736,Central Midfield,"Right Midfield, Right-Back",right
+7520625,Central Midfield,Attacking Midfield,right
+7523845,Left-Back,Left Midfield,left
+7526260,Centre-Forward,,left
+7533344,Right Winger,Right-Back,right
+7534793,,,
+7548961,Central Midfield,,right
+7555884,Centre-Forward,"Right Winger, Left Winger",right
+7556367,Right Winger,Left Winger,left
+7568281,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+7569247,Centre-Forward,"Right Winger, Left Winger",right
+7580839,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+7584703,Central Midfield,Defensive Midfield,right
+7596295,,,
+7596456,Left Winger,"Right Winger, Attacking Midfield",right
+7603379,Left Winger,"Right Winger, Centre-Forward",left
+7608692,Central Midfield,Defensive Midfield,right
+7609658,Centre-Forward,"Right Winger, Left Winger",left
+7613039,Central Midfield,Attacking Midfield,right
+7614005,Centre-Forward,,right
+7614488,Centre-Forward,Right Winger,right
+7617225,Central Midfield,"Centre-Forward, Attacking Midfield",left
+7617869,Defensive Midfield,Central Midfield,right
+7618191,Left Winger,Right Winger,right
+7619157,Centre-Forward,"Left Winger, Right Winger",left
+7621250,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+7622055,Defensive Midfield,Central Midfield,left
+7623182,Centre-Forward,,right
+7630910,,,
+7631232,,,
+7633808,Defensive Midfield,"Central Midfield, Centre-Back",left
+7637189,Central Midfield,Defensive Midfield,right
+7637672,Central Midfield,,right
+7637833,Defensive Midfield,Central Midfield,right
+7637994,Attacking Midfield,"Central Midfield, Right Winger",left
+7638799,Centre-Forward,Right Winger,left
+7641697,Defensive Midfield,"Central Midfield, Centre-Back",right
+7643146,Centre-Forward,,right
+7650230,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+7651196,Central Midfield,Defensive Midfield,right
+7654255,Central Midfield,"Attacking Midfield, Defensive Midfield",both
+7654577,Left Winger,Right Winger,both
+7659568,Attacking Midfield,"Central Midfield, Left Winger",right
+7660856,Centre-Forward,,right
+7735721,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+7760032,,,
+7789012,Right-Back,Right Midfield,right
+7790783,Left Winger,"Right Winger, Second Striker",right
+7803019,Central Midfield,"Left Midfield, Attacking Midfield",right
+7803985,Left Winger,"Right Winger, Attacking Midfield",right
+7806883,Left-Back,"Left Midfield, Central Midfield",left
+7831516,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+7832482,Right Winger,"Right Midfield, Left Winger",right
+8057882,Centre-Forward,,left
+8169133,,,
+8187970,Centre-Forward,,right
+8189097,Defensive Midfield,"Centre-Back, Central Midfield",right
+8204070,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+8213730,Right Winger,Left Winger,right
+8290688,Defensive Midfield,Central Midfield,right
+8296484,Centre-Forward,,left
+9063327,Right Midfield,"Defensive Midfield, Central Midfield",right
+9106314,Central Midfield,Attacking Midfield,left
+9153165,Central Midfield,"Left Midfield, Attacking Midfield",right
+9248960,Centre-Forward,,right
+10688461,,,
+10757691,Centre-Forward,,right
+10930283,Attacking Midfield,"Left Winger, Right Winger",right
+10938333,Attacking Midfield,"Central Midfield, Left Winger",right
+10943646,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+11390421,Attacking Midfield,"Left Winger, Centre-Forward",right
+11665731,Centre-Forward,"Right Winger, Left Winger",right
+13001226,,,
+13496945,Right Winger,"Attacking Midfield, Second Striker",left
+13538000,Right Winger,"Left Winger, Attacking Midfield",right
+13538161,Centre-Forward,"Right Winger, Left Winger",right
+13544762,Left Winger,"Attacking Midfield, Right Winger",right
+13559252,Right-Back,"Defensive Midfield, Central Midfield",right
+13691755,Centre-Forward,"Left Winger, Second Striker",right
+14412874,Central Midfield,"Right Midfield, Left Midfield",left
+14585144,,,
+14585788,Right Midfield,"Left Midfield, Central Midfield",right
+14589491,Centre-Forward,"Left Winger, Right Winger",right
+14708792,Left-Back,Left Midfield,left
+14719096,Right-Back,"Right Midfield, Left Midfield",right
+14771099,Centre-Forward,"Second Striker, Right Winger",right
+15928850,Centre-Forward,,right
+16876335,,,
+16896943,Central Midfield,Attacking Midfield,right
+17183201,Defensive Midfield,"Central Midfield, Centre-Back",left
+17200589,,,
+17203165,Centre-Forward,"Attacking Midfield, Left Winger",right
+17258388,Central Midfield,"Attacking Midfield, Right Winger",right
+17734787,Centre-Forward,,right
+18609983,Centre-Forward,,right
+18694991,Defensive Midfield,"Central Midfield, Right-Back",right
+19152070,Left Winger,Right Winger,right
+19760328,Right Winger,"Centre-Forward, Left Winger",right
+20163633,Defensive Midfield,"Central Midfield, Centre-Back",right
+20244777,Centre-Forward,,right
+20389516,Right Winger,"Left Winger, Attacking Midfield",right
+20397244,Centre-Forward,"Right Winger, Left Winger",left
+20442968,Attacking Midfield,Central Midfield,left
+20443934,Right-Back,"Left-Back, Right Midfield",right
+20448925,Left-Back,"Right-Back, Left Midfield",both
+20515740,,,
+20546813,Central Midfield,Defensive Midfield,right
+20570963,Left Winger,Right Winger,right
+20654361,Defensive Midfield,Central Midfield,right
+20663216,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+20669978,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+20672232,Attacking Midfield,Central Midfield,right
+20685112,Centre-Forward,"Left Winger, Right Winger",right
+20693967,Right Winger,"Left Winger, Second Striker",both
+20701856,Right Winger,"Left Winger, Centre-Forward",right
+20745487,Left-Back,Left Midfield,left
+20766739,Attacking Midfield,"Right Winger, Left Winger",right
+20767061,Defensive Midfield,Central Midfield,right
+20792016,,,
+20878312,Central Midfield,Attacking Midfield,right
+20878956,Left Winger,"Right Winger, Second Striker",left
+20880727,Right Winger,"Left Winger, Centre-Forward",left
+20883625,Right Winger,Left Winger,right
+20884752,Attacking Midfield,"Central Midfield, Left Midfield",right
+21179060,Attacking Midfield,"Left Winger, Right Winger",left
+21511203,Central Midfield,Attacking Midfield,right
+21530523,Left Winger,"Centre-Forward, Right Winger",right
+21723240,Attacking Midfield,"Left Winger, Centre-Forward",right
+21818713,Right Winger,,left
+21855743,Left Winger,"Right Winger, Attacking Midfield",right
+21859929,Left Winger,"Attacking Midfield, Right Winger",right
+21910161,Left-Back,"Left Midfield, Right-Back",left
+22012557,Right Winger,Left Winger,left
+22090964,Defensive Midfield,Central Midfield,left
+22105937,Right Winger,"Centre-Forward, Left Winger",right
+22343090,Left Winger,"Right Winger, Centre-Forward",right
+22344861,Left Winger,"Right Winger, Centre-Forward",right
+22352589,Centre-Forward,,right
+22364342,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+22368689,Central Midfield,Attacking Midfield,right
+22379315,,,
+23156945,Right Midfield,"Defensive Midfield, Attacking Midfield",right
+23235513,Centre-Forward,,right
+23303294,Central Midfield,Attacking Midfield,right
+23600500,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+23627065,Centre-Forward,,right
+23800945,Centre-Forward,"Right Winger, Left Winger",right
+23805453,Attacking Midfield,"Centre-Forward, Right Winger",left
+23844093,Attacking Midfield,"Central Midfield, Defensive Midfield",left
+23900282,Right-Back,"Right Midfield, Left Midfield",right
+24609970,Centre-Forward,,both
+24630256,Attacking Midfield,"Right Winger, Centre-Forward",left
+24702384,Right Winger,"Left Winger, Centre-Forward",both
+25191019,Left Winger,"Right Winger, Centre-Forward",right
+25192951,Attacking Midfield,"Right Winger, Left Winger",both
+25423986,Defensive Midfield,Central Midfield,right
+25436222,Right-Back,"Left-Back, Centre-Back",right
+25437671,Right Winger,"Right Midfield, Attacking Midfield",left
+25446848,Centre-Forward,"Attacking Midfield, Second Striker",right
+25541838,Centre-Forward,"Right Winger, Left Winger",right
+26012763,Central Midfield,,left
+26015339,Right Winger,"Left Winger, Second Striker",left
+26021135,Right Winger,"Right Midfield, Centre-Forward",left
+26021296,Centre-Forward,"Left Winger, Right Winger",right
+26029024,Centre-Forward,Left Winger,left
+26066698,Left Winger,"Right Winger, Centre-Forward",right
+26069596,Right Winger,"Left Winger, Right Midfield",right
+26071367,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+26073782,Centre-Forward,Right Winger,right
+26076197,Left Winger,Left-Back,left
+26084730,Attacking Midfield,"Left Winger, Right Winger",right
+26087306,Left-Back,"Left Midfield, Right Midfield",left
+26088111,Attacking Midfield,"Left Winger, Central Midfield",right
+26101957,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+26102440,Second Striker,"Centre-Forward, Left Winger",right
+26102601,Right Winger,"Left Winger, Centre-Forward",right
+26124980,Central Midfield,"Attacking Midfield, Defensive Midfield",left
+26154926,Right-Back,"Centre-Back, Left-Back",right
+26159434,Defensive Midfield,Centre-Back,right
+26177144,,,
+26192600,,,
+26195981,Centre-Forward,,right
+26196786,Right-Back,"Centre-Back, Right Midfield",right
+26197108,Defensive Midfield,Central Midfield,right
+26206607,Centre-Forward,"Right Winger, Left Winger",right
+26228181,Right-Back,"Centre-Back, Right Midfield",right
+26232045,Right Winger,Left Winger,right
+26243798,Centre-Forward,,right
+26246696,Defensive Midfield,Central Midfield,left
+26248306,Central Midfield,"Defensive Midfield, Attacking Midfield",left
+28105119,Centre-Forward,,right
+28114779,Right-Back,Right Midfield,right
+28120414,Right-Back,Right Midfield,right
+28127337,Right Midfield,"Right-Back, Left Midfield",right
+28128142,Central Midfield,"Right Midfield, Defensive Midfield",right
+28130718,Centre-Forward,"Right Winger, Left Winger",right
+28161469,Right Winger,"Centre-Forward, Left Winger",right
+28165011,Central Midfield,Defensive Midfield,left
+28604219,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+28627081,Right Winger,"Centre-Forward, Left Winger",right
+28670551,Left Winger,"Right Winger, Centre-Forward",right
+28675220,Centre-Forward,"Attacking Midfield, Left Winger",right
+28772303,Defensive Midfield,,right
+28778743,Attacking Midfield,Central Midfield,left
+28806435,Centre-Forward,"Left Winger, Right Winger",right
+28954877,Defensive Midfield,Central Midfield,right
+28972909,Right-Back,Left-Back,right
+29060010,Centre-Forward,"Left Winger, Second Striker",right
+29070314,Attacking Midfield,Central Midfield,right
+29182853,Left-Back,Left Winger,left
+29208935,Left Winger,Right Winger,right
+29287342,Right Winger,"Right Midfield, Right-Back",right
+29334515,Left-Back,Left Midfield,left
+29337413,Left Winger,"Attacking Midfield, Right Winger",right
+29380400,Central Midfield,Attacking Midfield,right
+29385713,Left Winger,"Attacking Midfield, Right Winger",right
+29399237,Central Midfield,"Defensive Midfield, Centre-Back",left
+29402135,Defensive Midfield,Central Midfield,right
+29410668,,,
+29426124,Attacking Midfield,Right Winger,left
+29426446,Right-Back,"Right Winger, Central Midfield",right
+29575693,Defensive Midfield,"Centre-Back, Central Midfield",right
+29582938,Central Midfield,Defensive Midfield,right
+29584065,,,
+29591793,Left Winger,Right Winger,right
+29660540,Left Winger,"Right Winger, Second Striker",right
+29849232,Centre-Forward,Left Winger,left
+30141608,Right Winger,Right-Back,right
+30158352,Defensive Midfield,Central Midfield,left
+30266061,,,
+30668239,Defensive Midfield,Central Midfield,left
+30700600,Centre-Forward,,right
+30797683,Left Winger,Right Winger,right
+30917306,Centre-Forward,"Right Winger, Left Winger",right
+31172491,Central Midfield,Right Midfield,both
+31226426,Defensive Midfield,Central Midfield,right
+31411737,Central Midfield,Defensive Midfield,right
+31412220,Centre-Forward,,right
+31477586,Centre-Forward,Left Winger,right
+31581270,Centre-Forward,,right
+31693809,Left Winger,"Right Winger, Left Midfield",right
+31789282,Right-Back,Right Midfield,right
+31842573,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+31983448,Left-Back,"Left Midfield, Central Midfield",left
+32062177,Second Striker,"Attacking Midfield, Right Winger",right
+32173911,Left Winger,"Centre-Forward, Right Winger",right
+32179385,Attacking Midfield,"Right Winger, Central Midfield",left
+32222533,Left Winger,"Centre-Forward, Right Winger",right
+32602815,Centre-Forward,"Left Winger, Second Striker",both
+32606840,Right Winger,"Centre-Forward, Second Striker",right
+32624550,Left-Back,Left Midfield,left
+32634210,Centre-Forward,,right
+32640650,Attacking Midfield,"Right Winger, Left Winger",both
+32684281,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+32684925,Defensive Midfield,Centre-Back,right
+32689594,Centre-Forward,"Right Winger, Left Winger",right
+32719218,Attacking Midfield,"Left Winger, Right Winger",right
+32759468,Left Midfield,"Attacking Midfield, Right Midfield",right
+36515437,Left Winger,"Attacking Midfield, Left Midfield",right
+38149909,Centre-Forward,Left Winger,right
+38171161,Defensive Midfield,Central Midfield,left
+38177923,Central Midfield,Defensive Midfield,right
+38289013,Left Winger,"Right Winger, Centre-Forward",right
+42004732,Defensive Midfield,Central Midfield,right
+42420595,Centre-Forward,,left
+42429772,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+42455693,Left Winger,"Attacking Midfield, Right Winger",right
+42523796,Centre-Forward,,right
+42642131,Left-Back,"Left Midfield, Centre-Back",left
+42723597,Right Winger,"Left Winger, Centre-Forward",right
+42781396,Left-Back,Left Midfield,left
+42784455,Right-Back,Right Winger,right
+42791056,Left-Back,Left Midfield,left
+42791378,Defensive Midfield,Central Midfield,right
+42797174,,,
+42858676,Left Winger,Right Winger,right
+42957047,Central Midfield,Defensive Midfield,right
+43335397,Left Winger,"Attacking Midfield, Right Winger",right
+43551781,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+43551942,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+43552264,Left Winger,"Centre-Forward, Right Winger",right
+43724534,Central Midfield,Attacking Midfield,right
+44071006,,,
+44162454,Right Winger,Attacking Midfield,left
+44164386,Right Winger,"Centre-Forward, Left Winger",left
+44379965,Centre-Forward,Second Striker,right
+44400090,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+44542736,Attacking Midfield,"Second Striker, Left Winger",both
+44544024,Attacking Midfield,"Central Midfield, Left Winger",right
+44597637,Central Midfield,Defensive Midfield,right
+44646420,Central Midfield,Attacking Midfield,left
+44773449,Left Winger,"Right Winger, Attacking Midfield",right
+44779567,Right Winger,"Attacking Midfield, Left Winger",left
+44817724,,,
+45079027,Attacking Midfield,"Left Winger, Right Midfield",right
+45137792,Central Midfield,"Right Midfield, Attacking Midfield",right
+45190761,Left-Back,Left Midfield,left
+45256610,Central Midfield,"Defensive Midfield, Right Midfield",right
+45306842,Centre-Forward,"Left Winger, Second Striker",right
+45490543,Defensive Midfield,"Centre-Back, Central Midfield",both
+45526124,Right Winger,"Left Winger, Right Midfield",right
+45567340,Centre-Forward,,right
+45572492,Centre-Forward,"Right Winger, Left Winger",right
+45735746,Centre-Forward,Left Winger,right
+45775996,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+45776318,Left Winger,"Attacking Midfield, Right Winger",right
+45793062,Right Winger,"Attacking Midfield, Left Winger",left
+45795960,Defensive Midfield,"Central Midfield, Centre-Back",right
+45797731,Defensive Midfield,"Centre-Back, Right-Back",right
+45804654,Central Midfield,Defensive Midfield,right
+45815924,Right-Back,Right Midfield,right
+45852471,Right Winger,"Left Winger, Centre-Forward",left
+46031503,Attacking Midfield,"Central Midfield, Left Winger",right
+46059678,Defensive Midfield,Central Midfield,right
+46122468,Right Winger,"Left Winger, Second Striker",left
+46149033,Left Winger,"Right Winger, Attacking Midfield",right
+46160464,Left Winger,"Right Winger, Centre-Forward",right
+46312448,Defensive Midfield,"Central Midfield, Centre-Back",right
+46369120,Centre-Forward,,left
+46384576,Defensive Midfield,"Central Midfield, Attacking Midfield",left
+46480693,Defensive Midfield,Central Midfield,left
+46618509,Attacking Midfield,"Central Midfield, Defensive Midfield",right
+46707220,Attacking Midfield,Central Midfield,right
+47006358,Attacking Midfield,"Right Winger, Central Midfield",left
+47039846,Centre-Forward,,left
+47499340,Attacking Midfield,"Central Midfield, Left Winger",right
+47746314,Right-Back,Right Midfield,right
+48585285,Left Winger,"Right Winger, Left Midfield",right
+48633263,,,
+48723906,Right-Back,Right Midfield,right
+48841436,Right-Back,"Right Midfield, Left Midfield",right
+49081487,Central Midfield,"Attacking Midfield, Right Midfield",right
+49222684,,,
+49239428,Defensive Midfield,Central Midfield,right
+49722750,Defensive Midfield,Central Midfield,right
+49811622,Defensive Midfield,Central Midfield,right
+50081941,Centre-Forward,"Left Winger, Right Winger",right
+50084517,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+50331169,Centre-Forward,"Second Striker, Right Winger",left
+50367394,Right Winger,"Left Winger, Centre-Forward",right
+50391544,,,
+50402653,Centre-Forward,"Right Winger, Left Winger",right
+50497965,Central Midfield,,right
+50636425,Left Winger,"Right Winger, Left Midfield",right
+50827693,Central Midfield,Attacking Midfield,right
+51451246,Central Midfield,"Left-Back, Left Midfield",left
+51603391,Centre-Forward,"Right Winger, Left Winger",right
+51785482,Centre-Forward,"Right Winger, Left Winger",right
+51943584,Attacking Midfield,"Central Midfield, Defensive Midfield",right
+51981419,Attacking Midfield,"Central Midfield, Defensive Midfield",right
+52103779,Central Midfield,Attacking Midfield,right
+52153689,Right Winger,"Centre-Forward, Left Winger",right
+52153850,Right Winger,"Attacking Midfield, Second Striker",left
+52497102,Attacking Midfield,"Centre-Forward, Left Winger",right
+52497907,Centre-Forward,"Right Winger, Left Winger",right
+52502576,Centre-Forward,,right
+52514490,Defensive Midfield,"Centre-Back, Central Midfield",right
+52608031,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+52748745,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+52780945,Defensive Midfield,"Central Midfield, Right Midfield",right
+52791571,Left Winger,"Attacking Midfield, Right Winger",right
+52813467,Defensive Midfield,Central Midfield,both
+52815560,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+52822483,Right-Back,"Defensive Midfield, Central Midfield",right
+52825059,Central Midfield,"Right-Back, Defensive Midfield",right
+52844379,Attacking Midfield,Right Winger,left
+53085074,Left Winger,"Right Winger, Left Midfield",right
+53086362,Defensive Midfield,"Central Midfield, Right-Back",right
+53168472,Left-Back,,left
+53350563,Right Winger,Right-Back,right
+53400312,,,
+53501742,Attacking Midfield,Central Midfield,left
+53501903,Central Midfield,Defensive Midfield,right
+53635211,Left-Back,"Left Midfield, Right-Back",left
+53693976,Central Midfield,,right
+53779789,Right Winger,"Left Winger, Attacking Midfield",left
+53943365,Central Midfield,Defensive Midfield,right
+53944170,Left Midfield,"Right Midfield, Left Winger",left
+53950288,Central Midfield,Defensive Midfield,right
+54186958,Left Winger,Right Winger,right
+54187441,Centre-Forward,"Left Winger, Right Winger",right
+54188407,Defensive Midfield,"Central Midfield, Attacking Midfield",right
+54190339,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+54191788,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+54202253,Right Winger,"Left Winger, Attacking Midfield",right
+54210625,Centre-Forward,"Left Winger, Right Winger",both
+54539065,Left Winger,Right Winger,right
+54596059,Left Winger,"Attacking Midfield, Right Winger",right
+54646291,Central Midfield,Defensive Midfield,right
+54719868,Central Midfield,Defensive Midfield,right
+54721317,Left Winger,"Second Striker, Right Winger",both
+54721961,Attacking Midfield,"Centre-Forward, Left Winger",right
+54752551,Centre-Forward,"Left Winger, Right Winger",right
+54832407,Attacking Midfield,"Central Midfield, Left Winger",right
+54840940,Attacking Midfield,"Central Midfield, Left Winger",right
+54960885,Central Midfield,Attacking Midfield,right
+54974087,Left-Back,"Left Winger, Left Midfield",left
+55067789,Right Winger,Attacking Midfield,left
+55092422,Centre-Forward,,left
+55166965,Right-Back,"Right Midfield, Left Midfield",right
+55227501,Right Winger,"Attacking Midfield, Left Winger",right
+55253583,Central Midfield,Attacking Midfield,left
+55255676,Centre-Forward,,left
+55256159,Defensive Midfield,Central Midfield,right
+55312992,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+55313636,Defensive Midfield,Central Midfield,right
+55333278,Centre-Forward,,right
+55350666,Central Midfield,Attacking Midfield,right
+55607622,Left Winger,Right Winger,right
+55675242,Centre-Forward,,right
+55845580,Left Winger,"Right Winger, Second Striker",right
+55918030,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+55970838,Central Midfield,"Attacking Midfield, Right Midfield",right
+56061159,Central Midfield,Defensive Midfield,right
+56171122,Attacking Midfield,"Central Midfield, Centre-Forward",both
+56189315,Right-Back,"Right Midfield, Left Midfield",right
+56356111,Attacking Midfield,"Right Winger, Centre-Forward",left
+56605661,Centre-Forward,,left
+56732529,Right-Back,"Left Midfield, Right Midfield",right
+56931203,Defensive Midfield,Central Midfield,right
+57322755,,,
+57459122,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+57664880,Right-Back,"Right Midfield, Left-Back",
+57861300,Left Winger,"Right Winger, Attacking Midfield",right
+58372958,Right Winger,"Left Winger, Centre-Forward",left
+58401455,Centre-Forward,Right Winger,left
+58403226,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+58619127,Central Midfield,,right
+58818445,Central Midfield,"Defensive Midfield, Right-Back",right
+59252984,Centre-Forward,"Left Winger, Attacking Midfield",right
+59290014,Centre-Forward,,right
+59517668,Left Winger,"Attacking Midfield, Centre-Forward",right
+60223492,Central Midfield,"Defensive Midfield, Attacking Midfield",right
+60271953,Left-Back,"Centre-Back, Left Midfield",left
+60471432,Defensive Midfield,"Central Midfield, Attacking Midfield",left
+60534544,Left Winger,"Right Winger, Second Striker",right
+60716796,Centre-Forward,"Second Striker, Right Winger",left
+60903878,Centre-Forward,,right
+61274661,Attacking Midfield,"Central Midfield, Centre-Forward",right
+61320707,Centre-Forward,"Left Winger, Attacking Midfield",right
+61337612,Central Midfield,"Attacking Midfield, Left Winger",right
+61574926,Left Winger,"Right Winger, Left-Back",left
+61666052,Right-Back,"Right Midfield, Left Midfield",both
+61773439,,,
+61788734,Central Midfield,Attacking Midfield,right
+62279462,Right Winger,Left Winger,left
+62410677,Left Winger,"Left Midfield, Right Winger",left
+62593573,Central Midfield,Attacking Midfield,left
+62608385,Defensive Midfield,Central Midfield,right
+62679869,Attacking Midfield,"Central Midfield, Defensive Midfield",right
+62884500,Defensive Midfield,Central Midfield,right
+62909616,Centre-Forward,,right
+63083496,Attacking Midfield,"Right Winger, Central Midfield",left
+63526407,Left Winger,Centre-Forward,left
+64552782,Left Winger,"Right Winger, Centre-Forward",right
+64764819,Central Midfield,"Attacking Midfield, Defensive Midfield",right
+64784300,Left-Back,Left Midfield,left
+65405438,Attacking Midfield,"Central Midfield, Second Striker",right
+65656920,Right Winger,"Centre-Forward, Left Winger",left
+65790389,Central Midfield,"Attacking Midfield, Right Midfield",right
+65883930,Central Midfield,"Attacking Midfield, Centre-Forward",both
+66884545,Central Midfield,"Attacking Midfield, Left Winger",left
+67464789,Central Midfield,"Defensive Midfield, Right Midfield",left
+67606630,Centre-Forward,,left
+67922029,Centre-Forward,Left Winger,right
+69602064,Left Winger,"Attacking Midfield, Right Winger",both
+69930826,Defensive Midfield,"Central Midfield, Left-Back",left
+70628922,Defensive Midfield,Central Midfield,right
+71349236,Left Winger,Right Winger,right
+71431668,Attacking Midfield,"Right Winger, Central Midfield",left
+71846243,Right Winger,Left Winger,right
+72329243,Right Winger,Attacking Midfield,left
+72530171,Centre-Forward,,right
+72692298,Centre-Forward,"Second Striker, Left Winger",right
+72884371,Left-Back,"Left Midfield, Centre-Back",left
+73449320,Left Winger,"Attacking Midfield, Centre-Forward",right
+73664255,Centre-Forward,,right
+79091082,Left Winger,Right Winger,right
+79555245,Attacking Midfield,Right Winger,left
+80000410,Central Midfield,Defensive Midfield,right
+80400334,Right-Back,"Left-Back, Right Midfield",right
+81352649,Centre-Forward,,right
+82718090,Right Winger,Left Winger,right
+82828858,Central Midfield,"Defensive Midfield, Centre-Back",both
+83666058,,,
+93265361,Right Winger,Left Winger,left
