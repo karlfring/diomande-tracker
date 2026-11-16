@@ -8,7 +8,7 @@
   "vides": 0
  },
  "complet": true,
- "maj": "2026-11-15T09:34:08+00:00",
+ "maj": "2026-11-16T09:52:42+00:00",
  "par_championnat": {
   "ENG": {
    "box_scores": 380,
@@ -36,7 +36,7 @@
   "candidats": 952,
   "erreurs": 0
  },
- "quota_restant": 81,
- "requetes": 19,
+ "quota_restant": null,
+ "requetes": 0,
  "saison": 2025
 }
