@@ -693,6 +693,40 @@
     "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
     "name": "Spain"
    },
+   "date": "2027-03-21T16:00:00.000Z",
+   "homeTeam": {
+    "id": 458622,
+    "logo": "https://highlightly.net/soccer/images/teams/458622.png",
+    "name": "Celta de Vigo"
+   },
+   "id": 1336593298,
+   "league": {
+    "id": 119924,
+    "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+    "name": "La Liga",
+    "season": 2026
+   },
+   "round": "Regular Season - 29",
+   "state": {
+    "clock": null,
+    "description": "Not started",
+    "score": {
+     "current": null,
+     "penalties": null
+    }
+   }
+  },
+  {
+   "awayTeam": {
+    "id": 461175,
+    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+    "name": "Real Madrid"
+   },
+   "country": {
+    "code": "ES",
+    "logo": "https://highlightly.net/soccer/images/countries/ES.svg",
+    "name": "Spain"
+   },
    "date": "2027-03-07T16:00:00.000Z",
    "homeTeam": {
     "id": 454367,
