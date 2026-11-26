@@ -332,10 +332,10 @@
    },
    "round": "League Stage - 5",
    "state": {
-    "clock": null,
-    "description": "Not started",
+    "clock": 90,
+    "description": "Finished",
     "score": {
-     "current": null,
+     "current": "5 - 1",
      "penalties": null
     }
    }
